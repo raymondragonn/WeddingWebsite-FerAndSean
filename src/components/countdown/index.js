@@ -2,7 +2,7 @@ import React from 'react'
 const { useState, useEffect } = React;
 
 const TimeCountDown = (props) => {
-  const [countdownDate] = useState(new Date('12/25/2024').getTime());
+  const [countdownDate] = useState(new Date('04/18/2026').getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
@@ -49,11 +49,11 @@ const TimeCountDown = (props) => {
     <div className="react-countdown">
       <div className='time-section'>
         <div className='time'>{state.days || '0'}</div>
-        <small className="time-text">Days</small>
+        <small className="time-text">Días</small>
       </div>
       <div className='time-section'>
         <div className='time'>{state.hours || '00'}</div>
-        <small className="time-text">Hours</small>
+        <small className="time-text">Horas</small>
       </div>
       <div className='time-section'>
         <div className='time'>{state.minutes || '00'}</div>
@@ -61,7 +61,7 @@ const TimeCountDown = (props) => {
       </div>
       <div className='time-section'>
         <div className='time'>{state.seconds || '00'}</div>
-        <small className="time-text">Sec</small>
+        <small className="time-text">Seg</small>
       </div>
     </div>
   );

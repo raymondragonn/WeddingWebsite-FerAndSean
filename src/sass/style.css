@@ -17533,7 +17533,7 @@ a.ui-button:active, .ui-button:active,
 
 .wpo-invitation-area-s2 .wpo-event-item,
 .wpo-coming-soon-area .wpo-event-item {
-  padding: 40px 70px 70px;
+  padding: 70px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -14,7 +14,7 @@
         max-width: 900px;
         background: linear-gradient(140deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%);
         -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(28px);
         position: relative;
 
         .wpo-event-item {
@@ -32,7 +32,7 @@
             text-align: center;
             padding-bottom: 0;
             margin-top: 20px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
     
             @include media-query(1199px) {
                 margin-top: 20px;
@@ -41,7 +41,8 @@
             @include media-query(991px) {
                 display: flex;
                 justify-content: center;
-                margin-top: 0;
+                margin-top: 8px;
+                margin-bottom: 0;
             }
     
             #clock,
@@ -82,7 +83,7 @@
                     font-size: 60px;
                     line-height: 1em;
                     padding-top: 15px;
-                    color: $theme-primary-color;
+                    color: $black;
     
                     @include media-query(1300px) {
                         font-size: 50px;
@@ -120,7 +121,7 @@
             text-align: center;
     
             h2 {
-                font-size: 60px;
+                font-size: 100px;
                 margin-bottom: 20px;
     
                 @include media-query(1199px) {
@@ -128,11 +129,16 @@
                 }
     
                 @include media-query(767px) {
-                    font-size: 30px;
+                    font-size: 45px;
                 }
             }
             p{
+                font-size: 25px;
                 margin-bottom: 0;
+
+                @include media-query(767px) {
+                    font-size: 17px;
+                }
             }
         }
     

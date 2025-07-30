@@ -18,21 +18,21 @@ const Hero = () => {
                 <div className="hero-inner">
                     <div className="container-fluid">
                         <div className="row align-items-center">
-                            <div className="col-xl-6 col-lg-6 col-12">
+                            <div className="col-xl-12 col-lg-12 col-12">
                                 <div className="wpo-static-hero-inner">
                                     <div className="slide-title-sub">
                                         <Slide cascade direction="up" duration="1000" triggerOnce="true">
-                                            <h3>Lucas & Mia</h3>
+                                            <h3>Fer & Sean</h3>
                                         </Slide>
                                     </div>
                                     <div className="slide-title">
                                         <Slide cascade direction="up" duration="1200" triggerOnce="true">
-                                            <h2>Save the Date</h2>
+                                            <h2>Guarda la fecha</h2>
                                         </Slide>
                                     </div>
                                     <div className="slide-text">
                                         <Slide cascade direction="up" duration="1400" triggerOnce="true">
-                                            <p>We Are Getting Married November 15,2024</p>
+                                            <p>Nos casaremos el 18 de abril de 2026</p>
                                         </Slide>
                                     </div>
                                     <div className="shape-2">
@@ -47,7 +47,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="static-hero-right">
+            {/* <div className="static-hero-right">
                 <div className="static-hero-img scene" id="scene">
                     <div className="static-hero-img-inner">
                         <img className="zoom" src={hero2} alt="" />
@@ -79,8 +79,8 @@ const Hero = () => {
                         </span>
                     </div>
                 </div>
-            </div>
-            <div className="left-shape">
+            </div> */}
+            {/* <div className="left-shape">
                 <div className="left-shape-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 383" fill="none">
                         <path
@@ -111,7 +111,7 @@ const Hero = () => {
                             fill="" />
                     </svg>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
