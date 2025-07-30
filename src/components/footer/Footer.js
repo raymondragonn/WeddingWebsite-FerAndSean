@@ -36,7 +36,7 @@ const Footer = (props) => {
                         <div className="col col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <Link className='logo' onClick={ClickHandler} to="/">Habibi</Link>
+                                    <Link className='logo' onClick={ClickHandler} to="/">Fer & Sean</Link>
                                 </div>
                                 <p>We can’t wait to see all of our beloved friends
                                     and relative s at our wedding.</p>
@@ -66,7 +66,7 @@ const Footer = (props) => {
                                     <h3>Contact </h3>
                                 </div>
                                 <div className="contact-ft">
-                                    <p>Habibi@wpoceans.com</p>
+                                    <p>Fer & Sean@wpoceans.com</p>
                                     <p>4517 Washington Ave. Manchester,
                                         Kentucky 39495</p>
                                 </div>
@@ -79,7 +79,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12">
-                            <p className="copyright"> &copy; Copyright 2023 | <Link onClick={ClickHandler} to="/">Habibi</Link> | All right
+                            <p className="copyright"> &copy; Copyright 2023 | <Link onClick={ClickHandler} to="/">Fer & Sean</Link> | All right
                                 reserved.</p>
                         </div>
                     </div>

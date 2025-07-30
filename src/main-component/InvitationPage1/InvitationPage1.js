@@ -14,7 +14,7 @@ const InvitationPage1 = () => {
             <header id="header">
                 <div className="wpo-site-header invitation-header">
                     <ul>
-                        <li> <Link className="navbar-brand" to="/">Habibi</Link></li>
+                        <li> <Link className="navbar-brand" to="/">Fer & Sean</Link></li>
                         <li><Link className="back-btn" to="/"><i className="ti-back-left"></i></Link></li>
                     </ul>
                 </div>

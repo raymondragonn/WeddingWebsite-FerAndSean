@@ -35,7 +35,7 @@ const Hero9 = () => {
                 </div>
             </div>
             <div className="hero-text-bottom">
-                <h2>Welcome To Habibi</h2>
+                <h2>Welcome To Fer & Sean</h2>
             </div>
         </section>
     )

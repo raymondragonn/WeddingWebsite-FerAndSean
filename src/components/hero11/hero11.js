@@ -15,21 +15,21 @@ const SlideArray = [
         sImg: hero1,
         Title: 'Light Lace Dress',
         price: '850',
-        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Habibi.",
+        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Fer & Sean.",
     },
     {
         id: '2',
         sImg: hero2,
         Title: 'White Ball Dress',
         price: '730',
-        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Habibi.",
+        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Fer & Sean.",
     },
     {
         id: '3',
         sImg: hero3,
         Title: 'Designer Gown',
         price: '960',
-        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Habibi.",
+        Des: "Here we have the best wedding gown you have ever seen. The elegant and brand new look is waiting for you in your big day. Lets Ready with Fer & Sean.",
     }
 ]
 

@@ -65,7 +65,7 @@ const FooterRtl = (props) => {
                                     <h3>اتصال</h3>
                                 </div>
                                 <div className="contact-ft">
-                                    <p>Habibi@wpoceans.com</p>
+                                    <p>Fer & Sean@wpoceans.com</p>
                                     <p>4517 برج خليفة ، الإمارات العربية المتحدة</p>
                                 </div>
                             </div>

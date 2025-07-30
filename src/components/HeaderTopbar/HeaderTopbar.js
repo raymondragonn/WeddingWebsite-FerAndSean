@@ -13,7 +13,7 @@ const HeaderTopbar = (props) => {
                         <div className="contact-intro">
                             <ul>
                                 <li><i className="fi flaticon-phone-call"></i> (307) 555-0133</li>
-                                <li><i className="fi flaticon-email"></i>demo.Habibi@gmail.com</li>
+                                <li><i className="fi flaticon-email"></i>demo.Fer & Sean@gmail.com</li>
                                 <li><i className="fi flaticon-maps-and-flags"></i> 244 Royal Ln. Mesa, New Jersey 463</li>
                             </ul>
                         </div>

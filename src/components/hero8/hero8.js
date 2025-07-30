@@ -20,7 +20,7 @@ const Hero8 = () => {
                             <div className="col col-xl-4 col-lg-4 col-12">
                                 <div className="wpo-static-hero-inner">
                                     <div className="slide-sub-title">
-                                        <span>Habibi Wedding</span>
+                                        <span>Fer & Sean Wedding</span>
                                     </div>
                                     <div className="slide-title">
                                         <h2>Making Your Dream Long Lasting.</h2>

@@ -20,28 +20,28 @@ const SlideArray = [
         sImg: hero1,
         sub: 'Welcome To',
         Des: "Making Your Dream Long Lasting. We are happy to see you here. We must want that your dreamy wedding will made with us.",
-        Title: 'Habibi Weddings',
+        Title: 'Fer & Sean Weddings',
     },
     {
         id: '02',
         sImg: hero2,
         sub: 'Welcome To',
         Des: "Making Your Dream Long Lasting. We are happy to see you here. We must want that your dreamy wedding will made with us.",
-        Title: 'Habibi Weddings',
+        Title: 'Fer & Sean Weddings',
     },
     {
         id: '03',
         sImg: hero3,
         sub: 'Welcome To',
         Des: "Making Your Dream Long Lasting. We are happy to see you here. We must want that your dreamy wedding will made with us.",
-        Title: 'Habibi Weddings',
+        Title: 'Fer & Sean Weddings',
     },
     {
         id: '04',
         sImg: hero4,
         sub: 'Welcome To',
         Des: "Making Your Dream Long Lasting. We are happy to see you here. We must want that your dreamy wedding will made with us.",
-        Title: 'Habibi Weddings',
+        Title: 'Fer & Sean Weddings',
     }
 ]
 
@@ -78,7 +78,7 @@ const Hero10 = () => {
                                                                 <h3>Welcome To</h3>
                                                             </div>
                                                             <div className="slide-title">
-                                                                <h2>Habibi Weddings</h2>
+                                                                <h2>Fer & Sean Weddings</h2>
                                                             </div>
                                                             <div className="slide-text">
                                                                 <p>Making Your Dream Long Lasting. We are happy to see you here. We
