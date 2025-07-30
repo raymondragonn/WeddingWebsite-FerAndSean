@@ -70,8 +70,8 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='home' element={<Homepage />} />
+          <Route path='/' element={<ComingSoonPage />} />
+          {/* <Route path='home' element={<Homepage />} />
           <Route path='home-2' element={<HomePage2 />} />
           <Route path='home-3' element={<HomePage3 />} />
           <Route path='home-4' element={<HomePage4 />} />
@@ -133,7 +133,7 @@ const AllRoute = () => {
           <Route path='/404' element={<ErrorPage />} />
           <Route path='login' element={<LoginPage />} />
           <Route path='register' element={<SignUpPage />} />
-          <Route path='forgot' element={<ForgotPassword />} />
+          <Route path='forgot' element={<ForgotPassword />} /> */}
         </Routes>
       </BrowserRouter>
 
