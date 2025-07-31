@@ -1,7 +1,9 @@
 import React from 'react'
+import { useLanguage } from '../../contexts/LanguageContext';
 const { useState, useEffect } = React;
 
 const TimeCountDown = (props) => {
+  const { t } = useLanguage();
   const [countdownDate] = useState(new Date('04/18/2026').getTime());
   const [state, setState] = useState({
     days: 0,
@@ -30,38 +32,33 @@ const TimeCountDown = (props) => {
       );
       let seconds = Math.floor((distanceToDate % (1000 * 60)) / 1000);
 
-      const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // Asegurar que los números sean siempre strings con formato consistente
+      days = days.toString();
+      hours = hours.toString().padStart(2, '0');
+      minutes = minutes.toString().padStart(2, '0');
+      seconds = seconds.toString().padStart(2, '0');
 
-      days = `${days}`;
-      if (numbersToAddZeroTo.includes(hours)) {
-        hours = `0${hours}`;
-      } else if (numbersToAddZeroTo.includes(minutes)) {
-        minutes = `0${minutes}`;
-      } else if (numbersToAddZeroTo.includes(seconds)) {
-        seconds = `0${seconds}`;
-      }
-
-      setState({ days: days, hours: hours, minutes, seconds });
+      setState({ days: days, hours: hours, minutes: minutes, seconds: seconds });
     }
   };
 
   return (
     <div className="react-countdown">
       <div className='time-section'>
-        <div className='time'>{state.days || '0'}</div>
-        <small className="time-text">Días</small>
+        <div className='time'>{state.days}</div>
+        <small className="time-text">{t('days')}</small>
       </div>
       <div className='time-section'>
-        <div className='time'>{state.hours || '00'}</div>
-        <small className="time-text">Horas</small>
+        <div className='time'>{state.hours}</div>
+        <small className="time-text">{t('hours')}</small>
       </div>
       <div className='time-section'>
-        <div className='time'>{state.minutes || '00'}</div>
-        <small className="time-text">Min</small>
+        <div className='time'>{state.minutes}</div>
+        <small className="time-text">{t('minutes')}</small>
       </div>
       <div className='time-section'>
-        <div className='time'>{state.seconds || '00'}</div>
-        <small className="time-text">Seg</small>
+        <div className='time'>{state.seconds}</div>
+        <small className="time-text">{t('seconds')}</small>
       </div>
     </div>
   );

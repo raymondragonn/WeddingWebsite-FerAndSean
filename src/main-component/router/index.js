@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { LanguageProvider } from '../../contexts/LanguageContext';
 import Homepage from '../HomePage'
 import HomePage2 from '../HomePage2/HomePage2';
 import HomePage3 from '../HomePage3/HomePage3';
@@ -67,10 +68,11 @@ import ForgotPassword from '../ForgotPassword'
 const AllRoute = () => {
 
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<ComingSoonPage />} />
+    <LanguageProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<ComingSoonPage />} />
           {/* <Route path='home' element={<Homepage />} />
           <Route path='home-2' element={<HomePage2 />} />
           <Route path='home-3' element={<HomePage3 />} />
@@ -136,8 +138,8 @@ const AllRoute = () => {
           <Route path='forgot' element={<ForgotPassword />} /> */}
         </Routes>
       </BrowserRouter>
-
-    </div>
+      </div>
+    </LanguageProvider>
   );
 }
 
