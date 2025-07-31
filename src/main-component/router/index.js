@@ -64,6 +64,7 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 import LoginPage from '../LoginPage'
 import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
+import HomePage from '../HomePage';
 
 const AllRoute = () => {
 
@@ -72,70 +73,70 @@ const AllRoute = () => {
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<ComingSoonPage />} />
-          {/* <Route path='home' element={<Homepage />} />
-          <Route path='home-2' element={<HomePage2 />} />
-          <Route path='home-3' element={<HomePage3 />} />
-          <Route path='home-4' element={<HomePage4 />} />
-          <Route path='home-5' element={<HomePage5 />} />
-          <Route path='home-6' element={<HomePage6 />} />
-          <Route path='home-rtl' element={<HomePage7 />} />
-          <Route path='invitation-1' element={<InvitationPage1 />} />
-          <Route path='invitation-2' element={<InvitationPage2 />} />
-          <Route path='home-7' element={<HomePlanner1 />} />
-          <Route path='home-8' element={<HomePlanner2 />} />
-          <Route path='home-9' element={<HomePlanner3 />} />
-          <Route path='shop-home' element={<HomeShop1 />} />
-          <Route path='shop-home-2' element={<HomeShop2 />} />
-          <Route path='shop-home-video-bg' element={<HomeShop3 />} />
-          <Route path='shop-home-3' element={<HomeShop4 />} />
-          <Route path='/product-single/:slug' element={<ProductSinglePage />} />
-          <Route path='about' element={<AboutPage />} />
-          <Route path='story' element={<StoryPage1 />} />
-          <Route path='story-2' element={<StoryPage2 />} />
-          <Route path='story-3' element={<StoryPage3 />} />
-          <Route path='story-4' element={<StoryPage4 />} />
-          <Route path='story-5' element={<StoryPage5 />} />
-          <Route path='story-6' element={<StoryPage6 />} />
-          <Route path='accomodation' element={<AccomodationPage />} />
-          <Route path='rsvp' element={<RsvpPage1 />} />
-          <Route path='rsvp-2' element={<RsvpPage2 />} />
-          <Route path='rsvp-3' element={<RsvpPage3 />} />
-          <Route path='rsvp-4' element={<RsvpPage4 />} />
-          <Route path='rsvp-5' element={<RsvpPage5 />} />
-          <Route path='rsvp-6' element={<RsvpPage6 />} />
-          <Route path='rsvp-7' element={<RsvpPage7 />} />
-          <Route path='gallery' element={<GalleryPage />} />
-          <Route path='planner' element={<PlannerPage />} />
-          <Route path='team-single/:slug' element={<TeamSinglePage />} />
-          <Route path='groom-bride' element={<BrideGroomsPage />} />
-          <Route path='service' element={<ServicePage />} />
-          <Route path='service-s2' element={<ServicePageS2 />} />
-          <Route path='service-s3' element={<ServicePageS3 />} />
-          <Route path='service-single/:slug' element={<SeviceSinglePage />} />
-          <Route path='/pricing' element={<PricingPage />} />
-          <Route path='/coming' element={<ComingSoonPage />} />
-          <Route path='/portfolio-grid' element={<PortfolioGridPage />} />
-          <Route path='/portfolio-masonary' element={<PortfolioMasonaryPage />} />
-          <Route path='/portfolio-masonary-s2' element={<PortfolioMasonaryPageS2 />} />
-          <Route path='/portfolio-masonary-s3' element={<PortfolioMasonaryPageS3 />} />
-          <Route path='/project-single/:slug' element={<ProjectSinglePage />} />
-          <Route path='/shop' element={<ShopPage />} />
-          <Route path='/cart' element={<CartPage />} />
-          <Route path='/wishlist' element={<WishlistPage />} />
-          <Route path='/checkout' element={<CheckoutPage />} />
-          <Route path='/order_received' element={<OrderRecived />} />
-          <Route path='/blog-single/:slug' element={<BlogDetails />} />
-          <Route path='/blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
-          <Route path='/blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
-          <Route path='/blog' element={<BlogPage />} />
-          <Route path='/blog-left-sidebar' element={<BlogPageLeft />} />
-          <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
-          <Route path='/contact' element={<ContactPage />} />
-          <Route path='/404' element={<ErrorPage />} />
-          <Route path='login' element={<LoginPage />} />
-          <Route path='register' element={<SignUpPage />} />
-          <Route path='forgot' element={<ForgotPassword />} /> */}
+            <Route path='/' element={<HomePage />} />
+            <Route path='home' element={<Homepage />} />
+            <Route path='home-2' element={<HomePage2 />} />
+            <Route path='home-3' element={<HomePage3 />} />
+            <Route path='home-4' element={<HomePage4 />} />
+            <Route path='home-5' element={<HomePage5 />} />
+            <Route path='home-6' element={<HomePage6 />} />
+            <Route path='home-rtl' element={<HomePage7 />} />
+            <Route path='invitation-1' element={<InvitationPage1 />} />
+            <Route path='invitation-2' element={<InvitationPage2 />} />
+            <Route path='home-7' element={<HomePlanner1 />} />
+            <Route path='home-8' element={<HomePlanner2 />} />
+            <Route path='home-9' element={<HomePlanner3 />} />
+            <Route path='shop-home' element={<HomeShop1 />} />
+            <Route path='shop-home-2' element={<HomeShop2 />} />
+            <Route path='shop-home-video-bg' element={<HomeShop3 />} />
+            <Route path='shop-home-3' element={<HomeShop4 />} />
+            <Route path='/product-single/:slug' element={<ProductSinglePage />} />
+            <Route path='about' element={<AboutPage />} />
+            <Route path='story' element={<StoryPage1 />} />
+            <Route path='story-2' element={<StoryPage2 />} />
+            <Route path='story-3' element={<StoryPage3 />} />
+            <Route path='story-4' element={<StoryPage4 />} />
+            <Route path='story-5' element={<StoryPage5 />} />
+            <Route path='story-6' element={<StoryPage6 />} />
+            <Route path='accomodation' element={<AccomodationPage />} />
+            <Route path='rsvp' element={<RsvpPage1 />} />
+            <Route path='rsvp-2' element={<RsvpPage2 />} />
+            <Route path='rsvp-3' element={<RsvpPage3 />} />
+            <Route path='rsvp-4' element={<RsvpPage4 />} />
+            <Route path='rsvp-5' element={<RsvpPage5 />} />
+            <Route path='rsvp-6' element={<RsvpPage6 />} />
+            <Route path='rsvp-7' element={<RsvpPage7 />} />
+            <Route path='gallery' element={<GalleryPage />} />
+            <Route path='planner' element={<PlannerPage />} />
+            <Route path='team-single/:slug' element={<TeamSinglePage />} />
+            <Route path='groom-bride' element={<BrideGroomsPage />} />
+            <Route path='service' element={<ServicePage />} />
+            <Route path='service-s2' element={<ServicePageS2 />} />
+            <Route path='service-s3' element={<ServicePageS3 />} />
+            <Route path='service-single/:slug' element={<SeviceSinglePage />} />
+            <Route path='/pricing' element={<PricingPage />} />
+            <Route path='/coming' element={<ComingSoonPage />} />
+            <Route path='/portfolio-grid' element={<PortfolioGridPage />} />
+            <Route path='/portfolio-masonary' element={<PortfolioMasonaryPage />} />
+            <Route path='/portfolio-masonary-s2' element={<PortfolioMasonaryPageS2 />} />
+            <Route path='/portfolio-masonary-s3' element={<PortfolioMasonaryPageS3 />} />
+            <Route path='/project-single/:slug' element={<ProjectSinglePage />} />
+            <Route path='/shop' element={<ShopPage />} />
+            <Route path='/cart' element={<CartPage />} />
+            <Route path='/wishlist' element={<WishlistPage />} />
+            <Route path='/checkout' element={<CheckoutPage />} />
+            <Route path='/order_received' element={<OrderRecived />} />
+            <Route path='/blog-single/:slug' element={<BlogDetails />} />
+            <Route path='/blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
+            <Route path='/blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
+            <Route path='/blog' element={<BlogPage />} />
+            <Route path='/blog-left-sidebar' element={<BlogPageLeft />} />
+            <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
+            <Route path='/contact' element={<ContactPage />} />
+            <Route path='/404' element={<ErrorPage />} />
+            <Route path='login' element={<LoginPage />} />
+            <Route path='register' element={<SignUpPage />} />
+            <Route path='forgot' element={<ForgotPassword />} />
         </Routes>
       </BrowserRouter>
       </div>
