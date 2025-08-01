@@ -167,7 +167,8 @@
 	/* style for navigation less than 992px */
 	/*navbar collaps less then 992px*/
 	/*** cart-search-contact ***/
-	background-color: #fff;
+	background-color: #ded5c7;
+	transition: all 0.3s ease;
 
 	@media(min-width:1500px) {
 		padding: 0 80px;
@@ -175,7 +176,7 @@
 }
 
 .wpo-site-header .navigation {
-	background-color: #fff;
+	background-color: transparent;
 	margin-bottom: 0;
 	padding: 0;
 	border: 0;
@@ -186,19 +187,60 @@
 	border-radius: 0;
 }
 
-.navbar-header .navbar-brand {
-	font-size: 35px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	font-family: $heading-font;
-	color: $theme-primary-color;
+ .navbar-header .navbar-brand {
+ 	font-size: 35px;
+ 	font-weight: 200;
+ 	font-family: $heading-font;
+ 	color: $white;
+ 
+ 	&:hover {
+ 		color: $theme-primary-color;
+ 	}
+ }
 
-
-	&:hover {
-		color: $theme-primary-color;
-	}
-}
+ // Estilos para el logo centrado
+ .wpo-site-header .navigation .navbar-header {
+ 	position: absolute;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	z-index: 1000;
+ 	text-align: center;
+	text-transform: uppercase;
+ 	
+ 	.navbar-brand {
+		margin: 0;
+ 		font-size: 3.5rem;
+ 		color: $white;
+ 		text-decoration: none;
+ 		transition: all 0.3s ease;
+ 		
+ 		&:hover {
+ 			color: #d4c4b0;
+ 			text-decoration: none;
+ 		}
+ 	}
+ 	
+ 	// Responsive para tablets
+ 	@media (max-width: 991px) {
+ 		.navbar-brand {
+ 			font-size: 2rem;
+ 		}
+ 	}
+ 	
+ 	// Responsive para móviles
+ 	@media (max-width: 767px) {
+ 		.navbar-brand {
+ 			font-size: 1.8rem;
+ 		}
+ 	}
+ 	
+ 	// Responsive para móviles pequeños
+ 	@media (max-width: 480px) {
+ 		.navbar-brand {
+ 			font-size: 1.5rem;
+ 		}
+ 	}
+ }
 
 .sticky-header {
 	width: 100%;
@@ -241,13 +283,17 @@
 	}
 }
 
-.wpo-site-header #navbar {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	transition: all 0.5s;
-}
+ .wpo-site-header #navbar {
+ 	-webkit-transition: all 0.5s;
+ 	-moz-transition: all 0.5s;
+ 	-o-transition: all 0.5s;
+ 	-ms-transition: all 0.5s;
+ 	transition: all 0.5s;
+ 	
+ 	// Espaciado para el logo centrado
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ }
 
 .wpo-site-header #navbar>ul li a:hover,
 .wpo-site-header #navbar>ul li a:focus {
@@ -265,26 +311,7 @@
 		position: relative;
 	}
 
-	.wpo-site-header #navbar>ul>li>a:before {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 4px;
-		background: $theme-primary-color;
-		content: "";
-		opacity: 0;
-		visibility: hidden;
-		transition: all .3s;
-		border-radius: 3px;
-	}
 
-	.wpo-site-header #navbar>ul>li>a:hover:before,
-	.wpo-site-header #navbar>ul>li.current-menu-item a:before,
-	.wpo-site-header #navbar>ul>li>a.active:before {
-		opacity: 1;
-		visibility: visible;
-	}
 
 	.wpo-site-header #navbar>ul>li>.sub-menu>.menu-item-has-children>a {
 		position: relative;
@@ -942,6 +969,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 99;
+	transition: all 0.3s ease;
 
 	@include media-query(991px) {
 		position: relative;
@@ -973,7 +1001,7 @@
 		>ul li a:hover,
 		>ul li a:focus {
 			text-decoration: none;
-			color: darken($theme-primary-color, 5%);
+			color: #d4c4b0;
 		}
 
 		// style for widther screen
@@ -995,6 +1023,17 @@
 				@media(max-width:1870px) {
 					padding: 35px 18px;
 				}
+			}
+
+			// Estilos para menu-item-has-children en desktop
+			>ul>li.menu-item-has-children>a {
+				font-size: 20px;
+				color: white !important;
+			}
+
+			>ul>li.menu-item-has-children>a:hover,
+			>ul>li.menu-item-has-children>a:focus {
+				color: #d4c4b0 !important;
 			}
 
 			>ul .sub-menu {
@@ -1020,31 +1059,34 @@
 				overflow: hidden;
 				transition: all .5s;
 
-				&:after {
-					position: absolute;
-					left: 0px;
-					bottom: 5px;
-					width: 0px;
-					height: 1px;
-					content: "";
-					background: $theme-primary-color;
-					transition: all .3s;
-					opacity: 0;
-					visibility: hidden;
-				}
-
 				&.active {
 					color: #002642;
 					font-weight: 500;
 				}
 
 				&:hover {
-					&:after {
-						width: 100%;
-						opacity: 1;
-						visibility: visible;
-					}
+					color: #d4c4b0;
 				}
+			}
+
+			// Estilos para menu-item-has-children en submenús
+			>ul>li .sub-menu .menu-item-has-children > a {
+				color: white !important;
+			}
+
+			>ul>li .sub-menu .menu-item-has-children > a:hover,
+			>ul>li .sub-menu .menu-item-has-children > a:focus {
+				color: white !important;
+			}
+
+			// Estilos para menu-item-has-children en submenús
+			>ul>li .sub-menu .menu-item-has-children > a {
+				color: white !important;
+			}
+
+			>ul>li .sub-menu .menu-item-has-children > a:hover,
+			>ul>li .sub-menu .menu-item-has-children > a:focus {
+				color: white !important;
 			}
 
 			>ul>li>.sub-menu .sub-menu {
@@ -1090,7 +1132,7 @@
 
 				&:hover,
 				&.active {
-					color: $white;
+					color: $theme-primary-color;
 				}
 			}
 
@@ -1112,11 +1154,11 @@
 
 			>ul .menu-item-has-children>a {
 				position: relative;
-				color: $white;
+				color: $white !important;
 
 				&:hover,
 				&.active {
-					color: #fff;
+					color: #d4c4b0 !important;
 				}
 
 				&:before {
@@ -1138,7 +1180,7 @@
 				}
 
 				&.rotate {
-					color: #fff;
+					color: #d4c4b0 !important;
 				}
 			}
 		}
@@ -1196,7 +1238,7 @@
 		}
 
 		#navbar {
-			background: #525a44;
+			background: transparent;
 			display: block !important;
 			width: 300px;
 			height: 100%;
@@ -1220,7 +1262,7 @@
 			}
 
 			ul a {
-				color: $black;
+				color: $white;
 			}
 
 			ul a:hover,
@@ -1596,19 +1638,131 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: $white;
+	background: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	border: none;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
 	-moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
 	-webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
+	transition: all 0.3s ease;
+	
+	// Hacer el navbar más delgado
+	.navigation {
+		padding: 0;
+	}
+	
+	#navbar {
+		padding: 0;
+	}
+
+	// Cambiar color del logo a negro cuando está sticky
+	.navbar-header .navbar-brand {
+		color: #000 !important;
+		font-size: 2rem !important;
+		
+		&:hover {
+			color: #d4c4b0 !important;
+		}
+	}
+
+	// Mover el logo al lado izquierdo cuando está sticky
+	.navigation .navbar-header {
+		position: relative !important;
+		left: 0 !important;
+		transform: none !important;
+		text-align: left !important;
+	}
+
+	// Cambiar color de los enlaces del menú a negro cuando está sticky
+	#navbar > ul > li > a {
+		color: #000 !important;
+		
+		&:hover,
+		&:focus {
+			color: #d4c4b0 !important;
+		}
+	}
+
+	// Cambiar color de los enlaces con submenús a negro cuando está sticky
+	#navbar > ul > li.menu-item-has-children > a {
+		color: #000 !important;
+		
+		&:hover,
+		&:focus {
+			color: #d4c4b0 !important;
+		}
+	}
 }
 
 .fixed-navbar.active .wpo-header-style-2 {
-	background: $white;
+	background: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	transition: all 0.3s ease;
+	
+	// Hacer el navbar más delgado
+	.navigation {
+		padding: 0;
+	}
+	
+	#navbar {
+		padding: 0;
+	}
+
+	// Cambiar color del logo a negro cuando está sticky
+	.navbar-header .navbar-brand {
+		color: #000 !important;
+		font-size: 2rem !important;
+		
+		&:hover {
+			color: #d4c4b0 !important;
+		}
+	}
+
+	// Mover el logo al lado izquierdo cuando está sticky
+	.navigation .navbar-header {
+		position: relative !important;
+		left: 0 !important;
+		transform: none !important;
+		text-align: left !important;
+	}
+
+	// Cambiar color de los enlaces del menú a negro cuando está sticky
+	#navbar > ul > li > a {
+		color: #000 !important;
+		
+		&:hover,
+		&:focus {
+			color: #d4c4b0 !important;
+		}
+	}
+
+	// Cambiar color de los enlaces con submenús a negro cuando está sticky
+	#navbar > ul > li.menu-item-has-children > a {
+		color: #000 !important;
+		
+		&:hover,
+		&:focus {
+			color: #d4c4b0 !important;
+		}
+	}
 }
 
 .fixed-navbar.active .wpo-header-style-4 {
-	background: $theme-primary-color;
+	background: rgba(101, 113, 80, 0.75);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	transition: all 0.3s ease;
+	
+	// Hacer el navbar más delgado
+	.navigation {
+		padding: 0;
+	}
+	
+	#navbar {
+		padding: 0;
+	}
 
 	.mini-cart .cart-count {
 		background: #444c35;
@@ -1619,5 +1773,40 @@
 .topbarNone {
 	.topbar {
 		display: none;
+	}
+}
+
+// Estilos responsivos para el logo sticky
+.fixed-navbar.active .wpo-site-header .navbar-header .navbar-brand {
+	// Responsive para tablets
+	@media (max-width: 991px) {
+		font-size: 1.5rem !important;
+	}
+	
+	// Responsive para móviles
+	@media (max-width: 767px) {
+		font-size: 1.3rem !important;
+	}
+	
+	// Responsive para móviles pequeños
+	@media (max-width: 480px) {
+		font-size: 1.1rem !important;
+	}
+}
+
+.fixed-navbar.active .wpo-header-style-2 .navbar-header .navbar-brand {
+	// Responsive para tablets
+	@media (max-width: 991px) {
+		font-size: 1.5rem !important;
+	}
+	
+	// Responsive para móviles
+	@media (max-width: 767px) {
+		font-size: 1.3rem !important;
+	}
+	
+	// Responsive para móviles pequeños
+	@media (max-width: 480px) {
+		font-size: 1.1rem !important;
 	}
 }

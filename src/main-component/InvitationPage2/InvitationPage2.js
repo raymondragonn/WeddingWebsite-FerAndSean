@@ -26,7 +26,7 @@ const InvitationPage2 = () => {
                                     <div className="wpo-event-wrap">
                                         <div className="wpo-event-item">
                                             <div className="wpo-event-text">
-                                                <h2>James & Amelia</h2>
+                                                <h2>Fer & Sean</h2>
                                                 <p>Our Big Day is November 15,2022</p>
                                                 <div className="inner-shape">
                                                     <img src={cImg1} alt="" />

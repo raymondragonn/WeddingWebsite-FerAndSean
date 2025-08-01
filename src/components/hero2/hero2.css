@@ -1,0 +1,45 @@
+/* Estilos para el contador en hero2 */
+.wpo-wedding-date {
+    position: absolute !important;
+    top: 120px !important;
+    right: 50px !important;
+    z-index: 10 !important;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive para tablets */
+@media (max-width: 991px) {
+    .wpo-wedding-date {
+        top: 100px !important;
+        right: 30px !important;
+        padding: 15px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 767px) {
+    .wpo-wedding-date {
+        top: 80px !important;
+        right: 20px !important;
+        padding: 10px;
+    }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+    .wpo-wedding-date {
+        top: 70px !important;
+        right: 15px !important;
+        padding: 8px;
+    }
+}
+
+/* Asegurar que el contenedor tenga posición relativa */
+.wpo-static-hero-inner {
+    position: relative !important;
+} 

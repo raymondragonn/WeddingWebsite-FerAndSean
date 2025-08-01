@@ -1,0 +1,68 @@
+.header-language-toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #333;
+  color: #333;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-language-toggle-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #d4c4b0;
+  color: #d4c4b0;
+}
+
+.header-language-toggle-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-language-toggle-btn {
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-language-toggle-btn {
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+/* Estilos para el botón de idioma cuando el header está sticky */
+.fixed-navbar.active .wpo-site-header .header-language-toggle-btn,
+.fixed-navbar.active .wpo-header-style-2 .header-language-toggle-btn {
+  top: 10px !important;
+  right: 15px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+.fixed-navbar.active .wpo-site-header .header-language-toggle-btn:hover,
+.fixed-navbar.active .wpo-header-style-2 .header-language-toggle-btn:hover {
+  border-color: #d4c4b0 !important;
+  color: #d4c4b0 !important;
+} 

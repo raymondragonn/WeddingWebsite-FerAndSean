@@ -62,7 +62,7 @@ const Projects = [
     },
     {
         id: '6',
-        title:'James & Amelia',
+        title:'Fer & Sean',
         slug:'James-Amelia',
         pimg1:pimg8,
         pSimg:pSimg8,

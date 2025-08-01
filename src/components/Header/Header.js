@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
+import HeaderLanguageToggle from '../LanguageToggle/HeaderLanguageToggle'
+import { useLanguage } from '../../contexts/LanguageContext'
 import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
@@ -9,6 +11,7 @@ import { removeFromCart } from "../../store/actions/action";
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
     const [cartActive, setcartState] = useState(false);
+    const { t } = useLanguage();
 
     const SubmitHandler = (e) => {
         e.preventDefault()
@@ -24,6 +27,7 @@ const Header = (props) => {
 
         <header id="header" className={props.topbarNone}>
             <div className={`wpo-site-header ${props.hclass}`}>
+                <HeaderLanguageToggle />
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         <div className="row align-items-center">
@@ -32,6 +36,11 @@ const Header = (props) => {
                                     <MobileMenu/>
                                 </div>
                             </div>
+                            {/* <div className="col-lg-2 col-md-6 col-6">
+                                <div className="navbar-header">
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home">Fer & Sean</Link>
+                                </div>
+                            </div> */}
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home">Fer & Sean</Link>
@@ -42,137 +51,80 @@ const Header = (props) => {
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
-                                            <Link to="/">Home</Link>
+                                            <Link to="/">{t('home')}</Link>
+                                        </li>
+                                        <li className="menu-item-has-children">
+                                            <Link onClick={ClickHandler} to="/">{t('about')}</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Wedding Home 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-2">Wedding Home 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-3">Announcement Home 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-4">Announcement Home 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-5">Muslim Wedding Home</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-6">Asian Wedding Home</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-rtl">Muslim Wedding Home(RTL)</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/invitation-1">Wedding Invitation 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/invitation-2">Wedding Invitation 2</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/about">{t('about')}</Link></li>
                                                 <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Event Planner Homes</Link>
+                                                    <Link onClick={ClickHandler} to="/story">{t('story')}</Link>
                                                     <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/home-7">Wedding Planner 1</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/home-8">Wedding Planner 2</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/home-9">Wedding Planner 3</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story">{t('ourStoryStyle1')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story-2">{t('ourStoryStyle2')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story-3">{t('ourStoryStyle3')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story-4">{t('ourStoryStyle4')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story-5">{t('ourStoryStyle5')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/story-6">{t('ourStoryStyle6')}</Link></li>
                                                     </ul>
                                                 </li>
+                                                <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
                                                 <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Wedding Shop Homes</Link>
+                                                    <Link onClick={ClickHandler} to="/rsvp">{t('rsvp')}</Link>
                                                     <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/shop-home">Bridal Shop</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/shop-home-2">Wedding Bouquet Shop</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/shop-home-video-bg">Bouquet Shop Video Bg</Link>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp">{t('rsvpStyle1')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-2">{t('rsvpStyle2')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-3">{t('rsvpStyle3')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-4">{t('rsvpStyle4')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-5">{t('rsvpStyle5')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-6">{t('rsvpStyle6')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/rsvp-7">{t('rsvpStyle7')}</Link></li>
+                                                    </ul>
+                                                </li>
+                                                <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/planner">{t('planners')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/team-single/Jenny-Wilson">{t('plannerSingle')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/groom-bride">{t('bridesGrooms')}</Link></li>
+                                                <li className="menu-item-has-children">
+                                                    <Link onClick={ClickHandler} to="/service">{t('service')}</Link>
+                                                    <ul className="sub-menu">
+                                                        <li><Link onClick={ClickHandler} to="/service">{t('service')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/service-s2">{t('serviceS2')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/service-s3">{t('serviceS3')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/service-single/Wedding-Dress">{t('serviceSingle')}</Link></li>
+                                                    </ul>
+                                                </li>
+                                                <li><Link onClick={ClickHandler} to="/pricing">{t('pricing')}</Link></li>
+                                                <li className="menu-item-has-children">
+                                                    <Link onClick={ClickHandler} to="/">{t('authPages')}</Link>
+                                                    <ul className="sub-menu">
+                                                        <li><Link onClick={ClickHandler} to="/login">{t('login')}</Link>
                                                         </li>
-                                                        <li><Link onClick={ClickHandler} to="/shop-home-3">Wedding Cake Shop</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/register">{t('register')}</Link></li>
+                                                        <li><Link onClick={ClickHandler} to="/forgot">{t('forgotPassword')}</Link></li>
                                                     </ul>
                                                 </li>
+                                                <li><Link onClick={ClickHandler} to="/coming">{t('comingSoon')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/404">{t('error404')}</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Pages</Link>
+                                            <Link onClick={ClickHandler} to="/portfolio-grid">{t('portfolio')}</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/story">Our Story</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/story">Our Story Style 1</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/story-2">Our Story Style 2</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/story-3">Our Story Style 3</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/story-4">Our Story Style 4</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/story-5">Our Story Style 5</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/story-6">Our Story Style 6</Link></li>
-                                                    </ul>
-                                                </li>
-                                                <li><Link onClick={ClickHandler} to="/accomodation">Accomodation</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/rsvp">RSVP</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/rsvp">RSVP Style 1</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-2">RSVP Style 2</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-3">RSVP Style 3</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-4">RSVP Style 4</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-5">RSVP Style 5</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-6">RSVP Style 6</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-7">RSVP Style 7</Link></li>
-                                                    </ul>
-                                                </li>
-                                                <li><Link onClick={ClickHandler} to="/gallery">Gallery</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/planner">Planners</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/team-single/Jenny-Wilson">Planner Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/groom-bride">Brides & Grooms</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/service">Serevice</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/service">Serevice</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/service-s2">Serevice S2</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/service-s3">Serevice S3</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/service-single/Wedding-Dress">Serevice Single</Link></li>
-                                                    </ul>
-                                                </li>
-                                                <li><Link onClick={ClickHandler} to="/pricing">Pricing</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Auth Pages</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/login">Login</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/forgot">Forgot Password</Link></li>
-                                                    </ul>
-                                                </li>
-                                                <li><Link onClick={ClickHandler} to="/coming">Coming Soon</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/404">404 Error</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/portfolio-grid">{t('portfolioGrid')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary">{t('portfolioMasonary')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary-s2">{t('portfolioMasonaryS2')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary-s3">{t('portfolioMasonaryS3')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/project-single/James-Amelia">{t('portfolioSingle')}</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/portfolio-grid">Portfolio</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/portfolio-grid">Portfolio Grid</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary">Portfolio Masonary</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary-s2">Portfolio Masonary S2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/portfolio-masonary-s3">Portfolio Masonary S3</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-single/James-Amelia">Portfolio Single</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/shop">Shop</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/product-single/Earrings">Shop Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/wishlist">Wishlist</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/blog">Blog</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Blog left sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-fullwidth">Blog fullwidth</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Blog details</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/blog-single/Top-10-wedding">Blog details right sidebar</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/Top-10-wedding">Blog details left
-                                                            sidebar</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Top-10-wedding">Blog details
-                                                            fullwidth</Link></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <Link onClick={ClickHandler} to="/contact">{t('contact')}</Link>
                                         </li>
                                     </ul>
-
                                 </div>
                             </div>
-                            <div className="col-lg-2 col-md-2 col-2">
+                            {/* <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
@@ -237,7 +189,7 @@ const Header = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </nav>

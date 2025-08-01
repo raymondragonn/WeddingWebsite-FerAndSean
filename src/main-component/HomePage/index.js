@@ -18,12 +18,9 @@ const HomePage = () => {
         <Fragment>
             <Navbar />
             <Hero2 />
-            <CoupleSection2 />
             <StorySection2 />
             <PortfolioSection />
-            <RsvpSection/>
             <EventSection/>
-            <BlogSection />
             <Footer />
             <Scrollbar />
         </Fragment>

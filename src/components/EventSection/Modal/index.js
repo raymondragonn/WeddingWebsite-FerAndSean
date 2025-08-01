@@ -6,8 +6,10 @@ import React, {Fragment} from 'react';
 import { Button, Dialog, Grid, } from '@mui/material'
 import MuiDialogTitle from '@mui/material/DialogTitle';
 import IconButton from '@mui/material/IconButton';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const LocationMap = ({ maxWidth, button, buttonClass }) => {
+    const { t } = useLanguage();
     const [open, setOpen] = React.useState(false);
 
     function handleClickOpen() {
@@ -39,7 +41,7 @@ const LocationMap = ({ maxWidth, button, buttonClass }) => {
                 className={`btn ${buttonClass}`}
                 onClick={handleClickOpen}>
                 {button}
-                See Location
+                {t('seeLocation')}
             </Button>
             <Dialog
                 open={open}

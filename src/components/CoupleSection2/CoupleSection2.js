@@ -14,14 +14,6 @@ const CoupleSection2 = (props) => {
                     <div className="row align-items-center">
                         <div className="col col-md-12 col-12">
                             <div className="couple-item">
-                                <div className="couple-img-wrap">
-                                    <div className="couple-img">
-                                        <img src={coupleImg1} alt="" />
-                                    </div>
-                                    <div className="c-shape">
-                                        <img src={bg} alt="" />
-                                    </div>
-                                </div>
                                 <div className="couple-text">
                                     <h3>Amelia Lily</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae
@@ -65,7 +57,7 @@ const CoupleSection2 = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="shape-1">
+            {/* <div className="shape-1">
                 <svg viewBox="0 0 1920 692" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.1">
                         <path className="stroke-color"
@@ -90,7 +82,7 @@ const CoupleSection2 = (props) => {
                         d="M1041 397C1418.6 54.5998 1785 31.6665 1921 62.9998V649C1340.2 636.2 1092.33 475.667 1041 397Z"
                         fill="" />
                 </svg>
-            </div>
+            </div> */}
         </section>
     );
 }

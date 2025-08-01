@@ -33,7 +33,7 @@ const InvitationPage1 = () => {
                                     </div>
                                 </div>
                                 <div className="wpo-invitation-info">
-                                    <h2>James & Amelia</h2>
+                                    <h2>Fer & Sean</h2>
                                     <p>Our Big Day is November 15,2022</p>
                                     <span className="shape"><img src={shape} alt="" /> </span>
                                     <div className="row">
