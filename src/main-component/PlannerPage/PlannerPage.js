@@ -9,7 +9,7 @@ import PartnerSection from '../../components/PartnerSection';
 const PlannerPage = () => {
     return (
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
+            <Navbar/>
             <PageTitle pageTitle={'Our Planners'} pagesub={'Planner'} />
             <TeamSection/>
             <PartnerSection pClass={'pb-120 pt-0'}/>

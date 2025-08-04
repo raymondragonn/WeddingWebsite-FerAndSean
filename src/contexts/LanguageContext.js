@@ -32,7 +32,7 @@ export const LanguageProvider = ({ children }) => {
       // Header translations
       home: 'Inicio',
       about: 'Acerca de',
-      portfolio: 'Portafolio',
+      portfolio: 'Galería',
       contact: 'Contacto',
       story: 'Nuestra Historia',
       accommodation: 'Alojamiento',
@@ -71,6 +71,10 @@ export const LanguageProvider = ({ children }) => {
       serviceS3: 'Servicio S3',
       serviceSingle: 'Servicio Single',
       plannerSingle: 'Planner Single',
+      // Nuevas traducciones para el menú About
+      'Cuándo y Dónde': 'Cuándo y Dónde',
+      'Damas de Honor': 'Damas de Honor',
+      'Guadalajara': 'Guadalajara',
       // Story section translations
       ourStory: 'Nuestra Historia',
       howItHappened: '¿Cómo Sucedió?',
@@ -124,7 +128,7 @@ export const LanguageProvider = ({ children }) => {
       // Header translations
       home: 'Home',
       about: 'About',
-      portfolio: 'Portfolio',
+      portfolio: 'Gallery',
       contact: 'Contact',
       story: 'Our Story',
       accommodation: 'Accommodation',
@@ -163,6 +167,10 @@ export const LanguageProvider = ({ children }) => {
       serviceS3: 'Service S3',
       serviceSingle: 'Service Single',
       plannerSingle: 'Planner Single',
+      // Nuevas traducciones para el menú About
+      'Cuándo y Dónde': 'When & Where',
+      'Damas de Honor': 'Bridesmaids',
+      'Guadalajara': 'Guadalajara',
       // Story section translations
       ourStory: 'Our Story',
       howItHappened: 'How it Happened',

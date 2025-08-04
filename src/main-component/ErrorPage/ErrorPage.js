@@ -5,12 +5,10 @@ import Footer from '../../components/footer/Footer'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Error from '../../components/404/404';
 
-
-
 const ErrorPage =() => {
     return(
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
+            <Navbar/>
             <PageTitle pageTitle={'404'} pagesub={'404'}/> 
             <Error/>
             <Footer footerClass={'wpo-site-footer-s2'}/>

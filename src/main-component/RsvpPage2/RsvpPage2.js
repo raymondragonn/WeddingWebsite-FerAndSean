@@ -3,7 +3,6 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer'
 import Scrollbar from '../../components/scrollbar/scrollbar'
-import './guadalajara-page.css'
 
 // Import images
 import guadalajaraImg from '../../images/guadalajara.jpg';
@@ -15,9 +14,8 @@ import tortaahogada from '../../images/tortaahogada.jpg';
 const RsvpPage2 = () => {
     return (
         <Fragment>
-            <div className="guadalajara-page">
-                <Navbar/>
-                <PageTitle pageTitle={'Descubre Guadalajara'} pagesub={'Tu Guía de la Perla Tapatía'} />
+            <Navbar/>
+            <PageTitle pageTitle={'Descubre Guadalajara'} pagesub={'Tu Guía de la Perla Tapatía'} />
                 
                 {/* Sección Principal de Guadalajara */}
                 <section className="wpo-about-section section-padding">
@@ -192,7 +190,6 @@ const RsvpPage2 = () => {
 
                 <Footer footerClass={'wpo-site-footer-s2'}/>
                 <Scrollbar />
-            </div>
         </Fragment>
     )
 };

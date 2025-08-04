@@ -11,7 +11,7 @@ import SectionTitle from '../SectionTitle'
 const StorySection4 = (props) => {
     return (
 
-        <section className="wpo-story-section-s4 section-padding" id="story">
+        <section className="wpo-story-section-s4 section-padding" id="story" style={{ backgroundColor: '#f4f2ee' }}>
             <div className="container">
                 <SectionTitle  MainTitle={'Nuestra Historia'} />
                 <div className="row">

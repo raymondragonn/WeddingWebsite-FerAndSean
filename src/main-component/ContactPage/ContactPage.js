@@ -5,11 +5,10 @@ import Footer from '../../components/footer/Footer'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Contactpage from '../../components/Contactpage/Contactpage';
 
-
 const ContactPage =() => {
     return(
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
+            <Navbar/>
             <PageTitle pageTitle={'Contact Us'} pagesub={'Contact'}/> 
             <Contactpage/> 
             <Footer footerClass={'wpo-site-footer-s2'}/>

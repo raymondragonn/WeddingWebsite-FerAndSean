@@ -56,7 +56,8 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">{t('about')}</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/about">{t('about')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/about">{t('Cuándo y Dónde')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/planner">{t('Damas de Honor')}</Link></li>
                                                 {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/story">{t('story')}</Link>
                                                     <ul className="sub-menu">
@@ -69,24 +70,20 @@ const Header = (props) => {
                                                     </ul>
                                                 </li> */}
                                                 <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
                                                 {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/rsvp">{t('rsvp')}</Link>
                                                     <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/rsvp">{t('rsvpStyle1')}</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-2">{t('rsvpStyle2')}</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-3">{t('rsvpStyle3')}</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/rsvp-4">{t('rsvpStyle4')}</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/rsvp">{t('rsvpStyle1')}</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/rsvp-2">{t('rsvpStyle2')}</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/rsvp-3">{t('rsvpStyle3')}</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/rsvp-4">{t('rsvpStyle4')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/rsvp-5">{t('rsvpStyle5')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/rsvp-6">{t('rsvpStyle6')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/rsvp-7">{t('rsvpStyle7')}</Link></li>
                                                     </ul>
                                                 </li> */}
-                                                <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/planner">{t('planners')}</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/team-single/Jenny-Wilson">{t('plannerSingle')}</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/groom-bride">{t('bridesGrooms')}</Link></li>
-                                                <li className="menu-item-has-children">
+                                                <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
+                                                {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/service">{t('service')}</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link onClick={ClickHandler} to="/service">{t('service')}</Link></li>
@@ -94,8 +91,8 @@ const Header = (props) => {
                                                         <li><Link onClick={ClickHandler} to="/service-s3">{t('serviceS3')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/service-single/Wedding-Dress">{t('serviceSingle')}</Link></li>
                                                     </ul>
-                                                </li>
-                                                <li><Link onClick={ClickHandler} to="/pricing">{t('pricing')}</Link></li>
+                                                </li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/pricing">{t('pricing')}</Link></li>
                                                 <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/">{t('authPages')}</Link>
                                                     <ul className="sub-menu">
@@ -104,20 +101,20 @@ const Header = (props) => {
                                                         <li><Link onClick={ClickHandler} to="/register">{t('register')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/forgot">{t('forgotPassword')}</Link></li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
                                                 <li><Link onClick={ClickHandler} to="/coming">{t('comingSoon')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/404">{t('error404')}</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/portfolio-grid">{t('portfolio')}</Link>
-                                            <ul className="sub-menu">
+                                            <Link onClick={ClickHandler} to="/gallery">{t('portfolio')}</Link>
+                                            {/* <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/portfolio-grid">{t('portfolioGrid')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/portfolio-masonary">{t('portfolioMasonary')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/portfolio-masonary-s2">{t('portfolioMasonaryS2')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/portfolio-masonary-s3">{t('portfolioMasonaryS3')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/project-single/James-Amelia">{t('portfolioSingle')}</Link></li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/contact">{t('contact')}</Link>

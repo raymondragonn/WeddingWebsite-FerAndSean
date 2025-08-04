@@ -15,18 +15,18 @@ import PartnerSection from '../../components/PartnerSection';
 const AboutPage = () => {
     return (
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'} />
-            <About />
-            <FunFact fClass={'section-padding pt-0'}/>
-            <ServiceSectionS2 />
-            <Testimonial2 tClass={'wpo-testimonial-section-s3  pb-120 pb-1'}/>
-            <PortfolioSectionS3/>
-            <TeamSection />
-            <PricingSection pClass={'pt-0'}/>
-            <PartnerSection pClass={'section-padding pt-0'}/>
-            <Footer footerClass={'wpo-site-footer-s2'} />
-            <Scrollbar />
+            <Navbar/>
+                <PageTitle pageTitle={'About Us'} pagesub={'About'} />
+                <About />
+                <FunFact fClass={'section-padding pt-0'}/>
+                <ServiceSectionS2 />
+                <Testimonial2 tClass={'wpo-testimonial-section-s3  pb-120 pb-1'}/>
+                <PortfolioSectionS3/>
+                <TeamSection />
+                <PricingSection pClass={'pt-0'}/>
+                <PartnerSection pClass={'section-padding pt-0'}/>
+                <Footer footerClass={'wpo-site-footer-s2'} />
+                <Scrollbar />
         </Fragment>
     )
 };

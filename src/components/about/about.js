@@ -1,8 +1,8 @@
 import React from 'react'
 import SectionTitle from "../SectionTitle";
-import abimg from '../../images/about/img-1.jpg'
-import abimg2 from '../../images/about/img-2.jpg'
 import sign from '../../images/about/signature.png'
+import abimg from "../../images/ferandsean/photo1-onepage.svg";
+import abimg2 from "../../images/ferandsean/photo2-onepage.svg";
 
 const About = (props) => {
     return (
