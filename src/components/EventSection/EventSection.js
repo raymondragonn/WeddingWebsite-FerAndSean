@@ -2,8 +2,8 @@ import React from 'react'
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from '../SectionTitle'
 import { useLanguage } from '../../contexts/LanguageContext';
-import sImg1 from '../../images/event/1.jpg'
-import sImg2 from '../../images/event/2.jpg'
+import sImg1 from '../../images/event/Iglesia.jpeg'
+import sImg2 from '../../images/event/LugarBoda.PNG'
 import sImg3 from '../../images/event/3.jpg'
 import LocationMap from './Modal'
 
@@ -14,26 +14,29 @@ const EventSection = (props) => {
         {
             Simg: sImg1,
             title: t('theReception'),
-            li1: t('eventDate'),
-            li2: t('eventLocation'),
-            li3: t('eventPhone'),
+            li1: t('eventDate1'),
+            li2: t('eventLocation1'),
+            li3: t('eventPhone1'),
             animation:'1200',
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.382838205276!2d-103.83853937824018!3d20.884509581819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615dd4bd04cf9%3A0x8980ab78799224e9!2sParroquia%20Santiago%20Ap%C3%B3stol!5e0!3m2!1ses!2smx!4v1754148173128!5m2!1ses!2smx"
         },
         {
             Simg: sImg2,
             title: t('theCeremony'),
-            li1: t('eventDate'),
-            li2: t('eventLocation'),
-            li3: t('eventPhone'),
+            li1: t('eventDate2'),
+            li2: t('eventLocation2'),
+            li3: t('eventPhone2'),
             animation:'1400',
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sLa%20Cueva%20de%20la%20Luna!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx"
         },
         {
             Simg: sImg3,
             title: t('theParty'),
-            li1: t('eventDate'),
-            li2: t('eventLocation'),
-            li3: t('eventPhone'),
+            li1: t('eventDate3'),
+            li2: t('eventLocation3'),
+            li3: t('eventPhone3'),
             animation:'1600',
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sEl%20Jard%C3%ADn%20Event%20Hall!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx"
         },
     ]
 
@@ -57,10 +60,10 @@ const EventSection = (props) => {
                                                 <h2>{event.title}</h2>
                                             </div>
                                             <ul>
-                                                <li>{event.li1}</li>
-                                                <li>{event.li2}</li>
-                                                <li>{event.li3}</li>
-                                                <li><LocationMap /></li>
+                                                <li style={{ color: '#5C5C5C' }}>{event.li1}</li>
+                                                <li style={{ color: '#5C5C5C' }}>{event.li2}</li>
+                                                <li style={{ color: '#5C5C5C' }}>{event.li3}</li>
+                                                <li style={{ color: '#5C5C5C' }}><LocationMap mapUrl={event.mapUrl} /></li>
                                             </ul>
                                         </div>
                                     </div>

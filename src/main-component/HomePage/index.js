@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar'
 import Hero2 from '../../components/hero2/hero2';
 import CoupleSection2 from '../../components/CoupleSection2/CoupleSection2';
+import StorySection4 from '../../components/StorySection4/StorySection4';
 import StorySection2 from '../../components/StorySection2/StorySection2';
 import PortfolioSection from '../../components/PortfolioSection';
 import RsvpSection from '../../components/RsvpSection/RsvpSection';
@@ -21,6 +22,7 @@ const HomePage = () => {
             <StorySection2 />
             <PortfolioSection />
             <EventSection/>
+            <StorySection4 />
             <Footer />
             <Scrollbar />
         </Fragment>

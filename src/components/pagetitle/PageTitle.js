@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 
 const PageTitle = (props) => {
     return(
-        <section className="wpo-page-title">
+        <section className="wpo-page-title2">
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="wpo-breadcumb-wrap">
-                            <h2>{props.pageTitle}</h2>
+                            {/* <h2>{props.pageTitle}</h2>
                             <ol className="wpo-breadcumb-wrap">
                                 <li><Link to="/home">Home</Link></li>
                                 <li><span>{props.pagesub}</span></li>
-                            </ol>
+                            </ol> */}
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,10 @@
 import React from 'react'
-import pImg1 from '../../images/portfolio/7.jpg'
-import pImg2 from '../../images/portfolio/8.jpg'
-import pImg3 from '../../images/portfolio/9.jpg'
-import pImg4 from '../../images/portfolio/10.jpg'
-import pImg5 from '../../images/portfolio/30.jpg'
-import pImg6 from '../../images/portfolio/11.jpg'
+import pImg1 from '../../images/portfolio/FotoColor1.jpeg'
+import pImg2 from '../../images/portfolio/FotoNegro1.jpeg'
+import pImg3 from '../../images/portfolio/FotoColor2.jpeg'
+import pImg4 from '../../images/portfolio/FotoNegro2.jpeg'
+import pImg5 from '../../images/portfolio/FotoColor3.jpeg'
+import pImg6 from '../../images/portfolio/FotoNegro3.jpeg'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -37,7 +37,7 @@ const PortfolioSectionS2 = (props) => {
 
     return (
 
-        <section className={`wpo-portfolio-section-s2 section-padding ${props.prClass}`} id="gallery">
+        <section className={`wpo-portfolio-section-s2 section-padding ${props.prClass}`} id="gallery" style={{ marginBottom: '20px' }}>
             <div className="container-fluid">
                 <div className="sortable-gallery">
                     <div className="gallery-filters"></div>

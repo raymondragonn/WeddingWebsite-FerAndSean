@@ -13,13 +13,14 @@ import vImg from '../../images/video-img/img-2.jpg'
 const AccomodationPage =() => {
     return(
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
+            <Navbar />
             <PageTitle pageTitle={'Accomodation'} pagesub={'Accomodation'}/> 
+
             <WeddingDate2 pbClass={'pb-0'}/>
-            <CoupleSection3 cClass={'pt-160'}/>
+            {/* <CoupleSection3 cClass={'pt-160'}/>
             <VideoSection vimg={vImg}/>
             <EventSection/>
-            <PartnerSection pClass={'section-padding pt-0'} />
+            <PartnerSection pClass={'section-padding pt-0'} />  */}
             <Footer footerClass={'wpo-site-footer-s2'}/>
             <Scrollbar/>
         </Fragment>

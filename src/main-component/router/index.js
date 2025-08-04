@@ -100,7 +100,7 @@ const AllRoute = () => {
             <Route path='story-6' element={<StoryPage6 />} />
             <Route path='accomodation' element={<AccomodationPage />} />
             <Route path='rsvp' element={<RsvpPage1 />} />
-            <Route path='rsvp-2' element={<RsvpPage2 />} />
+            <Route path='guadalajara' element={<RsvpPage2 />} />
             <Route path='rsvp-3' element={<RsvpPage3 />} />
             <Route path='rsvp-4' element={<RsvpPage4 />} />
             <Route path='rsvp-5' element={<RsvpPage5 />} />

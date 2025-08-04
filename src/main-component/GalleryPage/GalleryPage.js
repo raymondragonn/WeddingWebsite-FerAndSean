@@ -9,10 +9,9 @@ import PartnerSection from '../../components/PartnerSection';
 const GalleryPage = () => {
     return (
         <Fragment>
-            <Navbar hclass={'wpo-header-style-3'}/>
+            <Navbar />
             <PageTitle pageTitle={'Gallery'} pagesub={'Gallery'} />
             <PortfolioSectionS2 prClass={'pb-0 pt-120'}/>
-            <PartnerSection pClass={'section-padding'}/>
             <Footer footerClass={'wpo-site-footer-s2'}/>
             <Scrollbar />
         </Fragment>

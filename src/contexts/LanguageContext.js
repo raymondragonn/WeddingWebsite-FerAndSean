@@ -79,12 +79,22 @@ export const LanguageProvider = ({ children }) => {
        // Event section translations
        ourWedding: 'Nuestra Boda',
        whenAndWhere: 'Cuándo y Dónde',
-       theReception: 'La Recepción',
+       theReception: 'La Misa',
        theCeremony: 'La Ceremonia',
        theParty: 'La Fiesta',
-       eventDate: 'Lunes, 18 Abr. 2026 1:00 PM – 2:30 PM',
-       eventLocation: 'Tequila Jalisco, México',
-       eventPhone: '+52 33-1234-5678',
+       // Misa event
+       eventDate1: 'Sábado, 18 Abr. 2026 - 5:00 PM',
+       eventLocation1: 'Misa en Parroquia Santiago Apóstol (Sixto Gorjón 16, Centro, 46400 Tequila, Jal., Mexico)',
+       
+       eventPhone1: '+52 33-1234-5678',
+       // Ceremonia event
+       eventDate2: 'Sábado, 18 Abr. 2026 - 1:00 PM',
+       eventLocation2: 'Cueva de la Luna en Tequila Jalisco ( Camino a la Toma No. 3, 46400 Tequila, Jal., Mexico)',
+       eventPhone2: '+52 33-1234-5679',
+       // Fiesta event
+       eventDate3: 'Sábado, 18 Abr. 2026 - 8:00 PM',
+       eventLocation3: 'Salón de Eventos "El Jardín"',
+       eventPhone3: '+52 33-1234-5680',
        // Modal translations
        seeLocation: 'Ver Ubicación',
        // Footer translations
@@ -161,12 +171,21 @@ export const LanguageProvider = ({ children }) => {
        // Event section translations
        ourWedding: 'Our Wedding',
        whenAndWhere: 'When & Where',
-       theReception: 'The Reception',
+       theReception: 'The Mass',
        theCeremony: 'The Ceremony',
        theParty: 'The Party',
-       eventDate: 'Monday, 18 Apr. 2026 1:00 PM – 2:30 PM',
-       eventLocation: 'Tequila Jalisco, Mexico',
-       eventPhone: '+52 33-1234-5678',
+       // Mass event
+       eventDate1: 'Saturday, Apr 18, 2026 - 5:00 PM',
+       eventLocation1: 'Mass at Santiago Apóstol Parish (Sixto Gorjón 16, Centro, 46400 Tequila, Jalisco, Mexico)',
+       eventPhone1: '+52 33-1234-5678',
+       // Ceremony event
+       eventDate2: 'Saturday, Apr 18, 2026 - 1:00 PM',
+       eventLocation2: 'Cave of the Moon in Tequila, Jalisco (Camino a la Toma No. 3, 46400 Tequila, Jalisco, Mexico)',
+       eventPhone2: '+52 33-1234-5679',
+       // Party event
+       eventDate3: 'Saturday, Apr 18, 2026 - 8:00 PM',
+       eventLocation3: '"El Jardín" Event Hall',
+       eventPhone3: '+52 33-1234-5680',
        // Modal translations
        seeLocation: 'See Location',
        // Footer translations

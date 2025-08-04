@@ -1,7 +1,7 @@
 import React from 'react'
-import sImg1 from '../../images/story/10.jpg'
-import sImg2 from '../../images/story/11.jpg'
-import sImg3 from '../../images/story/12.jpg'
+import sImg1 from '../../images/portfolio/FotoColor1.jpeg'
+import sImg2 from '../../images/portfolio/FotoColor3.jpeg'
+import sImg3 from '../../images/portfolio/FotoColor2.jpeg'
 
 import shape1 from '../../images/story/s-shape1.png'
 import shape2 from '../../images/story/s-shape2.png'
@@ -13,7 +13,7 @@ const StorySection4 = (props) => {
 
         <section className="wpo-story-section-s4 section-padding" id="story">
             <div className="container">
-                <SectionTitle subTitle={'Our Story'} MainTitle={'How it Happened'} />
+                <SectionTitle  MainTitle={'Nuestra Historia'} />
                 <div className="row">
                     <div className="col col-xs-12">
                         <div className="story-timeline">
@@ -32,9 +32,9 @@ const StorySection4 = (props) => {
                                         <i className="fi flaticon-heart"></i>
                                     </span>
                                     <div className="story-text">
-                                        <span className="date">22 Feb, 2019</span>
+                                        <span style={{ color: '#68615a' }} className="date">22 Feb, 2019</span>
                                         <h3>How we meet</h3>
-                                        <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
+                                        <p style={{ color: '#68615a' }}>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim tortor, faucibus netus orci donec volutpat adipiscing.</p>
                                     </div>
                                 </div>
@@ -45,9 +45,9 @@ const StorySection4 = (props) => {
                                         <i className="fi flaticon-heart"></i>
                                     </span>
                                     <div className="story-text right-align-text">
-                                        <span className="date">02 Nov, 2020</span>
+                                        <span style={{ color: '#68615a' }} className="date">02 Nov, 2020</span>
                                         <h3>He proposed, I said Yes</h3>
-                                        <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
+                                        <p style={{ color: '#68615a' }}>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim tortor, faucibus netus orci donec volutpat adipiscing.</p>
                                     </div>
                                 </div>
@@ -74,9 +74,9 @@ const StorySection4 = (props) => {
                                         <i className="fi flaticon-heart"></i>
                                     </span>
                                     <div className="story-text">
-                                        <span className="date"> 15 Apr, 2021</span>
+                                        <span style={{ color: '#68615a' }} className="date"> 15 Apr, 2021</span>
                                         <h3>Our Engagement Day</h3>
-                                        <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
+                                        <p style={{ color: '#68615a' }}>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim tortor, faucibus netus orci donec volutpat adipiscing.</p>
                                     </div>
                                 </div>

@@ -57,7 +57,7 @@ const Header = (props) => {
                                             <Link onClick={ClickHandler} to="/">{t('about')}</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/about">{t('about')}</Link></li>
-                                                <li className="menu-item-has-children">
+                                                {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/story">{t('story')}</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link onClick={ClickHandler} to="/story">{t('ourStoryStyle1')}</Link></li>
@@ -67,9 +67,10 @@ const Header = (props) => {
                                                         <li><Link onClick={ClickHandler} to="/story-5">{t('ourStoryStyle5')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/story-6">{t('ourStoryStyle6')}</Link></li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
                                                 <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
-                                                <li className="menu-item-has-children">
+                                                <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
+                                                {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/rsvp">{t('rsvp')}</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link onClick={ClickHandler} to="/rsvp">{t('rsvpStyle1')}</Link></li>
@@ -80,7 +81,7 @@ const Header = (props) => {
                                                         <li><Link onClick={ClickHandler} to="/rsvp-6">{t('rsvpStyle6')}</Link></li>
                                                         <li><Link onClick={ClickHandler} to="/rsvp-7">{t('rsvpStyle7')}</Link></li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
                                                 <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/planner">{t('planners')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/team-single/Jenny-Wilson">{t('plannerSingle')}</Link></li>

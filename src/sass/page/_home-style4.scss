@@ -211,7 +211,7 @@
 
 		.img-holder {
 			max-width: 330px;
-			border-radius: 50%;
+			border-radius: 0;
 			position: relative;
 			z-index: 1;
 			background: $white;
@@ -236,28 +236,21 @@
 				height: 90%;
 				content: "";
 				border: 1px solid #fff;
-				border-radius: 50%;
+				border-radius: 0;
 			}
 
 			img {
-				border-radius: 50%;
+				border-radius: 0;
 			}
 
 			.story-shape-img-1 {
-				position: absolute;
-				top: -35px;
-				left: -120px;
-				z-index: 1;
-
-				img {
-					border-radius: 0;
-				}
+				display: none;
 			}
 		}
 
 		.img-holder.right-align-img {
 			margin-left: 50px;
-			border-radius: 50%;
+			border-radius: 0;
 			margin-right: 0;
 
 			@media(max-width:991px) {
@@ -266,16 +259,15 @@
 			}
 
 			img {
-				border-radius: 50%;
+				border-radius: 0;
 			}
 
 			&:before {
-				border-radius: 50%;
+				border-radius: 0;
 			}
 
 			.story-shape-img-1 {
-				left: auto;
-				right: -125px;
+				display: none;
 			}
 		}
 	}
