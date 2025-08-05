@@ -1,0 +1,86 @@
+/* Custom Footer Styles */
+.custom-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.copyright-year {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-divider {
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.couple-names {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.made-by {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kodeo-logo {
+    height: 36px;
+    width: auto;
+    margin-left: 8px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.kodeo-logo:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-footer-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .footer-divider {
+        display: none;
+    }
+    
+    .copyright-year,
+    .couple-names,
+    .made-by {
+        font-size: 14px;
+    }
+    
+    .kodeo-logo {
+        height: 18px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-footer-content {
+        gap: 5px;
+    }
+    
+    .copyright-year,
+    .couple-names,
+    .made-by {
+        font-size: 13px;
+    }
+    
+    .kodeo-logo {
+        height: 16px;
+    }
+}

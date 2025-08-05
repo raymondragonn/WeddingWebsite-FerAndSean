@@ -1,9 +1,8 @@
 import React from 'react'
-import { Slide } from "react-awesome-reveal";
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../contexts/LanguageContext';
-import shape1 from '../../images/footer-shape-1.svg'
-import shape2 from '../../images/footer-shape-2.svg'
+import kodeoLogo from '../../images/kodeo-logoo.svg'
+import './FooterCustom.css'
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -24,13 +23,15 @@ const Footer = (props) => {
                                 </div>
                                 <div className="link-wrap">
                                     <ul>
-                                        <li><Link onClick={ClickHandler} to="/about">{t('about')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service">{t('services')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/planner">{t('Damas de honor')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/accomodation">{t('Alojamiento')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
+                                        {/* <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li> */}
                                     </ul>
                                     <ul>
+                                        <li><Link onClick={ClickHandler} to="/planner">{t('¿Cuando y Donde?')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/">{t('getQuote')}</Link></li>
+                                        {/* <li><Link onClick={ClickHandler} to="/">{t('getQuote')}</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/contact">{t('contact')}</Link></li>
                                     </ul>
                                 </div>
@@ -42,7 +43,7 @@ const Footer = (props) => {
                                     <Link className='logo' onClick={ClickHandler} to="/">Fer & Sean</Link>
                                 </div>
                                 <p>{t('footerDescription')}</p>
-                                <ul>
+                                {/* <ul>
                                     <li>
                                         <Link onClick={ClickHandler} to="/">
                                             <i className="ti-facebook"></i>
@@ -58,7 +59,7 @@ const Footer = (props) => {
                                             <i className="ti-instagram"></i>
                                         </Link>
                                     </li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
 
@@ -80,12 +81,21 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12">
-                            <p className="copyright">{t('copyright')}</p>
+                            <div className="custom-footer-content">
+                                <span className="copyright-year">{t('copyrightYear')}</span>
+                                <span className="footer-divider">|</span>
+                                <span className="couple-names">Fer & Sean</span>
+                                <span className="footer-divider">|</span>
+                                <a href="https://www.instagram.com/bykodeo/?next=%2F" target="_blank" rel="noopener noreferrer" className="kodeo-link">
+                                    <span className="made-by">{t('madeBy')}</span>
+                                    <img src={kodeoLogo} alt="Kodeo Logo" className="kodeo-logo" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="ft-shape-1">
+            {/* <div className="ft-shape-1">
                 <Slide direction="left" duration="1000" triggerOnce="true">
                     <img src={shape1} alt="" />
                 </Slide>
@@ -94,7 +104,7 @@ const Footer = (props) => {
             <Slide direction="right" duration="1200" triggerOnce="true">
                     <img src={shape2} alt="" />
                 </Slide>
-            </div>
+            </div> */}
         </footer>
     )
 }

@@ -112,7 +112,9 @@ export const LanguageProvider = ({ children }) => {
        footerContact: 'Contacto',
        footerEmail: 'Fer & Sean@wpoceans.com',
        footerAddress: 'Tequila Jalisco, México',
-       copyright: '© Copyright 2023 | Fer & Sean | Todos los derechos reservados.'
+       copyright: '© Copyright 2025 | Fer & Sean | Todos los derechos reservados.',
+       copyrightYear: '© 2025',
+       madeBy: 'Made by Kodeo'
      },
      en: {
       names: 'Fer & Sean',
@@ -207,7 +209,9 @@ export const LanguageProvider = ({ children }) => {
        footerContact: 'Contact',
        footerEmail: 'Fer & Sean@wpoceans.com',
        footerAddress: 'Tequila Jalisco, Mexico',
-       copyright: '© Copyright 2023 | Fer & Sean | All rights reserved.'
+       copyright: '© Copyright 2025 | Fer & Sean | All rights reserved.',
+       copyrightYear: '© 2025',
+       madeBy: 'Made by Kodeo'
      }
    };
 

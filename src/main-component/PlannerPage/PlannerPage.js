@@ -12,7 +12,6 @@ const PlannerPage = () => {
             <Navbar/>
             <PageTitle pageTitle={'Our Planners'} pagesub={'Planner'} />
             <TeamSection/>
-            <PartnerSection pClass={'pb-120 pt-0'}/>
             <Footer footerClass={'wpo-site-footer-s2'}/>
             <Scrollbar />
         </Fragment>

@@ -11,6 +11,59 @@
     "size":"Xl"
   },
   {
+    "id": 30,
+    "proImg": "/product/16.jpg",
+    "title": "Simple Cake",
+    "slug":"Simple-Cake",
+    "price": "125",
+    "delPrice": "185.00",
+    "brand":"Gucci",
+    "stock":"Stock in",
+    "size":"L"
+  },
+  {
+    "id": 31,
+    "proImg": "../images/event/Iglesia.jpeg",
+    "title": "La Misa",
+    "slug": "the-reception",
+    "type": "event",
+    "eventDate": "Sábado, 15 de Febrero de 2025",
+    "eventTime": "6:00 PM - 11:00 PM",
+    "eventLocation": "Parroquia Santiago Apóstol",
+    "eventAddress": "C. Francisco I. Madero 123, Centro, Tequila, Jal.",
+    "eventPhone": "+52 374 742 0123",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.382838205276!2d-103.83853937824018!3d20.884509581819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615dd4bd04cf9%3A0x8980ab78799224e9!2sParroquia%20Santiago%20Ap%C3%B3stol!5e0!3m2!1ses!2smx!4v1754148173128!5m2!1ses!2smx",
+    "description": "Únete a nosotros en la ceremonia religiosa donde oficializaremos nuestro amor ante Dios y nuestros seres queridos. Un momento sagrado e inolvidable en la hermosa Parroquia Santiago Apóstol.",
+    "details": [
+      "Ceremonia religiosa",
+      "Vestimenta formal",
+      "Llegada 30 minutos antes",
+      "Música en vivo durante la ceremonia"
+    ]
+  },
+  {
+    "id": 32,
+    "proImg": "/images/event/LugarBoda.PNG", 
+    "title": "The Ceremony",
+    "slug": "the-ceremony",
+    "type": "event",
+    "eventDate": "Sábado, 15 de Febrero de 2025",
+    "eventTime": "8:00 PM - 2:00 AM",
+    "eventLocation": "La Cueva de la Luna",
+    "eventAddress": "Carretera Tequila - Magdalena Km 5, Tequila, Jal.",
+    "eventPhone": "+52 374 742 0456",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sLa%20Cueva%20de%20la%20Luna!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx",
+    "description": "Después de la ceremonia, celebraremos con una recepción llena de alegría, música, baile y deliciosa comida. Un ambiente mágico en La Cueva de la Luna para festejar nuestro nuevo comienzo.",
+    "details": [
+      "Cena de tres tiempos",
+      "Barra libre incluida",
+      "DJ y música en vivo",
+      "Pista de baile",
+      "Mesa de postres",
+      "Actividades y juegos"
+    ]
+  },
+  {
     "id": 2,
     "proImg": "/product/2.jpg",
     "title": "Wedding Rings",

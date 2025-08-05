@@ -11,20 +11,22 @@ import PortfolioSectionS3 from '../../components/PortfolioSectionS3/PortfolioSec
 import TeamSection from '../../components/TeamSection/TeamSection';
 import PricingSection from '../../components/PricingSection/PricingSection';
 import PartnerSection from '../../components/PartnerSection';
+import EventSection from '../../components/EventSection/EventSection';
 
 const AboutPage = () => {
     return (
         <Fragment>
             <Navbar/>
                 <PageTitle pageTitle={'About Us'} pagesub={'About'} />
-                <About />
+                <EventSection/>
+                {/* <About />
                 <FunFact fClass={'section-padding pt-0'}/>
                 <ServiceSectionS2 />
                 <Testimonial2 tClass={'wpo-testimonial-section-s3  pb-120 pb-1'}/>
                 <PortfolioSectionS3/>
                 <TeamSection />
                 <PricingSection pClass={'pt-0'}/>
-                <PartnerSection pClass={'section-padding pt-0'}/>
+                <PartnerSection pClass={'section-padding pt-0'}/> */}
                 <Footer footerClass={'wpo-site-footer-s2'} />
                 <Scrollbar />
         </Fragment>
