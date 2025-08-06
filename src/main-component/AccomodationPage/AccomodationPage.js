@@ -9,14 +9,17 @@ import EventSection from '../../components/EventSection/EventSection';
 import VideoSection from '../../components/VideoSection';
 import PartnerSection from '../../components/PartnerSection';
 import vImg from '../../images/video-img/img-2.jpg'
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const AccomodationPage =() => {
+    const { t } = useLanguage();
+    
     return(
         <Fragment>
             <Navbar />
-            <PageTitle pageTitle={'Accomodation'} pagesub={'Accomodation'}/> 
+            <PageTitle pageTitle={t('accommodationTitle')} pagesub={t('accommodationSubtitle')}/> 
 
-            <WeddingDate2 pbClass={'pb-0'}/>
+            <WeddingDate2 pbClass={'pb-120'}/>
             {/* <CoupleSection3 cClass={'pt-160'}/>
             <VideoSection vimg={vImg}/>
             <EventSection/>

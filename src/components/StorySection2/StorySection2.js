@@ -1,8 +1,8 @@
 import React from 'react'
-import { Zoom } from "react-awesome-reveal";
 import SectionTitle from '../SectionTitle'
 import { useLanguage } from '../../contexts/LanguageContext';
 import sImg1 from '../../images/ferandsean/how-we-meet-photo.svg'
+import './StorySection2.css'
 // import sImg2 from '../../images/story/2.jpg'
 // import sImg3 from '../../images/story/3.jpg'
 
@@ -36,11 +36,9 @@ const StorySection2 = (props) => {
                         Storys.map((story, st) => (
                             <div className="wpo-story-item" key={st}>
                                 <div className="wpo-story-img-wrap">
-                                    <Zoom direction="up" duration="1000" triggerOnce="true">
-                                        <div className="wpo-story-img">
-                                            <img src={story.sImg} alt="" />
-                                        </div>
-                                    </Zoom>
+                                    <div className="wpo-story-img">
+                                        <img src={story.sImg} alt="" />
+                                    </div>
                                     {/* <div className="clip-shape">
                                         <svg viewBox="0 0 382 440" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M191 0L381.526 110V330L191 440L0.474411 330V110L191 0Z" />

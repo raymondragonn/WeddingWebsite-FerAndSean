@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './WeddingDate2.css';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const WeddingDate2 = (props) => {
+    const { t } = useLanguage();
     const [currentImageIndex, setCurrentImageIndex] = useState({});
 
     const hotels = [
@@ -71,12 +73,12 @@ const WeddingDate2 = (props) => {
     };
 
     return (
-        <section className={`hotels-section ${props.pbClass || ''}`}>
+        <section className={`hotels-section ${props.pbClass || ''}`} style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
                 <div className="hotels-header">
-                    <h2 className="hotels-title">Hoteles Recomendados</h2>
+                    <h2 className="hotels-title">{t('recommendedHotels')}</h2>
                     <p className="hotels-subtitle">
-                        Hemos seleccionado estos hoteles para que tengas una estancia perfecta durante nuestra celebración
+                        {t('hotelsSubtitle')}
                     </p>
                 </div>
                 
@@ -96,14 +98,14 @@ const WeddingDate2 = (props) => {
                                     <button 
                                         className="carousel-btn prev-btn"
                                         onClick={() => prevImage(hotel.id, hotel.images.length)}
-                                        aria-label="Imagen anterior"
+                                        aria-label={t('previousImage')}
                                     >
                                         ‹
                                     </button>
                                     <button 
                                         className="carousel-btn next-btn"
                                         onClick={() => nextImage(hotel.id, hotel.images.length)}
-                                        aria-label="Siguiente imagen"
+                                        aria-label={t('nextImage')}
                                     >
                                         ›
                                     </button>
@@ -115,7 +117,7 @@ const WeddingDate2 = (props) => {
                                                 key={index}
                                                 className={`dot ${(currentImageIndex[hotel.id] || 0) === index ? 'active' : ''}`}
                                                 onClick={() => goToImage(hotel.id, index)}
-                                                aria-label={`Ir a imagen ${index + 1}`}
+                                                aria-label={`${t('goToImage')} ${index + 1}`}
                                             />
                                         ))}
                                     </div>
@@ -164,7 +166,7 @@ const WeddingDate2 = (props) => {
                                         href={`tel:${hotel.phone}`} 
                                         className="btn-call"
                                     >
-                                        Llamar
+                                        {t('callButton')}
                                     </a>
                                     <a 
                                         href={`https://${hotel.website}`} 
@@ -172,7 +174,7 @@ const WeddingDate2 = (props) => {
                                         rel="noopener noreferrer"
                                         className="btn-website"
                                     >
-                                        Reservar
+                                        {t('bookButton')}
                                     </a>
                                 </div>
                             </div>

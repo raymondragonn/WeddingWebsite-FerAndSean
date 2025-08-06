@@ -1,0 +1,149 @@
+/* Estilos específicos para StorySection2 - Imagen arriba, texto abajo */
+.wpo-story-section .wpo-story-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding-top: 20px !important;
+  text-align: center;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap {
+  position: relative;
+  z-index: 1;
+  flex-basis: auto !important;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 1200px !important;
+  width: 100%;
+}
+
+/* Contenedor para las 3 imágenes */
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-images-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 30px !important;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Estilos para las imágenes individuales */
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img {
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform 0.3s ease;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen izquierda */
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-left {
+  max-width: 200px !important;
+  flex-shrink: 0 !important;
+  flex-basis: auto !important;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-left img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  max-width: none !important;
+}
+
+/* Imagen central (más grande) */
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-center {
+  max-width: 400px !important;
+  flex-shrink: 0 !important;
+  flex-basis: auto !important;
+  transform: scale(1.1) !important;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-center img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  max-width: none !important;
+}
+
+/* Imagen derecha */
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-right {
+  max-width: 200px !important;
+  flex-shrink: 0 !important;
+  flex-basis: auto !important;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-right img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  max-width: none !important;
+}
+
+.wpo-story-section .wpo-story-item .wpo-story-content {
+  flex-basis: auto !important;
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .wpo-story-section .wpo-story-item {
+    padding-top: 30px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap {
+    margin-bottom: 30px;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-content {
+    margin-top: 0;
+    max-width: 700px;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-images-container {
+    gap: 20px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-left,
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-right {
+    max-width: 150px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-center {
+    max-width: 280px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .wpo-story-section .wpo-story-item {
+    padding-top: 20px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap {
+    margin-bottom: 20px;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-content {
+    max-width: 500px;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-images-container {
+    gap: 15px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-left,
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-right {
+    max-width: 120px !important;
+  }
+  
+  .wpo-story-section .wpo-story-item .wpo-story-img-wrap .wpo-story-img.wpo-story-img-center {
+    max-width: 220px !important;
+  }
+} 

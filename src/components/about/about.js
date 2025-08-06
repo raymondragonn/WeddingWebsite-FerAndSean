@@ -20,8 +20,8 @@ const About = (props) => {
                     <div className="row align-items-center">
                         <div className="col-xl-5 offset-xl-1 col-lg-6 col-md-12 col-12">
                             <div className="wpo-about-text">
-                            <p style={{ color: '#333' }}>
-                             <small style={{ color: '#333' }}>{t('aboutDescription').charAt(0)}</small>{t('aboutDescription').slice(1)}
+                            <p style={{ color: '#5C5C5C' }}>
+                             <small style={{ color: '#5C5C5C' }}>{t('aboutDescription').charAt(0)}</small>{t('aboutDescription').slice(1)}
                             </p>
                                 <div className="about-info">
                                     <h5>{t('aboutSignature')}</h5>

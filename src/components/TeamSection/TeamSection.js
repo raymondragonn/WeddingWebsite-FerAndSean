@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom'
 import { Slide } from "react-awesome-reveal";
 import Team from '../../api/team'
 import SectionTitle from '../SectionTitle';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
 }
 
 const TeamSection = (props) => {
+    const { t } = useLanguage();
+    
     return (
         <section className="wpo-team-section-s2 section-padding" style={{backgroundColor: '#f4f2ee'}}>
             <div className="container">
-                <SectionTitle subTitle={'Personas Importantes'} MainTitle={'Damas de Honor'} />
+                <SectionTitle subTitle={t('importantPeople')} MainTitle={t('bridesmaids')} />
                 <div className="wpo-team-wrap">
                     <div className="row">
                         {Team.slice(0, 8).map((team, tm) => (
@@ -27,8 +30,7 @@ const TeamSection = (props) => {
                                             </div>
                                         </Link>
                                         <div className="wpo-team-text">
-                                            <h3>{team.name}</h3>
-                                            <span>{team.title}</span>
+                                            <h3 style={{ color: '#5C5C5C' }}>{team.name}</h3>
                                         </div>
                                     </div>
                                 </Slide>

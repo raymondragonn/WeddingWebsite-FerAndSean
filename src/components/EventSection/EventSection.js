@@ -48,7 +48,7 @@ const EventSection = (props) => {
                 <SectionTitle 
                     subTitle={t('ourWedding')} 
                     MainTitle={t('whenAndWhere')} 
-                    style={{ color: '#333' }}
+                    style={{ color: '#5C5C5C' }}
                 />
                 <div className="wpo-event-wrap">
                     <div className="row" style={{ justifyContent: 'center' }}>

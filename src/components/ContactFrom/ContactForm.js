@@ -1,40 +1,64 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SimpleReactValidator from 'simple-react-validator';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 
 const ContactForm = () => {
+    const { t } = useLanguage();
 
     const [forms, setForms] = useState({
         name: '',
-        email: '',
         subject: '',
-        phone: '',
         message: ''
     });
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
+    const [validator, setValidator] = useState(null);
+
+    useEffect(() => {
+        setValidator(new SimpleReactValidator({
+            className: 'errorMessage',
+            messages: {
+                required: t('requiredField'),
+                alpha_space: t('invalidName')
+            }
+        }));
+    }, [t]);
     const changeHandler = e => {
         setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
+        if (validator && validator.allValid()) {
             validator.hideMessages();
-        } else {
+        } else if (validator) {
             validator.showMessages();
         }
     };
 
     const submitHandler = e => {
         e.preventDefault();
-        if (validator.allValid()) {
+        if (validator && validator.allValid()) {
             validator.hideMessages();
+            
+            // Crear mensaje para WhatsApp
+            const whatsappText = `${t('whatsappMessage')}
+
+*Nombre:* ${forms.name}
+*Asunto:* ${forms.subject}
+*Mensaje:* ${forms.message}`;
+
+            // Codificar el mensaje para URL
+            const encodedMessage = encodeURIComponent(whatsappText);
+            
+            // Crear URL de WhatsApp
+            const whatsappUrl = `https://wa.me/17734311552?text=${encodedMessage}`;
+            
+            // Abrir WhatsApp en nueva ventana
+            window.open(whatsappUrl, '_blank');
+            
+            // Limpiar formulario
             setForms({
                 name: '',
-                email: '',
                 subject: '',
-                phone: '',
                 message: ''
-            })
-        } else {
+            });
+        } else if (validator) {
             validator.showMessages();
         }
     };
@@ -50,50 +74,20 @@ const ContactForm = () => {
                             name="name"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Name" />
-                        {validator.message('name', forms.name, 'required|alpha_space')}
+                            placeholder={t('yourName')} />
+                        {validator && validator.message('name', forms.name, 'required|alpha_space')}
                     </div>
                 </div>
                 <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
-                            value={forms.email}
-                            type="email"
-                            name="email"
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            placeholder="Your Email" />
-                        {validator.message('email', forms.email, 'required|email')}
-                    </div>
-                </div>
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <input
-                            value={forms.phone}
-                            type="phone"
-                            name="phone"
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            placeholder="Your phone" />
-                        {validator.message('phone', forms.phone, 'required|phone')}
-                    </div>
-                </div>
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <select
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
                             value={forms.subject}
                             type="text"
-                            name="subject">
-                            <option>Photography</option>
-                            <option>The Rehearsal Dinner</option>
-                            <option>The Afterparty</option>
-                            <option>Videographers</option>
-                            <option>Perfect Cake</option>
-                            <option>All Of The Above</option>
-                        </select>
-                        {validator.message('subject', forms.subject, 'required')}
+                            name="subject"
+                            onBlur={(e) => changeHandler(e)}
+                            onChange={(e) => changeHandler(e)}
+                            placeholder={t('subject')} />
+                        {validator && validator.message('subject', forms.subject, 'required')}
                     </div>
                 </div>
                 <div className="col col-lg-12 col-12">
@@ -103,13 +97,13 @@ const ContactForm = () => {
                         value={forms.message}
                         type="text"
                         name="message"
-                        placeholder="Message">
+                        placeholder={t('message')}>
                     </textarea>
-                    {validator.message('message', forms.message, 'required')}
+                    {validator && validator.message('message', forms.message, 'required')}
                 </div>
             </div>
             <div className="submit-area">
-                <button type="submit" className="theme-btn"> Submit Now</button>
+                <button type="submit" className="theme-btn"> {t('submitNow')}</button>
             </div>
         </form >
     )

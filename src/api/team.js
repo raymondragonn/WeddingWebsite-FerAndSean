@@ -15,8 +15,8 @@ const Teams = [
    {
       id: '2',
       tImg: timg2,
-      name: 'Robert Fox',
-      slug: 'Robert-Fox',
+      name: 'Ray Mondragón',
+      slug: 'Ray Mondragón',
       title: 'Dress Designer',
    },
    {
