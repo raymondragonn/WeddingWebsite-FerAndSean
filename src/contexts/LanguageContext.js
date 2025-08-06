@@ -75,9 +75,10 @@ export const LanguageProvider = ({ children }) => {
       'Cuándo y Dónde': 'Cuándo y Dónde',
       'Damas de Honor': 'Damas de Honor',
       'Guadalajara': 'Guadalajara',
+      accommodation: 'Alojamiento',
       // Story section translations
       ourStory: 'Nuestra Historia',
-      howItHappened: '¿Cómo Sucedió?',
+             howItHappened: '¿CÓMO SUCEDIÓ?',
              howWeMeet: '¿Cómo nos conocimos?',
        howWeMeetDescription: '"Nuestra historia comenzó con un mensaje y se convirtió en toda una vida. En solo tres años, hemos enfrentado tanto juntos, y cada desafío solo ha hecho nuestro amor más fuerte y nuestro vínculo inquebrantable. Todo lo que hemos planeado hasta ahora ha funcionado a nuestro favor, y apreciamos convertir cada momento que compartimos en algo especial. Nos sentimos verdaderamente bendecidos de que desde el principio, ambas familias nos han amado y apoyado en cada paso del camino."',
        // Event section translations
@@ -92,7 +93,7 @@ export const LanguageProvider = ({ children }) => {
        
        eventPhone1: '+52 33-1234-5678',
        // Ceremonia event
-       eventDate2: 'Sábado, 18 Abr. 2026 - 1:00 PM',
+       eventDate2: 'Sábado, 18 Abr. 2026 - Al terminar la Misa',
        eventLocation2: 'Cueva de la Luna en Tequila Jalisco ( Camino a la Toma No. 3, 46400 Tequila, Jal., Mexico)',
        eventPhone2: '+52 33-1234-5679',
        // Fiesta event
@@ -114,7 +115,12 @@ export const LanguageProvider = ({ children }) => {
        footerAddress: 'Tequila Jalisco, México',
        copyright: '© Copyright 2025 | Fer & Sean | Todos los derechos reservados.',
        copyrightYear: '© 2025',
-       madeBy: 'Made by Kodeo'
+       madeBy: 'Made by Kodeo',
+       // About section translations
+       aboutDate: '16 de Abril del 2026',
+       aboutMainTitle: 'NUESTRO DÍA ESPECIAL',
+       aboutDescription: 'El 16 de abril de 2026, en el mágico pueblo de Tequila, Jalisco, vamos a dar un paso muy especial en nuestras vidas y queremos celebrarlo contigo. Este día no sería el mismo sin las personas que queremos cerca, y por eso nos emociona invitarte a ser parte de esta gran fiesta de amor, alegría y buenos recuerdos.',
+       aboutSignature: '- Fer & Sean'
      },
      en: {
       names: 'Fer & Sean',
@@ -173,9 +179,10 @@ export const LanguageProvider = ({ children }) => {
       'Cuándo y Dónde': 'When & Where',
       'Damas de Honor': 'Bridesmaids',
       'Guadalajara': 'Guadalajara',
+      accommodation: 'Accommodation',
       // Story section translations
       ourStory: 'Our Story',
-      howItHappened: 'How it Happened',
+             howItHappened: 'HOW IT HAPPENED',
              howWeMeet: 'How we meet',
        howWeMeetDescription: '"Our story started with a message and turned into a lifetime. In just three years, we\'ve faced so much together, and every challenge has only made our love stronger and our bond unbreakable. Everything we\'ve planned so far has worked in our favor, and we cherish turning every moment we share into something special. We feel truly blessed that from the very beginning, both of our families have loved and supported us every step of the way."',
        // Event section translations
@@ -188,8 +195,8 @@ export const LanguageProvider = ({ children }) => {
        eventDate1: 'Saturday, Apr 18, 2026 - 5:00 PM',
        eventLocation1: 'Mass at Santiago Apóstol Parish (Sixto Gorjón 16, Centro, 46400 Tequila, Jalisco, Mexico)',
        eventPhone1: '+52 33-1234-5678',
-       // Ceremony event
-       eventDate2: 'Saturday, Apr 18, 2026 - 1:00 PM',
+               // Ceremony event
+        eventDate2: 'Saturday, Apr 18, 2026 - After Mass',
        eventLocation2: 'Cave of the Moon in Tequila, Jalisco (Camino a la Toma No. 3, 46400 Tequila, Jalisco, Mexico)',
        eventPhone2: '+52 33-1234-5679',
        // Party event
@@ -211,7 +218,12 @@ export const LanguageProvider = ({ children }) => {
        footerAddress: 'Tequila Jalisco, Mexico',
        copyright: '© Copyright 2025 | Fer & Sean | All rights reserved.',
        copyrightYear: '© 2025',
-       madeBy: 'Made by Kodeo'
+       madeBy: 'Made by Kodeo',
+       // About section translations
+       aboutDate: 'April 16, 2026',
+       aboutMainTitle: 'OUR SPECIAL DAY',
+       aboutDescription: 'On April 16, 2026, in the magical town of Tequila, Jalisco, we are taking a very special step in our lives and we want to celebrate it with you. This day would not be the same without the people we want close to us, and that\'s why we are excited to invite you to be part of this great celebration of love, joy, and good memories.',
+       aboutSignature: '- Fer & Sean'
      }
    };
 

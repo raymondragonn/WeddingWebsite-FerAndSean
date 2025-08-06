@@ -9,6 +9,7 @@ import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import About from '../../components/about/about';
 import TeamSection from '../../components/TeamSection/TeamSection';
+import PortfolioSectionS3 from '../../components/PortfolioSectionS3/PortfolioSectionS3';
 
 
 
@@ -19,7 +20,7 @@ const HomePage = () => {
             <Navbar />
             <Hero2 />
             <About />
-            <PortfolioSection />
+            <PortfolioSectionS3 />
             <StorySection2 />
             <EventSection/>
             <PortfolioSection />

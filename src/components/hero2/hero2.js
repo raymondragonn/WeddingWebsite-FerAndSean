@@ -1,14 +1,14 @@
 import React from "react";
-import { Slide } from "react-awesome-reveal";
-import hero1 from '../../images/slider/hero-1.jpg'
-import shape1 from '../../images/slider/shape1.svg'
-import shape2 from '../../images/slider/shape2.svg'
-import shape3 from '../../images/slider/shape3.svg'
-import shape4 from '../../images/slider/shape4.svg'
-import shape5 from '../../images/slider/shape5.svg'
-import shape6 from '../../images/slider/shape6.svg'
-import bgshape from '../../images/slider/bg-shape.png'
-import TimeCountDown from "../countdown";
+// import { Slide } from "react-awesome-reveal";
+// import hero1 from '../../images/slider/hero-1.jpg'
+// import shape1 from '../../images/slider/shape1.svg'
+// import shape2 from '../../images/slider/shape2.svg'
+// import shape3 from '../../images/slider/shape3.svg'
+// import shape4 from '../../images/slider/shape4.svg'
+// import shape5 from '../../images/slider/shape5.svg'
+// import shape6 from '../../images/slider/shape6.svg'
+// import bgshape from '../../images/slider/bg-shape.png'
+// import TimeCountDown from "../countdown";
 import Bg from "../../images/ferandsean/background-hover.svg";
 
 

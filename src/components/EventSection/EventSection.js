@@ -43,13 +43,17 @@ const EventSection = (props) => {
     };
 
     return (
-        <section className="wpo-event-section section-padding" id="event">
+        <section className="wpo-event-section section-padding" id="event" style={{backgroundColor: '#ded5c7'}}>
             <div className="container">
-                <SectionTitle subTitle={t('ourWedding')} MainTitle={t('whenAndWhere')} />
+                <SectionTitle 
+                    subTitle={t('ourWedding')} 
+                    MainTitle={t('whenAndWhere')} 
+                    style={{ color: '#333' }}
+                />
                 <div className="wpo-event-wrap">
                     <div className="row" style={{ justifyContent: 'center' }}>
                         {Events.map((event, eitem) => (
-                            <div className="col col-lg-4 col-md-6 col-12" key={eitem}>
+                            <div className="col col-lg-6 col-md-6 col-12" key={eitem}>
                                 <Slide direction="up" duration={event.animation} triggerOnce="true">
                                     <div className="wpo-event-item" 
                                          onClick={() => handleEventClick(event.slug)}

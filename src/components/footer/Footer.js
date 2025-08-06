@@ -23,13 +23,13 @@ const Footer = (props) => {
                                 </div>
                                 <div className="link-wrap">
                                     <ul>
-                                        <li><Link onClick={ClickHandler} to="/planner">{t('Damas de honor')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/accomodation">{t('Alojamiento')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/planner">{t('Damas de Honor')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li> */}
                                     </ul>
                                     <ul>
-                                        <li><Link onClick={ClickHandler} to="/planner">{t('¿Cuando y Donde?')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/planner">{t('Cuándo y Dónde')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/">{t('getQuote')}</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/contact">{t('contact')}</Link></li>

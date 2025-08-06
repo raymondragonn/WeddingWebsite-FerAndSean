@@ -1,0 +1,83 @@
+/* Estilos específicos para PortfolioSection - Eliminar fondo blanco */
+.portfolio-section-fix {
+  background-color: transparent !important;
+}
+
+/* Estilos para el componente personalizado */
+.portfolio-section-fix .custom-portfolio-section {
+  background-color: transparent !important;
+  height: auto !important;
+  min-height: auto !important;
+  max-height: none !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.portfolio-section-fix .custom-portfolio-section img {
+  background-color: transparent !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  vertical-align: top !important;
+  width: 100% !important;
+}
+
+.portfolio-section-fix .custom-hero-container {
+  background-color: transparent !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.portfolio-section-fix .custom-hero-inner {
+  background-color: transparent !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 991px) {
+  .portfolio-section-fix .custom-portfolio-section {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-section-fix .custom-portfolio-section {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
+  
+  .portfolio-section-fix .custom-portfolio-section img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-section-fix .custom-portfolio-section {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
+  
+  .portfolio-section-fix .custom-portfolio-section img {
+    width: 100% !important;
+    height: auto !important;
+  }
+} 

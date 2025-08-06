@@ -10,9 +10,9 @@ const ClickHandler = () => {
 
 const TeamSection = (props) => {
     return (
-        <section className="wpo-team-section-s2 section-padding">
+        <section className="wpo-team-section-s2 section-padding" style={{backgroundColor: '#f4f2ee'}}>
             <div className="container">
-                <SectionTitle subTitle={'Personas Importantes'} MainTitle={'Personas Importantes'} />
+                <SectionTitle subTitle={'Personas Importantes'} MainTitle={'Damas de Honor'} />
                 <div className="wpo-team-wrap">
                     <div className="row">
                         {Team.slice(0, 8).map((team, tm) => (
