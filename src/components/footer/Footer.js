@@ -23,7 +23,7 @@ const Footer = (props) => {
                                 </div>
                                 <div className="link-wrap">
                                     <ul>
-                                        <li><Link onClick={ClickHandler} to="/planner">{t('Damas de Honor')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas de Honor')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li> */}

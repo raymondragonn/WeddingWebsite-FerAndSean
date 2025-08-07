@@ -10,9 +10,9 @@ const ClickHandler = () => {
 
 const ProjectSection = (props) => {
     return (
-        <section className={`wpo-portfolio-section-s3 section-padding ${props.prClass}`}>
+        <section className={`wpo-portfolio-section-s3 section-padding2 ${props.prClass}`}>
             <div className="container-fluid">
-                <SectionTitle subTitle={'Our Amazing Work'} MainTitle={'Featured Wedding Story'} />
+                <SectionTitle subTitle={'Our Amazing Work'} MainTitle={'Dress Code'} />
                 <div className="sortable-gallery">
                     <div className="gallery-filters"></div>
                     <div className="row">
@@ -24,10 +24,10 @@ const ProjectSection = (props) => {
                                             <div className="grid" key={pitem}>
                                                 <div className="img-holder">
                                                     <img src={project.pimg1} alt="" />
-                                                    <div className="portfolio-content">
+                                                    {/* <div className="portfolio-content">
                                                         <h4><Link onClick={ClickHandler} to={`/project-single/${project.slug}`}>{project.title}</Link></h4>
                                                         <span>{project.location}- {project.date}</span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         ))}

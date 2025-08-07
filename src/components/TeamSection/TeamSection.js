@@ -22,7 +22,7 @@ const TeamSection = (props) => {
                             <div className="col col-lg-3 col-md-6 col-sm-6 col-12" key={tm}>
                                 <Slide direction="up" duration={team.animation} triggerOnce="true">
                                     <div className="wpo-team-item">
-                                        <Link onClick={ClickHandler} to="/planner" className="wpo-team-img-wrap">
+                                        <Link onClick={ClickHandler} to="/groom-bride" className="wpo-team-img-wrap">
                                             <div className="wpo-team-img">
                                                 <div className="wpo-team-img-inner">
                                                     <img src={team.tImg} alt="" />

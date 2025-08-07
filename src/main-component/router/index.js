@@ -46,6 +46,7 @@ import PortfolioGridPage from '../PortfolioGridPage/PortfolioGridPage';
 import PortfolioMasonaryPage from '../PortfolioMasonaryPage/PortfolioMasonaryPage';
 import PortfolioMasonaryPageS2 from '../PortfolioMasonaryPageS2/PortfolioMasonaryPageS2';
 import PortfolioMasonaryPageS3 from '../PortfolioMasonaryPageS3/PortfolioMasonaryPageS3';
+import DressCodePage from '../DressCodePage/DressCodePage';
 import ProjectSinglePage from '../ProjectSinglePage';
 import ShopPage from '../ShopPage';
 import CartPage from '../CartPage/CartPage';
@@ -119,7 +120,8 @@ const AllRoute = () => {
             <Route path='/portfolio-grid' element={<PortfolioGridPage />} />
             <Route path='/portfolio-masonary' element={<PortfolioMasonaryPage />} />
             <Route path='/portfolio-masonary-s2' element={<PortfolioMasonaryPageS2 />} />
-            <Route path='/portfolio-masonary-s3' element={<PortfolioMasonaryPageS3 />} />
+            <Route path='/menu' element={<PortfolioMasonaryPageS3 />} />
+            <Route path='/dressCode' element={<DressCodePage />} />
             <Route path='/project-single/:slug' element={<ProjectSinglePage />} />
             <Route path='/shop' element={<ShopPage />} />
             <Route path='/cart' element={<CartPage />} />

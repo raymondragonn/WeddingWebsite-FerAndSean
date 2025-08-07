@@ -1,0 +1,73 @@
+/* Estilos específicos para EventSection - Desktop ajustado */
+
+/* Aumentar tamaño para desktop manteniendo móvil intacto */
+@media (min-width: 992px) {
+  .wpo-event-section .wpo-event-item {
+    max-width: 450px; /* Aumentado de 340px a 450px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-img {
+    max-width: 450px; /* Aumentado de 340px a 450px */
+    margin-bottom: 40px; /* Aumentado de 30px a 40px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-img .wpo-event-img-inner img {
+    height: 320px; /* Aumentado de 250px a 320px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text h2 {
+    font-size: 42px; /* Aumentado de 35px a 42px */
+    padding: 15px 0; /* Aumentado de 10px a 15px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul {
+    max-width: 300px; /* Aumentado de 230px a 300px */
+    margin-top: 40px; /* Aumentado de 30px a 40px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul li {
+    font-size: 20px; /* Aumentado de 18px a 20px */
+    margin-bottom: 25px; /* Aumentado de 20px a 25px */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul li button {
+    font-size: 20px; /* Aumentado de 18px a 20px */
+    margin-top: 15px; /* Aumentado de 10px a 15px */
+  }
+}
+
+/* Para pantallas extra grandes */
+@media (min-width: 1200px) {
+  .wpo-event-section .wpo-event-item {
+    max-width: 500px; /* Aún más grande para XL */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-img {
+    max-width: 500px;
+    margin-bottom: 45px;
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-img .wpo-event-img-inner img {
+    height: 360px; /* Más alto para pantallas grandes */
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text h2 {
+    font-size: 46px;
+    padding: 18px 0;
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul {
+    max-width: 320px;
+    margin-top: 45px;
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul li {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .wpo-event-section .wpo-event-item .wpo-event-text ul li button {
+    font-size: 22px;
+    margin-top: 18px;
+  }
+}

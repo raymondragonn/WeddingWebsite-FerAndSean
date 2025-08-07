@@ -7,6 +7,7 @@ import sImg1 from '../../images/event/Iglesia.jpeg'
 import sImg2 from '../../images/event/LugarBoda.PNG'
 import sImg3 from '../../images/event/3.jpg'
 import LocationMap from './Modal'
+import './EventSection.css'
 
 const EventSection = (props) => {
     const { t } = useLanguage();
@@ -42,6 +43,10 @@ const EventSection = (props) => {
         navigate(`/product-single/${slug}`);
     };
 
+    const handleLocationClick = (e) => {
+        e.stopPropagation(); // Prevenir que se ejecute el onClick del contenedor
+    };
+
     return (
         <section className="wpo-event-section section-padding" id="event" style={{backgroundColor: '#ded5c7'}}>
             <div className="container">
@@ -71,7 +76,12 @@ const EventSection = (props) => {
                                                 <li style={{ color: '#5C5C5C' }}>{event.li1}</li>
                                                 <li style={{ color: '#5C5C5C' }}>{event.li2}</li>
                                                 <li style={{ color: '#5C5C5C' }}>{event.li3}</li>
-                                                <li style={{ color: '#5C5C5C' }}><LocationMap mapUrl={event.mapUrl} /></li>
+                                                <li 
+                                                    style={{ color: '#5C5C5C' }}
+                                                    onClick={(e) => handleLocationClick(e)}
+                                                >
+                                                    <LocationMap mapUrl={event.mapUrl} />
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>

@@ -4,20 +4,18 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import Footer from '../../components/footer/Footer'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import PartnerSection from '../../components/PartnerSection';
-import PortfolioSectionS3 from '../../components/PortfolioSectionS3/PortfolioSectionS3';
-import WeddingMenuSection from '../../components/WeddingMenuSection/WeddingMenuSection';
-import { useLanguage } from '../../contexts/LanguageContext';
+import ProjectSection from '../../components/ProjectSection/ProjectSection';
 
-const PortfolioMasonaryPageS3 =() => {
-    const { t } = useLanguage();
+const DressCodePage =() => {
     return(
         <Fragment>
-            <Navbar />
-            <PageTitle /> 
-            <WeddingMenuSection />
+            <Navbar/>
+            <PageTitle pageTitle={'Dress Code'} pagesub={'Dress Code'}/> 
+            <ProjectSection/>
+            {/* <PartnerSection pClass={'pb-120'}/> */}
             <Footer footerClass={'wpo-site-footer-s2'}/>
             <Scrollbar/>
         </Fragment>
     )
 };
-export default PortfolioMasonaryPageS3;
+export default DressCodePage;

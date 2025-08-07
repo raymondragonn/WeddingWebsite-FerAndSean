@@ -57,7 +57,7 @@ const Header = (props) => {
                                             <Link onClick={ClickHandler} to="/about">{t('about')}</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/about">{t('Cuándo y Dónde')}</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/planner">{t('Damas de Honor')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas de Honor')}</Link></li>
                                                 {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/story">{t('story')}</Link>
                                                     <ul className="sub-menu">
@@ -83,6 +83,8 @@ const Header = (props) => {
                                                     </ul>
                                                 </li> */}
                                                 <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/dressCode">{t('Dress Code')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/menu">{t('Menu')}</Link></li>
                                                 {/* <li className="menu-item-has-children">
                                                     <Link onClick={ClickHandler} to="/service">{t('service')}</Link>
                                                     <ul className="sub-menu">
