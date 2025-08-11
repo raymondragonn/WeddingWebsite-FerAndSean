@@ -1,20 +1,24 @@
 import React from 'react'
 import bg from '../../images/contact/bg.jpg'
-import RSVPFrom3 from '../RSVPFrom3/RSVPFrom3';
+import SectionTitle from "../SectionTitle";
+import RSVPFrom from '../RSVPFrom/RSVPFrom';
 
 const RsvpSectionS7 = (props) => {
     return (
-        <section className="wpo-contact-section-s7 section-padding"  style={{ background: `url(${bg})no-repeat center top / cover` }}>
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col col-lg-12 col-md-12 col-12">
-                        <div className="wpo-contact-section-wrapper">
-                            <div className="wpo-contact-section-inner">
-                                <div className="wpo-contact-form-area">
-                                    <div className="wpo-section-title">
-                                        <h2>Make an Inquiry</h2>
+        <section className="wpo-contact-section-s8 section-padding" id="rsvp" style={{ backgroundColor: '#f6f1ee' }}>
+            <div className="wpo-contact-section-inner" style={{ background: `url(${bg}) no-repeat center top / cover` }}>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col col-lg-12 col-md-12 col-12">
+                            <div className="wpo-contact-section-wrapper">
+                                <div className="wpo-contact-section-inner">
+                                    <div className="wpo-contact-form-area">
+                                        <SectionTitle 
+                                            subTitle={'Confirma tu asistencia'} 
+                                            MainTitle={'¿Vas a Asistir?'} 
+                                        />
+                                        <RSVPFrom />
                                     </div>
-                                    <RSVPFrom3 />
                                 </div>
                             </div>
                         </div>

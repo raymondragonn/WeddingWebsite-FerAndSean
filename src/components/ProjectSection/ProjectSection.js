@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom'
 import SectionTitle from '../../components/SectionTitle'
 import Projects from '../../api/projects'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
 }
 
 const ProjectSection = (props) => {
+    const { t } = useLanguage();
+    
     return (
-        <section className={`wpo-portfolio-section-s3 section-padding2 ${props.prClass}`}>
+        <section className={`wpo-portfolio-section-s3 section-padding2 ${props.prClass}`} style={{backgroundColor: '#f6f1ee'}}>
             <div className="container-fluid">
-                <SectionTitle subTitle={'Our Amazing Work'} MainTitle={'Dress Code'} />
+                <SectionTitle MainTitle={t('Dress Code')} />
                 <div className="sortable-gallery">
                     <div className="gallery-filters"></div>
                     <div className="row">

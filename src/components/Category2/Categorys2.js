@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import SectionTitle from "../SectionTitle";
 import cImg1 from '../../images/category/5.jpg'
 import cImg2 from '../../images/category/6.jpg'
 import cImg3 from '../../images/category/7.jpg'
@@ -43,12 +44,12 @@ const Categoey = [
 
 const Categorys2 = () => {
     return (
-        <section className="wpo-category-section-s2 section-padding pt-0">
+        <section className="wpo-category-section-s2 section-padding pt-0" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
-                <div className="wpo-section-title">
-                    <span>Our Shop</span>
-                    <h2>Special Product for You</h2>
-                </div>
+                <SectionTitle 
+                    subTitle={'Our Shop'} 
+                    MainTitle={'Special Product for You'} 
+                />
                 <div className="wpo-category-wrap">
                     <div className="row">
                         {

@@ -9,7 +9,7 @@ const About = (props) => {
     const { t } = useLanguage();
 
     return (
-        <section className="wpo-about-section section-padding" style={{backgroundColor: '#f4f2ee'}}>
+        <section className="wpo-about-section section-padding" style={{backgroundColor: '#f6f1ee'}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-6 col-lg-8 col-md-10 col-12">

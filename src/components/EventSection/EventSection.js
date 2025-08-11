@@ -48,12 +48,11 @@ const EventSection = (props) => {
     };
 
     return (
-        <section className="wpo-event-section section-padding" id="event" style={{backgroundColor: '#ded5c7'}}>
+        <section className="wpo-event-section section-padding" id="event" style={{backgroundColor: '#f6f1ee'}}>
             <div className="container">
                 <SectionTitle 
-                    subTitle={t('ourWedding')} 
-                    MainTitle={t('whenAndWhere')} 
-                    style={{ color: '#5C5C5C' }}
+                    subTitle={'Te invitamos a celebrar con nosotros en estos lugares especiales'} 
+                    MainTitle={'Cuándo y Dónde'} 
                 />
                 <div className="wpo-event-wrap">
                     <div className="row" style={{ justifyContent: 'center' }}>

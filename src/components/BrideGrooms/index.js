@@ -37,7 +37,7 @@ const Brides = [
   },
   {
     id: '4',
-    tImg: timg4,
+    tImg: timg4,  
     name: 'Jenefer Abram',
     title: 'Groomsmen',
     animation:'1600',
@@ -48,9 +48,12 @@ const Brides = [
 
 const BrideGrooms = (props) => {
   return (
-    <section className={`wpo-team-section section-padding ${props.brClass}`}>
+    <section className={`wpo-team-section section-padding ${props.brClass}`} style={{ backgroundColor: '#f6f1ee' }}>
       <div className="container">
-        <SectionTitle subTitle={'Personas Importantes'} MainTitle={'DAMAS DE HONOR'} />
+        <SectionTitle 
+          subTitle={'Personas Importantes'} 
+          MainTitle={'Damas de Honor y Padrinos'} 
+        />
         <div className="wpo-team-wrap scene-2" id="scene-2">
           <div className="row">
             {Brides.slice(0, 8).map((Bride, tm) => (

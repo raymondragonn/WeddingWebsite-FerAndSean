@@ -5,14 +5,35 @@
     z-index: 9999;
     height: 100vh;
     width: 300px;
-    background: #243352;
+    background: #534334;
     transition: all 0.3s ease 0s;
     box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
-    overflow-x: auto;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
+
+/* Estilo para scrollbar webkit */
+.mobileMenu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mobileMenu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.mobileMenu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.mobileMenu::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .responsivemenu .card-body{
-    background: #243352;
+    background: #534334;
 }
 .mobileMenu h2{
     padding-left: 20px;
@@ -25,72 +46,153 @@
     top: 0;
     z-index: 999;
     cursor: pointer;
+    display: none; /* Hidden by default */
 }
 .responsivemenu {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 .responsivemenu li{
     display: block;
     padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.responsivemenu li:last-child {
+    border-bottom: none;
 }
 
 .responsivemenu li a,
 .responsivemenu li p{
     display: block;
-    padding: 13px 35px;
+    padding: 15px 35px;
     font-size: 16px;
     letter-spacing: 0;
-    text-transform: capitalize;
+    text-transform: uppercase !important;
     font-weight: 500;
     color: #fff;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
+
+.responsivemenu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase !important;
+}
+
+/* Asegurar que todos los elementos del menú estén en mayúsculas */
+.responsivemenu * {
+    text-transform: uppercase !important;
+}
+
 .responsivemenu li p{
     position: relative;
     margin-bottom: 0;
+    user-select: none;
+}
+
+.responsivemenu li p:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.responsivemenu li.active > p {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .responsivemenu li .subMenu{
-    padding-left: 20px;
+    padding-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
+
 .responsivemenu li .subMenu li:first-child a{
-    padding-top: 0px;
+    padding-top: 10px;
+}
+
+.responsivemenu li .subMenu li:last-child a{
+    padding-bottom: 15px;
 }
 
 .responsivemenu li .subMenu li{
-    padding-top: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+.responsivemenu li .subMenu li a {
+    padding: 12px 35px 12px 50px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-transform: uppercase !important;
+}
+
+.responsivemenu li .subMenu li:last-child a {
+    border-bottom: none;
 }
 
 .responsivemenu li a{
     position: relative;
 }
+
 .responsivemenu li i{
     position: absolute;
     right: 20px;
-    top: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
 }
+
 .showmenu i {
     font-size: 30px;
     color: #fff;
 }
 
+.menu-close {
+    position: sticky;
+    top: 0;
+    background: #534334;
+    z-index: 10;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-close .clox {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-close .clox:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .mobileMenu{
     display: none;
 }
-.showmenu{
-    display: none;
-}
-@media (max-width:992px){
+
+/* Mostrar el botón del menú móvil y el menú en dispositivos móviles */
+@media (max-width: 992px){
     .showmenu {
-        display: block;
+        display: block !important;
         width: 40px;
         height: 36px;
         text-align: center;
         line-height: 40px;
         border-radius: 5px;
+        position: relative;
+        z-index: 1000;
     }
 
     .showmenu button:focus{
@@ -98,19 +200,18 @@
         box-shadow: none;
     }
     .showmenu button span{
-        background-color: #fff;
+        background-color: #333;
         width: 20px;
         display: block;
         height: 2px;
         margin: 0 auto;
         margin-bottom: 5px;
+        transition: all 0.3s ease;
     }
     .mobileMenu{
-        display: block;
+        display: block !important;
     }
 }
-
-
 
 .middle-header-3 .showmenu {
     top: 36px;
@@ -123,7 +224,6 @@
     color: #fff;
 }
 
-
 @media(max-width:450px){
     .mobileMenu {
         left: -240px;
@@ -132,5 +232,8 @@
     .responsivemenu li a, .responsivemenu li p {
         font-size: 14px;
         padding: 13px 25px;
+    }
+    .responsivemenu li .subMenu li a {
+        padding: 10px 25px 10px 40px;
     }
 }

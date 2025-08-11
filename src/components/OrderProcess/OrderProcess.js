@@ -1,4 +1,5 @@
 import React from "react";
+import SectionTitle from "../SectionTitle";
 import cImg1 from '../../images/order/img-1.jpg'
 import cImg2 from '../../images/order/img-2.jpg'
 import cImg3 from '../../images/order/img-3.jpg'
@@ -32,13 +33,13 @@ const Process = [
 
 const OrderProcess = () => {
     return (
-        <section className="wpo-order-section section-padding">
+        <section className="wpo-order-section section-padding" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="shape" style={{ backgroundImage: `url(${bg})` }}></div>
             <div className="container-fluid">
-                <div className="wpo-section-title">
-                    <span>Ordering Cake</span>
-                    <h2>How to Order Your Cake</h2>
-                </div>
+                <SectionTitle 
+                    subTitle={'Ordering Cake'} 
+                    MainTitle={'How to Order Your Cake'} 
+                />
                 <div className="wpo-order-wrap">
                     <div className="row">
                         {

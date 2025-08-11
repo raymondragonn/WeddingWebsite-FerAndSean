@@ -3,12 +3,9 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/footer/Footer'
 import Scrollbar from '../../components/scrollbar/scrollbar'
+import SectionTitle from '../../components/SectionTitle';
 import { useLanguage } from '../../contexts/LanguageContext';
-
-// Import images
-import guadalajaraImg from '../../images/guadalajara.jpg';
-import iglesia from '../../images/Iglesia.jpg';
-import tortaahogada from '../../images/tortaahogada.jpg';
+import img1 from '../../images/guadalajara/banner-one-guadalajara.svg';
 
 // import tortaAhogadaImg from '../../images/torta-ahogada.jpg';
 
@@ -22,16 +19,18 @@ const RsvpPage2 = () => {
                 
                 <section className="wpo-about-section section-padding" style={{ backgroundColor: '#f6f1ee' }}>
                     <div className="container">
+                        <SectionTitle 
+                            MainTitle={t('welcomeGuadalajara')} 
+                        />
                         <div className="row align-items-center">
                             <div className="col-lg-12 col-md-12 col-12">
                                 <div className="wpo-about-wrap">
                                     <div className="wpo-about-item">
-                                        <div className="wpo-about-text">
-                                            <h2 style={{ color: '#5C5C5C' }}>{t('welcomeGuadalajara')}</h2>
+                                        <div className="wpo-about-text" style={{ textAlign: 'center' }}>
                                             <p style={{ color: '#5C5C5C' }}>{t('guadalajaraDescription')}</p>
                                             
                                             <h3 style={{ color: '#5C5C5C' }}>{t('whySpecial')}</h3>
-                                            <ul className="about-list" style={{ color: '#5C5C5C' }}>
+                                            <ul className="about-list" style={{ color: '#5C5C5C', textAlign: 'center', listStyle: 'none', padding: 0 }}>
                                                 <li><strong>{t('mariachiCradle')}</strong></li>
                                                 <li><strong>{t('tequilaCapital')}</strong></li>
                                                 <li><strong>{t('culturalHeritage')}</strong></li>
@@ -47,10 +46,10 @@ const RsvpPage2 = () => {
 
                 <section className="wpo-service-section-s2 section-padding" style={{ backgroundColor: '#f6f1ee' }}>
                     <div className="container">
-                        <div className="wpo-section-title">
-                            <h2 style={{ color: '#5C5C5C' }}>{t('placesNotToMiss')}</h2>
-                            <p style={{ color: '#5C5C5C' }}>{t('placesDescription')}</p>
-                        </div>
+                        <SectionTitle 
+                            subTitle={t('placesDescription')} 
+                            MainTitle={t('placesNotToMiss')} 
+                        />
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-12">
                                 <div className="wpo-service-item hover-shadow">
@@ -128,12 +127,12 @@ const RsvpPage2 = () => {
                             <div className="col-lg-12 col-md-12 col-12">
                                 <div className="wpo-about-wrap">
                                     <div className="wpo-about-item">
-                                        <div className="wpo-about-text">
+                                        <div className="wpo-about-text" style={{ textAlign: 'center' }}>
                                             <h2 style={{ color: '#5C5C5C' }}>{t('flavorsThatEnchant')}</h2>
                                             <p style={{ color: '#5C5C5C' }}>{t('gastronomyDescription')}</p>
                                             
                                             <h3 style={{ color: '#5C5C5C' }}>{t('dishesToTry')}</h3>
-                                            <ul className="about-list" style={{ color: '#5C5C5C' }}>
+                                            <ul className="about-list" style={{ color: '#5C5C5C', textAlign: 'center', listStyle: 'none', padding: 0 }}>
                                                 <li><i className="fi flaticon-food"></i> <strong>{t('tortaAhogada')}</strong></li>
                                                 <li><i className="fi flaticon-food"></i> <strong>{t('birria')}</strong></li>
                                                 <li><i className="fi flaticon-food"></i> <strong>{t('carnitas')}</strong></li>

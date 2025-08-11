@@ -1,5 +1,6 @@
 import React from 'react';
 import './WeddingMenuSection.css';
+import SectionTitle from '../SectionTitle';
 
 const WeddingMenuSection = () => {
     const regularMenu = [
@@ -49,18 +50,12 @@ const WeddingMenuSection = () => {
     ];
 
     return (
-        <section className="wedding-menu-section ">
+        <section className="wedding-menu-section" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="section-title-wrapper text-center">
-                            <h2 className="section-title">Menú de Nuestra Boda</h2>
-                            <p className="section-subtitle">
-                                Hemos seleccionado cuidadosamente cada plato para hacer de este día una experiencia gastronómica memorable
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <SectionTitle 
+                    subTitle={'Hemos seleccionado cuidadosamente cada plato para hacer de este día una experiencia gastronómica memorable'}
+                    MainTitle={'Menú de Nuestra Boda'} 
+                />
 
                 {/* Menú Regular */}
                 <div className="row menu-section-wrapper">

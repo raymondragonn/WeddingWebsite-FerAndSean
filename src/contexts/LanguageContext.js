@@ -73,6 +73,8 @@ export const LanguageProvider = ({ children }) => {
       plannerSingle: 'Planner Single',
       // Nuevas traducciones para el menú About
       'Cuándo y Dónde': 'Cuándo y Dónde',
+      'Dress Code': 'Código de Vestimenta',
+      'Menu': 'Menú',
       'Damas de Honor': 'Damas de Honor',
       'Guadalajara': 'Guadalajara',
       accommodation: 'Alojamiento',
@@ -149,6 +151,10 @@ export const LanguageProvider = ({ children }) => {
         videographers: 'Videógrafos',
         perfectCake: 'Pastel Perfecto',
                 allOfTheAbove: 'Todo lo Anterior',
+        // Error page translations
+        oopsPageNotFound: '¡Ups! Página No Encontrada',
+        errorDescription: 'Lo sentimos pero no podemos encontrar la página que solicitaste. Esto puede ser porque has escrito la dirección web incorrectamente.',
+        backToHome: 'Volver al inicio',
         // Accommodation page translations
         accommodationTitle: 'Alojamiento',
         accommodationSubtitle: 'Alojamiento',
@@ -184,14 +190,16 @@ export const LanguageProvider = ({ children }) => {
         carnitas: 'Carnitas: Carne de cerdo cocida en su propia grasa',
         tejuino: 'Tejuino: Bebida refrescante hecha de maíz fermentado',
         jericalla: 'Jericalla: Postre cremoso que te robará el corazón',
-        // WeddingDate2 (Hotels) translations
-        recommendedHotels: 'Hoteles Recomendados',
-        hotelsSubtitle: 'Hemos seleccionado estos hoteles para que tengas una estancia perfecta durante nuestra celebración',
-        callButton: 'Llamar',
-        bookButton: 'Reservar',
-        previousImage: 'Imagen anterior',
-        nextImage: 'Siguiente imagen',
-        goToImage: 'Ir a imagen'
+                 // WeddingDate2 (Hotels) translations
+         recommendedHotels: 'Hoteles Recomendados',
+         hotelsSubtitle: 'Hemos seleccionado estos hoteles para que tengas una estancia perfecta durante nuestra celebración',
+         callButton: 'Llamar',
+         bookButton: 'Reservar',
+         previousImage: 'Imagen anterior',
+         nextImage: 'Siguiente imagen',
+         goToImage: 'Ir a imagen',
+         // Dress Code page translations
+         'Our Amazing Work': 'Nuestro Trabajo Increíble'
        },
      en: {
       names: 'Fer & Sean',
@@ -248,6 +256,8 @@ export const LanguageProvider = ({ children }) => {
       plannerSingle: 'Planner Single',
       // Nuevas traducciones para el menú About
       'Cuándo y Dónde': 'When & Where',
+      'Dress Code': 'Dress Code',
+      'Menu': 'Menu',
       'Damas de Honor': 'Bridesmaids',
       'Guadalajara': 'Guadalajara',
       accommodation: 'Accommodation',
@@ -321,6 +331,10 @@ export const LanguageProvider = ({ children }) => {
         videographers: 'Videographers',
         perfectCake: 'Perfect Cake',
                 allOfTheAbove: 'All Of The Above',
+        // Error page translations
+        oopsPageNotFound: 'Oops! Page Not Found!',
+        errorDescription: 'We\'re sorry but we can\'t seem to find the page you requested. This might be because you have typed the web address incorrectly.',
+        backToHome: 'Back to home',
         // Accommodation page translations
         accommodationTitle: 'Accommodation',
         accommodationSubtitle: 'Accommodation',
@@ -356,14 +370,16 @@ export const LanguageProvider = ({ children }) => {
         carnitas: 'Carnitas: Pork meat cooked in its own fat',
         tejuino: 'Tejuino: Refreshing drink made from fermented corn',
         jericalla: 'Jericalla: Creamy dessert that will steal your heart',
-        // WeddingDate2 (Hotels) translations
-        recommendedHotels: 'Recommended Hotels',
-        hotelsSubtitle: 'We have selected these hotels for you to have a perfect stay during our celebration',
-        callButton: 'Call',
-        bookButton: 'Book',
-        previousImage: 'Previous image',
-        nextImage: 'Next image',
-        goToImage: 'Go to image'
+                 // WeddingDate2 (Hotels) translations
+         recommendedHotels: 'Recommended Hotels',
+         hotelsSubtitle: 'We have selected these hotels for you to have a perfect stay during our celebration',
+         callButton: 'Call',
+         bookButton: 'Book',
+         previousImage: 'Previous image',
+         nextImage: 'Next image',
+         goToImage: 'Go to image',
+         // Dress Code page translations
+         'Our Amazing Work': 'Our Amazing Work'
        }
    };
 

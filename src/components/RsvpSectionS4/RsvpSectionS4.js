@@ -1,20 +1,22 @@
 import React from 'react'
 import cimg from '../../images/rsvp/img-4.jpg'
+import SectionTitle from "../SectionTitle";
 import RSVPFrom from '../RSVPFrom/RSVPFrom';
 import VideoModal from '../ModalVideo/VideoModal';
 
 const RsvpSectionS4 = (props) => {
     return (
-        <section className="wpo-contact-section-s5 section-padding pt-120" id="rsvp">
+        <section className="wpo-contact-section-s5 section-padding pt-120" id="rsvp" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
                 <div className="wpo-contact-section-wrap">
                     <div className="row align-items-center">
                         <div className="col col-xl-5 col-lg-5 col-md-12 col-12">
                             <div className="wpo-contact-section-wrapper">
                                 <div className="wpo-contact-form-area">
-                                    <div className="wpo-section-title">
-                                        <h2>Are You Attending?</h2>
-                                    </div>
+                                    <SectionTitle 
+                                        subTitle={'Confirma tu asistencia'} 
+                                        MainTitle={'¿Vas a Asistir?'} 
+                                    />
                                     <RSVPFrom />
                                 </div>
                             </div>

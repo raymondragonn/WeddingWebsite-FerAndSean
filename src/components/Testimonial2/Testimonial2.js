@@ -14,6 +14,8 @@ import shape2 from '../../images/testimonial/svg-2.svg'
 import shape3 from '../../images/testimonial/svg-3.svg'
 import shape4 from '../../images/testimonial/svg-4.svg'
 
+import SectionTitle from "../SectionTitle";
+
 
 const testimonial = [
     {
@@ -54,16 +56,16 @@ const Testimonial2 = (props) => {
     };
 
     return (
-        <section className={`wpo-testimonial-section-s2 ${props.tClass}`}>
+        <section className={`wpo-testimonial-section-s2 ${props.tClass}`} style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
                 <div className="wpo-testimonial-wrap">
                     <div className="row">
                         <div className="col col-lg-12">
                             <div className="wpo-testimonial-items">
-                                <div className="wpo-section-title">
-                                    <span>Testimonials</span>
-                                    <h2>What Our Client Says</h2>
-                                </div>
+                                <SectionTitle 
+                                    subTitle={'Testimonials'} 
+                                    MainTitle={'What Our Client Says'} 
+                                />
                                 <div className="wpo-testimonial-active">
                                     <Slider {...settings}>
                                         {

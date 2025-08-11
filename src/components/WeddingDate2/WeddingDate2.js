@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WeddingDate2.css';
+import SectionTitle from '../SectionTitle';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const WeddingDate2 = (props) => {
@@ -75,12 +76,10 @@ const WeddingDate2 = (props) => {
     return (
         <section className={`hotels-section ${props.pbClass || ''}`} style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
-                <div className="hotels-header">
-                    <h2 className="hotels-title">{t('recommendedHotels')}</h2>
-                    <p className="hotels-subtitle">
-                        {t('hotelsSubtitle')}
-                    </p>
-                </div>
+                <SectionTitle 
+                    subTitle={t('hotelsSubtitle')} 
+                    MainTitle={t('recommendedHotels')} 
+                />
                 
                 <div className="hotels-grid">
                     {hotels.map((hotel) => (

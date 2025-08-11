@@ -28,7 +28,7 @@ const StorySection2 = (props) => {
     ]
 
     return (
-        <section className="wpo-story-section section-padding" id="story">
+        <section className="wpo-story-section section-padding" id="story" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
                 <SectionTitle subTitle={t('ourStory')} MainTitle={t('howItHappened')} />
                 <div className="wpo-story-wrap">

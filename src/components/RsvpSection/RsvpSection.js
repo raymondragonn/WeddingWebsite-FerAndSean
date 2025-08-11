@@ -1,5 +1,6 @@
 import React from 'react'
 import { JackInTheBox } from "react-awesome-reveal";
+import SectionTitle from "../SectionTitle";
 import shape1 from '../../images/rsvp/shape.svg'
 import shape2 from '../../images/rsvp/shape2.svg'
 import shape3 from '../../images/rsvp/shape3.svg'
@@ -11,14 +12,15 @@ import RSVPFrom from '../RSVPFrom/RSVPFrom'
 
 const RsvpSection = (props) => {
     return (
-        <section className={`wpo-contact-section ${props.rClass} section-padding`}>
+        <section className={`wpo-contact-section ${props.rClass} section-padding`} style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container-fluid">
                 <div className="row justify-content-center">
                     <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
                         <div className="wpo-contact-section-wrapper">
-                            <div className="wpo-section-title">
-                                <h2>Are You Attending?</h2>
-                            </div>
+                            <SectionTitle 
+                                subTitle={'Confirma tu asistencia'} 
+                                MainTitle={'¿Vas a Asistir?'} 
+                            />
                             <div className="wpo-contact-form-area">
                                 <RSVPFrom />
                             </div>

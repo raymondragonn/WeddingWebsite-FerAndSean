@@ -13,7 +13,7 @@ const TeamSection = (props) => {
     const { t } = useLanguage();
     
     return (
-        <section className="wpo-team-section-s2 section-padding" style={{backgroundColor: '#f4f2ee'}}>
+        <section className="wpo-team-section-s2 section-padding" style={{backgroundColor: '#f6f1ee'}}>
             <div className="container">
                 <SectionTitle subTitle={t('importantPeople')} MainTitle={t('bridesmaids')} />
                 <div className="wpo-team-wrap">

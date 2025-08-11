@@ -9,6 +9,7 @@ import thumb1 from '../../images/testimonial/thumb-1.jpg'
 import thumb2 from '../../images/testimonial/thumb-2.jpg'
 import thumb3 from '../../images/testimonial/thumb-3.jpg'
 import shape from '../../images/testimonial/shape.svg'
+import SectionTitle from "../SectionTitle";
 
 
 const testimonial = [
@@ -45,7 +46,7 @@ const Testimonial = () => {
 
 
     return (
-        <section className="wpo-testimonial-section">
+        <section className="wpo-testimonial-section" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container-fluid">
                 <div className="wpo-testimonial-wrap">
                     <div className="row">
@@ -67,10 +68,10 @@ const Testimonial = () => {
                                 <img src={shape} alt=""/>
                             </div>
                             <div className="wpo-testimonial-items">
-                                <div className="wpo-section-title">
-                                    <span>Testimonials</span>
-                                    <h2>What Our Client Says</h2>
-                                </div>
+                                <SectionTitle 
+                                    subTitle={'Testimonials'} 
+                                    MainTitle={'What Our Client Says'} 
+                                />
                                 <div className="slider-nav">
                                     <Slider
                                         asNavFor={nav1}

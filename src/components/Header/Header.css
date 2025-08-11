@@ -1,0 +1,122 @@
+/* Estilos específicos para el header en dispositivos móviles */
+@media (max-width: 992px) {
+    .wpo-site-header {
+        min-height: 60px;
+        padding: 10px 0;
+    }
+    
+    .navigation {
+        padding: 0;
+    }
+    
+    .navbar {
+        padding: 0;
+    }
+    
+    .container-fluid {
+        padding: 0 15px;
+    }
+    
+    /* Asegurar que el botón del menú móvil esté visible */
+    .mobail-menu {
+        display: block !important;
+    }
+    
+    /* Ocultar elementos innecesarios en móvil */
+    .navbar-brand,
+    .navigation-holder {
+        display: none !important;
+    }
+    
+    /* Estilos para el título móvil */
+    .mobile-title {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .mobile-title a {
+        color: #000 !important;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: 'EB Garamond', serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-title a:hover {
+        color: #000 !important;
+        text-decoration: none;
+    }
+}
+
+/* Estilos para el header sticky en móviles */
+@media (max-width: 992px) {
+    .fixed-navbar.active .mobile-title a {
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .fixed-navbar.active .wpo-site-header {
+        min-height: 50px;
+        padding: 8px 0;
+    }
+}
+
+/* Estilos para el botón del menú móvil */
+.showmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.showmenu .navbar-toggler {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.showmenu .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Animación del botón hamburguesa */
+.showmenu .first-angle {
+    transform: rotate(0deg);
+}
+
+.showmenu .middle-angle {
+    opacity: 1;
+}
+
+.showmenu .last-angle {
+    transform: rotate(0deg);
+}
+
+/* Cuando el menú está activo */
+.showmenu.active .first-angle {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.showmenu.active .middle-angle {
+    opacity: 0;
+}
+
+.showmenu.active .last-angle {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
