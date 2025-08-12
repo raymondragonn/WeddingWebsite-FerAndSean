@@ -64,7 +64,7 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/about">{t('about')}</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/about">{t('Cuándo y Dónde')}</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/about">{t('Itinerario')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/dressCode">{t('Dress Code')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/menu">{t('Menu')}</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas de Honor')}</Link></li>

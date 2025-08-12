@@ -39,7 +39,35 @@
       "Vestimenta formal",
       "Llegada 30 minutos antes",
       "Música en vivo durante la ceremonia"
-    ]
+    ],
+    "logistics": {
+      "arrival": {
+        "title": "Llegada a la Ceremonia",
+        "details": [
+          "Inicio de la ceremonia: 5:00 PM",
+          "Estacionamiento limitado en la zona"
+          
+        ]
+      },
+      "ceremony": {
+        "title": "Durante la Ceremonia",
+        "details": [
+          "Duración aproximada: 1 hora",
+          "Fotografías permitidas sin flash",
+          "Teléfonos en silencio",
+          "Permanecer en sus asientos durante la ceremonia"
+        ]
+      },
+      "departure": {
+        "title": "Traslado a la Recepción",
+        "details": [
+          "Transporte directo a La Cueva de la Luna",
+          "Salida inmediata después de la ceremonia",
+          "Duración del traslado: 20 minutos"
+          
+        ]
+      }
+    }
   },
   {
     "id": 32,
@@ -61,7 +89,129 @@
       "Pista de baile",
       "Mesa de postres",
       "Actividades y juegos"
-    ]
+    ],
+    "logistics": {
+      "arrival": {
+        "title": "Llegada a la Recepción",
+        "details": [
+          "Llegada directa desde la ceremonia",
+          "Recepción de invitados en jardín principal",
+          "Estacionamiento amplio disponible"
+        ]
+      },
+      "schedule": {
+        "title": "Programa de la Noche",
+        "details": [
+          "8:00 PM - Cóctel de bienvenida",
+          "8:30 PM - Cena (3 tiempos)",
+          "10:00 PM - Apertura de pista de baile",
+          "12:00 AM - Segundo tiempo musical",
+          "2:00 AM - Cierre de la celebración"
+        ]
+      },
+      "departure": {
+        "title": "Regreso al Hotel",
+        "details": [
+          "Transporte de regreso disponible 11pm, 1am y 3am",
+          "Último transporte: 3:00 AM",
+          "Servicio de taxi disponible",
+          "Coordinador para organizar traslados"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "proImg": "/images/event/Aeropuerto.webp",
+    "title": "Llegada",
+    "slug": "the-arrival",
+    "type": "event",
+    "eventDate": "Se recomienda llegar el 16 de abril",
+    "eventLocation": "Aeropuerto Internacional de Guadalajara",
+    "eventAddress": "Carretera Guadalajara - Chapala Km 17.5, Tlajomulco de Zúñiga, Jal.",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.528613136687!2d-103.31221792493336!3d20.525541481000804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4daad5240069%3A0x4c14fc392e7d6f9d!2sAeropuerto%20Internacional%20de%20Guadalajara!5e0!3m2!1ses!2smx!4v1754950324746!5m2!1ses!2smx",
+    "description": "¡Bienvenidos a Guadalajara! Este será el punto de encuentro para todos nuestros invitados que vienen de fuera. Aquí comienza nuestra celebración especial.",
+    "details": [
+      "Recepción de invitados internacionales",
+      "Asistencia para equipaje",
+      "Coordinación para traslados al hotel"
+    ],
+    "logistics": {
+      "arrival": {
+        "title": "Llegada",
+        "details": [
+          "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Interjet)",
+          "Horarios sugeridos: Entre 8:00 AM y 6:00 PM",
+          "Terminal: Terminal 1 y 2 disponibles"
+        ]
+      },
+      "transportation": {
+        "title": "Transporte",
+        "details": [
+          "Servicio de shuttle disponible desde el aeropuerto",
+          "Reserva tu transporte con anticipación",
+          "Tiempo de traslado: 1.5 horas aproximadamente a Tequila",
+          "Costo aproximado en taxi: $800-1200 MXN"
+        ]
+      },
+      "departure": {
+        "title": "Regreso",
+        "details": [
+          "Check-in recomendado: 2 horas antes del vuelo",
+          "Servicio de transporte de regreso disponible",
+          "Horarios flexibles según tu vuelo de salida"
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "proImg": "/images/event/cantaritos.jpg",
+    "title": "Cantaritos",
+    "slug": "los-cantaritos",
+    "type": "event",
+    "eventDate": "Viernes, 14 de Febrero de 2025",
+    "eventTime": "3:00 PM - 7:00 PM",
+    "eventLocation": "Cantaritos el Güero #1",
+    "eventAddress": "Av. Ramón Corona 25, Centro, Tequila, Jal.",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3884844163513!2d-103.76710147492405!3d20.856386180750192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8426170566424a4b%3A0x68d0a3b104ded7bf!2sCantaritos%20el%20G%C3%BCero%20%231!5e0!3m2!1ses!2smx!4v1754950821218!5m2!1ses!2smx",
+    "description": "Una tarde especial degustando los famosos cantaritos de Tequila. Una tradición local que queremos compartir con todos ustedes antes de nuestra gran celebración.",
+    "details": [
+      "Se ofrecera transporte de ida y regreso en un punto medio para todos",
+      "Nos reuniremos a la 1:30pm y el regreso sera a las 6pm",
+      "Degustación de cantaritos tradicionales",
+      "Música en vivo mexicana",
+      "Botanas típicas jaliscienses"
+    ],
+    "logistics": {
+      "meetingPoint": {
+        "title": "Punto de Encuentro",
+        "details": [
+          "Lugar: Hotel Casa La Gran Señora (lobby principal)",
+          "Hora de salida: 1:30 PM en punto",
+          "Transporte grupal en autobús privado",
+          "Duración del viaje: 30 minutos aproximadamente"
+        ]
+      },
+      "atVenue": {
+        "title": "En el Lugar",
+        "details": [
+          "Llegada estimada: 2:00 PM",
+          "Actividades: Degustación, música y convivencia",
+          "Vestimenta: Casual cómoda",
+          "Sombreros recomendados (hay sol)"
+        ]
+      },
+      "departure": {
+        "title": "Regreso",
+        "details": [
+          "Hora de salida: 6:00 PM",
+          "Regreso al mismo punto de encuentro",
+          "Llegada estimada al hotel: 6:30 PM",
+          "Coordinador estará disponible todo el tiempo"
+        ]
+      }
+    }
   },
   {
     "id": 2,

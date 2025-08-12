@@ -363,3 +363,138 @@
   color: #8B4513;
   transition: color 0.3s ease;
 }
+
+/* Logistics Section Styles */
+.event-logistics {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.logistics-subsection {
+  background: linear-gradient(135deg, #faf8f4, #f7f3e9);
+  border: 1px solid rgba(210, 180, 140, 0.3);
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logistics-subsection:hover {
+  background: linear-gradient(135deg, #f7f3e9, #f2ebe0);
+  border-color: rgba(139, 69, 19, 0.4);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.1);
+  transform: translateY(-2px);
+}
+
+.logistics-subtitle {
+  color: #8B4513;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.logistics-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #8B4513, #D2B48C);
+  transition: width 0.4s ease;
+}
+
+.logistics-subsection:hover .logistics-subtitle::after {
+  width: 80px;
+}
+
+.logistics-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.logistics-detail-item {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem 1.5rem;
+  border-left: 3px solid #D2B48C;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Georgia', serif;
+  color: #5d4e37;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.logistics-detail-item::before {
+  content: '→';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: #D2B48C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #654321;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.logistics-detail-item:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-left-color: #8B4513;
+  transform: translateX(8px);
+  box-shadow: 3px 0 10px rgba(139, 69, 19, 0.1);
+}
+
+.logistics-detail-item:hover::before {
+  background: #8B4513;
+  color: #D2B48C;
+  transform: translateY(-50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .event-logistics {
+    gap: 1.5rem;
+  }
+  
+  .logistics-subsection {
+    padding: 1.5rem;
+  }
+  
+  .logistics-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .logistics-detail-item {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logistics-subsection {
+    padding: 1.2rem;
+  }
+  
+  .logistics-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .logistics-detail-item {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}

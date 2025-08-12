@@ -13,7 +13,9 @@ import './EventDetails.css';
 // Importar las imágenes de eventos
 import eventImage1 from '../../images/event/Iglesia.jpeg';
 import eventImage2 from '../../images/event/LugarBoda.PNG';
-import imgIA from '../../images/IglesiaIA.jpeg'
+import imgIA from '../../images/IglesiaIA.jpeg';
+import airportImage from '../../images/event/Aeropuerto.webp';
+import cantaritosImage from '../../images/event/cantaritos.jpg';
 
 
 
@@ -26,7 +28,9 @@ const ProductSinglePage = (props) => {
     // Mapeo de imágenes de eventos
     const eventImages = {
         'the-reception': imgIA,
-        'the-ceremony': eventImage2
+        'the-ceremony': eventImage2,
+        'the-arrival': airportImage,
+        'los-cantaritos': cantaritosImage
     };
 
     const addToCartProduct = (product, qty = 1) => {
@@ -111,6 +115,26 @@ const ProductSinglePage = (props) => {
                                                                 <li key={index}>{detail}</li>
                                                             ))}
                                                         </ul>
+                                                    </div>
+                                                )}
+
+                                                {item.logistics && (
+                                                    <div className="event-detail-section slide-up">
+                                                        <div className="event-detail-header">
+                                                            <h4 className="event-detail-title">Logística</h4>
+                                                        </div>
+                                                        <div className="event-logistics">
+                                                            {Object.entries(item.logistics).map(([key, section]) => (
+                                                                <div key={key} className="logistics-subsection">
+                                                                    <h5 className="logistics-subtitle">{section.title}</h5>
+                                                                    <ul className="logistics-details-list">
+                                                                        {section.details.map((detail, index) => (
+                                                                            <li key={index} className="logistics-detail-item">{detail}</li>
+                                                                        ))}
+                                                                    </ul>
+                                                                </div>
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 )}
 

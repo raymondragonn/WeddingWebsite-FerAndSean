@@ -72,7 +72,7 @@ export const LanguageProvider = ({ children }) => {
       serviceSingle: 'Servicio Single',
       plannerSingle: 'Planner Single',
       // Nuevas traducciones para el menú About
-      'Cuándo y Dónde': 'Cuándo y Dónde',
+      'Itinerario': 'Itinerario',
       'Dress Code': 'Código de Vestimenta',
       'Menu': 'Menú',
       'Damas de Honor': 'Damas de Honor',
@@ -85,16 +85,20 @@ export const LanguageProvider = ({ children }) => {
        howWeMeetDescription: '"Nuestra historia comenzó con un mensaje y se convirtió en toda una vida. En solo tres años, hemos enfrentado tanto juntos, y cada desafío solo ha hecho nuestro amor más fuerte y nuestro vínculo inquebrantable. Todo lo que hemos planeado hasta ahora ha funcionado a nuestro favor, y apreciamos convertir cada momento que compartimos en algo especial. Nos sentimos verdaderamente bendecidos de que desde el principio, ambas familias nos han amado y apoyado en cada paso del camino."',
        // Event section translations
        ourWedding: 'Nuestra Boda',
-               whenAndWhere: '¿CUÁNDO Y DÓNDE?', 
+               whenAndWhere: '¿Itinerario?', 
        theReception: 'La Misa',
        theCeremony: 'La Ceremonia',
        theParty: 'La Fiesta',
        // Misa event
-       eventDate1: 'Sábado, 18 Abr. 2026 - 5:00 PM',
+       eventDate1: 'Sábado, 18 Abr. 2026 - 5:00 PM - 6:00 PM',
        eventLocation1: 'Misa en Parroquia Santiago Apóstol (Sixto Gorjón 16, Centro, 46400 Tequila, Jal., Mexico)',
        
        eventPhone1: '+52 33-1234-5678',
        // Ceremonia event
+       llegada: 'Se remocomienda llegar el día jueves 16 de abril',
+       aeropuerto: 'Aeropuerto Internacional de Guadalajara (GDL)',
+       fechacantaritos: 'Viernes, 17 Abr 2026',
+       lugarCantaritos: 'Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.',
        eventDate2: 'Sábado, 18 Abr. 2026 - Al terminar la Misa',
        eventLocation2: 'Cueva de la Luna en Tequila Jalisco ( Camino a la Toma No. 3, 46400 Tequila, Jal., Mexico)',
        eventPhone2: '+52 33-1234-5679',
@@ -255,7 +259,7 @@ export const LanguageProvider = ({ children }) => {
       serviceSingle: 'Service Single',
       plannerSingle: 'Planner Single',
       // Nuevas traducciones para el menú About
-      'Cuándo y Dónde': 'When & Where',
+      'Itinerario': 'When & Where',
       'Dress Code': 'Dress Code',
       'Menu': 'Menu',
       'Damas de Honor': 'Bridesmaids',
@@ -273,9 +277,14 @@ export const LanguageProvider = ({ children }) => {
        theCeremony: 'The Ceremony',
        theParty: 'The Party',
        // Mass event
+       llegada: 'We recommend arriving on Thursday, April 16',
+       aeropuerto: 'Guadalajara International Airport (GDL)',
+       fechacantaritos: 'Friday, April 17, 2026',
+       lugarCantaritos: 'Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.',
        eventDate1: 'Saturday, Apr 18, 2026 - 5:00 PM',
        eventLocation1: 'Mass at Santiago Apóstol Parish (Sixto Gorjón 16, Centro, 46400 Tequila, Jalisco, Mexico)',
        eventPhone1: '+52 33-1234-5678',
+       
                // Ceremony event
         eventDate2: 'Saturday, Apr 18, 2026 - After Mass',
        eventLocation2: 'Cave of the Moon in Tequila, Jalisco (Camino a la Toma No. 3, 46400 Tequila, Jalisco, Mexico)',

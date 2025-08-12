@@ -10,46 +10,92 @@ const WeddingDate2 = (props) => {
     const hotels = [
         {
             id: 1,
-            name: 'Hotel Elegance',
-            address: 'Av. Principal 123, Centro Histórico',
-            phone: '+52 (55) 1234-5678',
-            email: 'reservas@hotelelegance.com',
-            website: 'www.hotelelegance.com',
-            description: 'Hotel boutique con elegancia clásica y servicio personalizado',
+            name: 'Hotel Solar de las Ánimas',
+            address: 'Calle Ramón Corona, 86 Colonia Centro , 46400 Jalisco, México',
+            phone: ' +(52) 374 742 67 00',
+            email: 'info@solardelasanimas.com',
+            website: 'www.hotelsolardelasanimas.com',
+            description: 'Hotel con arquitectura típica mexicana del siglo XVII. Ofrece 93 habitaciones con diseño virreinal, combinando confort moderno con historia y tradiciones de más de 490 años.',
             images: [
-                require('../../images/event/1.jpg'),
-                require('../../images/event/2.jpg'),
-                require('../../images/event/3.jpg')
+                require('../../images/event/SolarDeLasAnimas1.jpg'),
+                require('../../images/event/SolarDeLasAnimas2.webp'),
+                require('../../images/event/SolarDeLasAnimas3.jpg'),
+                require('../../images/event/SolarDeLasAnimas4.jpg')
+
             ]
         },
         {
             id: 2,
-            name: 'Resort Paradise',
-            address: 'Boulevard Costero 456, Zona Hotelera',
-            phone: '+52 (55) 9876-5432',
-            email: 'info@resortparadise.com',
-            website: 'www.resortparadise.com',
-            description: 'Resort frente al mar con todas las comodidades para tu estancia',
+            name: 'Hotel Plaza Jardín',
+            address: 'José Cuervo 13, La Villa, 46400 Tequila, Jal.',
+            phone: '+523747420061',
+            email: 'NA',
+            website: 'www.hotelplazajardin.com',
+            description: 'Ubicado en el centro de Tequila, este hotel ofrece un marco rústico y elegante con auténtico encanto mexicano. El lugar perfecto para construir historias inolvidables.',
             images: [
-                require('../../images/event/4.jpg'),
-                require('../../images/event/5.jpg'),
-                require('../../images/event/6.jpg')
+                require('../../images/event/PlazaJardin1.jpg'),
+                require('../../images/event/PlazaJardin2.webp'),
+                require('../../images/event/PlazaJardin3.JPEG'),
+                require('../../images/event/PlazaJardin4.jpg')
             ]
         },
         {
             id: 3,
-            name: 'Casa Boutique Inn',
-            address: 'Calle Romántica 789, Barrio Colonial',
-            phone: '+52 (55) 5555-1234',
-            email: 'contacto@casaboutiqueinn.com',
-            website: 'www.casaboutiqueinn.com',
-            description: 'Ambiente íntimo y acogedor en el corazón de la ciudad',
+            name: 'Nueve Agaves Hotel',
+            address: 'Francisco Javier Sauza Mora 21, La Villa, 46400 Tequila, Jal.',
+            phone: '+523861003407',
+            email: 'NA',
+            website: 'www.nueveagaveshotel.com.mx',
+            description: 'Hotel enfocado en brindar servicio de hospedaje cálido y confortable. Promueve la cultura y tradiciones del pueblo mágico de Tequila, garantizando una experiencia única.',
             images: [
-                require('../../images/event/7.jpg'),
-                require('../../images/event/8.jpg'),
-                require('../../images/event/9.jpg')
+                require('../../images/event/NueveAgaves1.webp'),
+                require('../../images/event/NueveAgaves2.JPEG'),
+                require('../../images/event/NueveAgaves3.JPEG'),
+                require('../../images/event/NueveAgaves4.JPEG')
+            ]
+        },
+        {
+            id: 4,
+            name: 'Casa Tahona',
+            address: 'C. Luis Navarro 28, Centro, 46400 Tequila, Jal.',
+            phone: '+523331710731',
+            email: 'NA',
+            description: 'Casa boutique ubicada en el centro del pueblo mágico de Tequila. A solo una cuadra de las principales atracciones, destilerías y todo lo que deseas visitar.',
+            images: [
+                require('../../images/event/casaTahona1.avif'),
+                require('../../images/event/casaTahona2.avif'),
+                require('../../images/event/casaTahona3.jpg')
+            ]
+        },
+        {
+            id: 5,
+            name: 'Hotel Casa La Gran Señora',
+            address: 'Nicolás Bravo No. 72, Centro, 46400 Tequila, Jal.',
+            phone: '+523747423300',
+            email: 'hotelcasalagransenora@hotmail.com',
+            description: 'Hotel acogedor ubicado en el centro de Tequila. Un lugar donde los huéspedes pueden descansar y disfrutar plenamente su estadía en el Paisaje Agavero.',
+            images: [
+                require('../../images/event/HotelCasaLaGranSeñora.JPEG'),
+                require('../../images/event/HotelCasaLaGranSeñora2.JPEG'),
+                require('../../images/event/HotelCasaLaGranSeñora3.JPEG'),
+                require('../../images/event/HotelCasaLaGranSeñora4.JPEG')
+            ]
+        },
+        {
+            id: 6,
+            name: 'Hotel de Barricas',
+            address: 'La Cofradía 1297 La Cofradía, 46400 Tequila, Jal.',
+            phone: '+523747426800',
+            email: 'atencionespecializadacofradia@gmail.com',
+            description: 'Complejo turístico único donde cada detalle está creado para una experiencia auténtica. Hospedaje especial, sabores conectados con la tierra y momentos inolvidables.',
+            images: [
+                require('../../images/event/HotelBarricas1.webp'),
+                require('../../images/event/HotelBarricas2.webp'),
+                require('../../images/event/HotelBarricas3.JPEG'),
+                require('../../images/event/HotelBarricas4.JPEG')
             ]
         }
+    
     ];
 
     const nextImage = (hotelId, imagesLength) => {
@@ -130,7 +176,14 @@ const WeddingDate2 = (props) => {
                                 <div className="hotel-details">
                                     <div className="hotel-detail">
                                         <span className="detail-icon">📍</span>
-                                        <span className="detail-text">{hotel.address}</span>
+                                        <a 
+                                            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(hotel.address)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="detail-link"
+                                        >
+                                            {hotel.address}
+                                        </a>
                                     </div>
                                     
                                     <div className="hotel-detail">
@@ -147,26 +200,10 @@ const WeddingDate2 = (props) => {
                                         </a>
                                     </div>
                                     
-                                    <div className="hotel-detail">
-                                        <span className="detail-icon">🌐</span>
-                                        <a 
-                                            href={`https://${hotel.website}`} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className="detail-link"
-                                        >
-                                            {hotel.website}
-                                        </a>
-                                    </div>
                                 </div>
                                 
                                 <div className="hotel-actions">
-                                    <a 
-                                        href={`tel:${hotel.phone}`} 
-                                        className="btn-call"
-                                    >
-                                        {t('callButton')}
-                                    </a>
+                                    
                                     <a 
                                         href={`https://${hotel.website}`} 
                                         target="_blank" 

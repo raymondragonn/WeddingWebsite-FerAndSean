@@ -21,16 +21,57 @@ const TeamSection = (props) => {
                         {Team.slice(0, 8).map((team, tm) => (
                             <div className="col col-lg-3 col-md-6 col-sm-6 col-12" key={tm}>
                                 <Slide direction="up" duration={team.animation} triggerOnce="true">
-                                    <div className="wpo-team-item">
+                                    <div className="wpo-team-item" style={{ 
+                                        background: '#fff', 
+                                        borderRadius: '8px',
+                                        padding: '20px',
+                                        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                                        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                                        border: '1px solid #e9e9e9',
+                                        marginBottom: '30px'
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-5px)';
+                                        e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                                    }}>
                                         <Link onClick={ClickHandler} to="/groom-bride" className="wpo-team-img-wrap">
-                                            <div className="wpo-team-img">
-                                                <div className="wpo-team-img-inner">
-                                                    <img src={team.tImg} alt="" />
+                                            <div className="wpo-team-img" style={{
+                                                width: '200px',
+                                                height: '200px',
+                                                margin: '0 auto',
+                                                overflow: 'hidden',
+                                                borderRadius: '4px',
+                                                position: 'relative'
+                                            }}>
+                                                <div className="wpo-team-img-inner" style={{
+                                                    width: '100%',
+                                                    height: '100%'
+                                                }}>
+                                                    <img 
+                                                        src={team.tImg} 
+                                                        alt={team.name}
+                                                        style={{
+                                                            width: '100%',
+                                                            height: '100%',
+                                                            objectFit: 'cover',
+                                                            objectPosition: 'center'
+                                                        }}
+                                                    />
                                                 </div>
                                             </div>
                                         </Link>
-                                        <div className="wpo-team-text">
-                                            <h3 style={{ color: '#5C5C5C' }}>{team.name}</h3>
+                                        <div className="wpo-team-text" style={{ paddingTop: '20px' }}>
+                                            <h3 style={{ 
+                                                color: '#2c2c2c',
+                                                fontSize: '18px',
+                                                fontWeight: '600',
+                                                marginBottom: '0',
+                                                letterSpacing: '0.5px'
+                                            }}>{team.name}</h3>
                                         </div>
                                     </div>
                                 </Slide>

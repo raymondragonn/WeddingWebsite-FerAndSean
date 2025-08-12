@@ -31,7 +31,7 @@ const MobileMenu = () => {
             submenu: [
                 {
                     id: 21,
-                    title: t('Cuándo y Dónde'),
+                    title: t('Itinerario'),
                     link: '/about'
                 },
                 {
