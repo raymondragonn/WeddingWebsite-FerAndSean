@@ -69,7 +69,7 @@ const EventSection = (props) => {
     };
 
     return (
-        <section className="wpo-event-section section-padding" id="event" style={{backgroundColor: '#f6f1ee'}}>
+        <section className="wpo-event-section" id="event" style={{backgroundColor: '#f6f1ee'}}>
             <div className="container">
                 <SectionTitle 
                     subTitle={'Te invitamos a celebrar con nosotros en estos lugares especiales'} 

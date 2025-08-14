@@ -1,0 +1,45 @@
+/* Fix for scroll issues in different pages */
+html, body, #root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Ensure main content takes available space */
+.wpo-site-footer,
+.wpo-site-footer-s2 {
+  margin-top: auto;
+}
+
+/* Fix for pages with less content */
+.section-padding {
+  min-height: auto;
+}
+
+/* Prevent extra scrollable space */
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Fix for specific page layouts */
+.wpo-shop-single-section {
+  min-height: calc(100vh - 200px);
+}
+
+/* Ensure proper viewport handling */
+@media (max-width: 768px) {
+  .App {
+    min-height: 100vh !important;
+  }
+  
+  .wpo-shop-single-section {
+    min-height: calc(100vh - 150px);
+  }
+}

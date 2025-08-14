@@ -43,7 +43,7 @@ const Brides = [
   {
     id: '5',
     tImg: timg5,  
-    name: 'Carlos Miguel',
+    name: 'Lili Yepez',
     title: 'Dama de Honor',
     animation:'1800'
   },
@@ -65,7 +65,7 @@ const Brides = [
 
 const BrideGrooms = (props) => {
   return (
-    <section className={`wpo-team-section section-padding ${props.brClass}`} style={{ backgroundColor: '#f8f6f3' }}>
+    <section className={`wpo-team-section section-padding ${props.brClass}`} style={{ backgroundColor: 'rgb(246, 241, 238)' }}>
       <div className="container">
         <SectionTitle 
           subTitle={'Personas Importantes'} 
@@ -79,8 +79,7 @@ const BrideGrooms = (props) => {
                   <div className="wedding-team-card" style={{
                     textAlign: 'center',
                     padding: '25px 20px',
-                    borderRadius: '15px',
-                    backgroundColor: '#ffffff',
+                    backgroundColor: '#d4c4b0',
                     boxShadow: '0 8px 25px rgba(45, 36, 32, 0.1)',
                     transition: 'all 0.3s ease',
                     border: '1px solid rgba(45, 36, 32, 0.1)',
@@ -99,10 +98,8 @@ const BrideGrooms = (props) => {
                       width: '140px',
                       height: '140px',
                       margin: '0 auto 20px',
-                      borderRadius: '12px',
                       overflow: 'hidden',
-                      position: 'relative',
-                      border: '3px solid #2d2420'
+                      position: 'relative'
                     }}>
                       <img 
                         src={Bride.tImg} 
@@ -133,7 +130,7 @@ const BrideGrooms = (props) => {
                         {Bride.name}
                       </h3>
                       <p style={{
-                        color: '#8b7355',
+                        color: '#2d2420',
                         fontSize: '14px',
                         fontWeight: '400',
                         margin: '0',
@@ -149,9 +146,9 @@ const BrideGrooms = (props) => {
                       right: '-5px',
                       width: '25px',
                       height: '25px',
-                      backgroundColor: '#2d2420',
+                      backgroundColor: 'rgb(88, 81, 71)',
                       borderRadius: '0 15px 0 15px',
-                      opacity: '0.1'
+                      opacity: '0.3'
                     }}></div>
                   </div>
                 </Slide>

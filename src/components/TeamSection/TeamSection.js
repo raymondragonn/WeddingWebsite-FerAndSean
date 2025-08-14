@@ -22,7 +22,7 @@ const TeamSection = (props) => {
                             <div className="col col-lg-3 col-md-6 col-sm-6 col-12" key={tm}>
                                 <Slide direction="up" duration={team.animation} triggerOnce="true">
                                     <div className="wpo-team-item" style={{ 
-                                        background: '#fff', 
+                                        background: '#d4c4b0', 
                                         borderRadius: '8px',
                                         padding: '20px',
                                         boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
@@ -34,34 +34,30 @@ const TeamSection = (props) => {
                                         e.currentTarget.style.transform = 'translateY(-5px)';
                                         e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
                                     }}
-                                    onMouseLeave={(e) => {
+                                    onMouseLeave={(e) => { 
                                         e.currentTarget.style.transform = 'translateY(0)';
                                         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
                                     }}>
                                         <Link onClick={ClickHandler} to="/groom-bride" className="wpo-team-img-wrap">
-                                            <div className="wpo-team-img" style={{
-                                                width: '200px',
-                                                height: '200px',
-                                                margin: '0 auto',
+                                            <div className="wpo-team-img-inner" style={{
+                                                width: '100%',
+                                                height: '300px',
                                                 overflow: 'hidden',
-                                                borderRadius: '4px',
-                                                position: 'relative'
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}>
-                                                <div className="wpo-team-img-inner" style={{
-                                                    width: '100%',
-                                                    height: '100%'
-                                                }}>
-                                                    <img 
-                                                        src={team.tImg} 
-                                                        alt={team.name}
-                                                        style={{
-                                                            width: '100%',
-                                                            height: '100%',
-                                                            objectFit: 'cover',
-                                                            objectPosition: 'center'
-                                                        }}
-                                                    />
-                                                </div>
+                                                <img 
+                                                    src={team.tImg} 
+                                                    alt={team.name}
+                                                    style={{
+                                                        width: '100%',
+                                                        height: '300px',
+                                                        objectFit: 'cover',
+                                                        objectPosition: 'center',
+                                                        display: 'block'
+                                                    }}
+                                                />
                                             </div>
                                         </Link>
                                         <div className="wpo-team-text" style={{ paddingTop: '20px' }}>

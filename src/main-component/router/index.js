@@ -1,6 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { LanguageProvider } from '../../contexts/LanguageContext';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import '../../components/ScrollToTop/ScrollFix.css';
 import Homepage from '../HomePage'
 import HomePage2 from '../HomePage2/HomePage2';
 import HomePage3 from '../HomePage3/HomePage3';
@@ -73,6 +75,7 @@ const AllRoute = () => {
     <LanguageProvider>
       <div className="App">
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='home' element={<Homepage />} />
