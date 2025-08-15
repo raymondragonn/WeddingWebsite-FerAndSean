@@ -74,6 +74,37 @@ const TeamSection = (props) => {
                             </div>
                         ))}
                     </div>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '40px' }}>
+                        <Link 
+                            to="/groom-bride" 
+                            onClick={ClickHandler}
+                            style={{
+                                backgroundColor: '#d4c4b0',
+                                color: '#2c2c2c',
+                                padding: '12px 24px',
+                                borderRadius: '25px',
+                                textDecoration: 'none',
+                                fontSize: '14px',
+                                fontWeight: '600',
+                                border: '2px solid #c4b49f',
+                                transition: 'all 0.3s ease',
+                                letterSpacing: '0.5px',
+                                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.target.style.backgroundColor = '#c4b49f';
+                                e.target.style.transform = 'translateY(-2px)';
+                                e.target.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.backgroundColor = '#d4c4b0';
+                                e.target.style.transform = 'translateY(0)';
+                                e.target.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+                            }}
+                        >
+                            Ver más
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

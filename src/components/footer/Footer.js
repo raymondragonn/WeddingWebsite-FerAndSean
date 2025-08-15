@@ -25,12 +25,14 @@ const Footer = (props) => {
                                     <ul>
                                         <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas de Honor')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/guadalajara">{t('Guadalajara')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/dressCode">{t('Codigo de Vestimenta')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas y Caballeros')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li> */}
                                     </ul>
                                     <ul>
                                         <li><Link onClick={ClickHandler} to="/planner">{t('Itinerario')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/gallery">{t('gallery')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/menu">{t('Menu')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/">{t('getQuote')}</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/contact">{t('contact')}</Link></li>
                                     </ul>

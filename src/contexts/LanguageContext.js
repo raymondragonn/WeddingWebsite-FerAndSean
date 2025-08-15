@@ -76,7 +76,9 @@ export const LanguageProvider = ({ children }) => {
       'Dress Code': 'Código de Vestimenta',
       'Menu': 'Menú',
       'Damas de Honor': 'Damas de Honor',
-      'Guadalajara': 'Guadalajara',
+      'Codigo de Vestimenta': 'Dress Code',
+      'Damas y Caballeros' : 'bridesmaids and groomsmen',
+      'Cercanía del punto de encuentro': 'Proximity to Meeting Point',
       accommodation: 'Alojamiento',
       // Story section translations
       ourStory: 'Nuestra Historia',

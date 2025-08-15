@@ -200,6 +200,18 @@ const WeddingDate2 = (props) => {
                                         </a>
                                     </div>
                                     
+                                    <div className="hotel-detail">
+                                        <span className="detail-icon">🚶</span>
+                                        <a 
+                                            href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(hotel.address)}&destination=${encodeURIComponent('Parroquia Santiago Apóstol, Sixto Gorjón 16, Centro, 46400 Tequila, Jal.')}&travelmode=walking`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="detail-link"
+                                        >
+                                            {t('Cercanía del punto de encuentro')}
+                                        </a>
+                                    </div>
+                                    
                                 </div>
                                 
                                 <div className="hotel-actions">

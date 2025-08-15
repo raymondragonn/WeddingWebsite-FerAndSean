@@ -96,25 +96,23 @@ const ProductSinglePage = (props) => {
                                                     <p className="event-detail-text secondary">{item.eventPhone}</p>
                                                 </div>
 
-                                                <div className="event-detail-section slide-up">
-                                                    <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">Descripción</h4>
-                                                    </div>
-                                                    <div className="event-description">
-                                                        <p className="event-detail-text">{item.description}</p>
-                                                    </div>
-                                                </div>
-
-                                                {item.details && (
-                                                    <div className="event-detail-section slide-up">
+                                                {item.mapUrl && (
+                                                    <div className="event-detail-section event-map-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">Detalles del Evento</h4>
+                                                            <h4 className="event-detail-title">Ubicación en el Mapa</h4>
                                                         </div>
-                                                        <ul className="event-details-list">
-                                                            {item.details.map((detail, index) => (
-                                                                <li key={index}>{detail}</li>
-                                                            ))}
-                                                        </ul>
+                                                        <div className="event-map-container">
+                                                            <iframe 
+                                                                src={item.mapUrl}
+                                                                width="100%" 
+                                                                height="400"
+                                                                className="event-map-iframe"
+                                                                allowFullScreen=""
+                                                                loading="lazy"
+                                                                referrerPolicy="no-referrer-when-downgrade"
+                                                                title={`Mapa de ${item.eventLocation}`}
+                                                            ></iframe>
+                                                        </div>
                                                     </div>
                                                 )}
 
@@ -138,25 +136,31 @@ const ProductSinglePage = (props) => {
                                                     </div>
                                                 )}
 
-                                                {item.mapUrl && (
-                                                    <div className="event-detail-section event-map-section slide-up">
+                                                <div className="event-detail-section slide-up">
+                                                    <div className="event-detail-header">
+                                                        <h4 className="event-detail-title">Descripción</h4>
+                                                    </div>
+                                                    <div className="event-description">
+                                                        <p className="event-detail-text">{item.description}</p>
+                                                    </div>
+                                                </div>
+
+                                                {item.details && (
+                                                    <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">Ubicación en el Mapa</h4>
+                                                            <h4 className="event-detail-title">Detalles del Evento</h4>
                                                         </div>
-                                                        <div className="event-map-container">
-                                                            <iframe 
-                                                                src={item.mapUrl}
-                                                                width="100%" 
-                                                                height="400"
-                                                                className="event-map-iframe"
-                                                                allowFullScreen=""
-                                                                loading="lazy"
-                                                                referrerPolicy="no-referrer-when-downgrade"
-                                                                title={`Mapa de ${item.eventLocation}`}
-                                                            ></iframe>
-                                                        </div>
+                                                        <ul className="event-details-list">
+                                                            {item.details.map((detail, index) => (
+                                                                <li key={index}>{detail}</li>
+                                                            ))}
+                                                        </ul>
                                                     </div>
                                                 )}
+
+                                                
+
+                                                
                                             </div>
                                         </div>
                                     </div>
