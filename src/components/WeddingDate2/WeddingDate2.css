@@ -160,10 +160,10 @@
 
 /* Hotel Description */
 .hotel-description {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: #777;
     margin-bottom: 24px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-style: italic;
 }
 

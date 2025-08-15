@@ -10,12 +10,12 @@ const WeddingDate2 = (props) => {
     const hotels = [
         {
             id: 1,
-            name: 'Hotel Solar de las Ánimas',
-            address: 'Calle Ramón Corona, 86 Colonia Centro , 46400 Jalisco, México',
-            phone: ' +(52) 374 742 67 00',
+            name: t('hotelSolarAnimas'),
+            address: t('hotelSolarAnimasAddress'),
+            phone: '+(52) 374 742 67 00',
             email: 'info@solardelasanimas.com',
             website: 'www.hotelsolardelasanimas.com',
-            description: 'Hotel con arquitectura típica mexicana del siglo XVII. Ofrece 93 habitaciones con diseño virreinal, combinando confort moderno con historia y tradiciones de más de 490 años.',
+            description: t('hotelSolarAnimasDescription'),
             images: [
                 require('../../images/event/SolarDeLasAnimas1.jpg'),
                 require('../../images/event/SolarDeLasAnimas2.webp'),
@@ -26,12 +26,12 @@ const WeddingDate2 = (props) => {
         },
         {
             id: 2,
-            name: 'Hotel Plaza Jardín',
-            address: 'José Cuervo 13, La Villa, 46400 Tequila, Jal.',
-            phone: '+523747420061',
+            name: t('hotelPlazaJardin'),
+            address: t('hotelPlazaJardinAddress'),
+            phone: '+(52) 374 742 00 61',
             email: 'NA',
             website: 'www.hotelplazajardin.com',
-            description: 'Ubicado en el centro de Tequila, este hotel ofrece un marco rústico y elegante con auténtico encanto mexicano. El lugar perfecto para construir historias inolvidables.',
+            description: t('hotelPlazaJardinDescription'),
             images: [
                 require('../../images/event/PlazaJardin1.jpg'),
                 require('../../images/event/PlazaJardin2.webp'),
@@ -41,12 +41,12 @@ const WeddingDate2 = (props) => {
         },
         {
             id: 3,
-            name: 'Nueve Agaves Hotel',
-            address: 'Francisco Javier Sauza Mora 21, La Villa, 46400 Tequila, Jal.',
-            phone: '+523861003407',
+            name: t('hotelNueveAgaves'),
+            address: t('hotelNueveAgavesAddress'),
+            phone: '+(52) 386 100 34 07',
             email: 'NA',
             website: 'www.nueveagaveshotel.com.mx',
-            description: 'Hotel enfocado en brindar servicio de hospedaje cálido y confortable. Promueve la cultura y tradiciones del pueblo mágico de Tequila, garantizando una experiencia única.',
+            description: t('hotelNueveAgavesDescription'),
             images: [
                 require('../../images/event/NueveAgaves1.webp'),
                 require('../../images/event/NueveAgaves2.JPEG'),
@@ -56,11 +56,11 @@ const WeddingDate2 = (props) => {
         },
         {
             id: 4,
-            name: 'Casa Tahona',
-            address: 'C. Luis Navarro 28, Centro, 46400 Tequila, Jal.',
-            phone: '+523331710731',
+            name: t('casaTahona'),
+            address: t('casaTahonaAddress'),
+            phone: '+(52) 333 171 07 31',
             email: 'NA',
-            description: 'Casa boutique ubicada en el centro del pueblo mágico de Tequila. A solo una cuadra de las principales atracciones, destilerías y todo lo que deseas visitar.',
+            description: t('casaTahonaDescription'),
             images: [
                 require('../../images/event/casaTahona1.avif'),
                 require('../../images/event/casaTahona2.avif'),
@@ -69,11 +69,11 @@ const WeddingDate2 = (props) => {
         },
         {
             id: 5,
-            name: 'Hotel Casa La Gran Señora',
-            address: 'Nicolás Bravo No. 72, Centro, 46400 Tequila, Jal.',
-            phone: '+523747423300',
+            name: t('hotelCasaGranSenora'),
+            address: t('hotelCasaGranSenoraAddress'),
+            phone: '+(52) 374 742 33 00',
             email: 'hotelcasalagransenora@hotmail.com',
-            description: 'Hotel acogedor ubicado en el centro de Tequila. Un lugar donde los huéspedes pueden descansar y disfrutar plenamente su estadía en el Paisaje Agavero.',
+            description: t('hotelCasaGranSenoraDescription'),
             images: [
                 require('../../images/event/HotelCasaLaGranSeñora.JPEG'),
                 require('../../images/event/HotelCasaLaGranSeñora2.JPEG'),
@@ -83,11 +83,11 @@ const WeddingDate2 = (props) => {
         },
         {
             id: 6,
-            name: 'Hotel de Barricas',
-            address: 'La Cofradía 1297 La Cofradía, 46400 Tequila, Jal.',
-            phone: '+523747426800',
+            name: t('hotelBarricas'),
+            address: t('hotelBarricasAddress'),
+            phone: '+(52) 374 742 68 00',
             email: 'atencionespecializadacofradia@gmail.com',
-            description: 'Complejo turístico único donde cada detalle está creado para una experiencia auténtica. Hospedaje especial, sabores conectados con la tierra y momentos inolvidables.',
+            description: t('hotelBarricasDescription'),
             images: [
                 require('../../images/event/HotelBarricas1.webp'),
                 require('../../images/event/HotelBarricas2.webp'),

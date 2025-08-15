@@ -7,7 +7,8 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/footer/Footer';
 import { addToCart } from "../../store/actions/action";
 import Product from './product'
-import api from "../../api";
+import { useTranslatedEvent, useTranslatedProduct } from "../../hooks/useTranslatedData";
+import { useLanguage } from "../../contexts/LanguageContext";
 import ProductTabs from './alltab';
 import './EventDetails.css';
 // Importar las imágenes de eventos
@@ -17,13 +18,9 @@ import imgIA from '../../images/IglesiaIA.jpeg';
 import airportImage from '../../images/event/Aeropuerto.webp';
 import cantaritosImage from '../../images/event/cantaritos.jpg';
 
-
-
 const ProductSinglePage = (props) => {
-    const { slug } = useParams()
-
-    const productsArray = api();
-    const Allproduct = productsArray
+    const { slug } = useParams();
+    const { t } = useLanguage();
 
     // Mapeo de imágenes de eventos
     const eventImages = {
@@ -38,18 +35,29 @@ const ProductSinglePage = (props) => {
     };
 
     const { addToCart } = props;
-    const [product, setProduct] = useState({});
+    const [item, setItem] = useState(null);
+    const [isEvent, setIsEvent] = useState(false);
+
+    // Intentar obtener como evento primero
+    const event = useTranslatedEvent(slug);
+    const product = useTranslatedProduct(slug);
 
     useEffect(() => {
-        setProduct(Allproduct.filter(Allproduct => Allproduct.slug === String(slug)))
-    }, [slug, Allproduct]);
-
-    const item = product[0];
-    const isEvent = item && item.type === 'event';
+        if (event) {
+            setItem(event);
+            setIsEvent(true);
+        } else if (product) {
+            setItem(product);
+            setIsEvent(false);
+        } else {
+            setItem(null);
+            setIsEvent(false);
+        }
+    }, [event, product]);
     
     // Obtener la imagen correcta para eventos
     const getEventImage = () => {
-        if (isEvent && eventImages[item.slug]) {
+        if (isEvent && eventImages[item?.slug]) {
             return eventImages[item.slug];
         }
         return item?.proImg;
@@ -59,8 +67,8 @@ const ProductSinglePage = (props) => {
         <Fragment>
             <Navbar/>
             <PageTitle 
-                pageTitle={isEvent ? 'Event Details' : 'Product Single'} 
-                pagesub={isEvent ? 'Event Details' : 'Product Single'} 
+                pageTitle={isEvent ? t('Event Details') : t('Product Single')} 
+                pagesub={isEvent ? t('Event Details') : t('Product Single')} 
             />
             <section className="wpo-shop-single-section section-padding">
                 <div className="container">
@@ -81,7 +89,7 @@ const ProductSinglePage = (props) => {
                                             <div className="event-info-grid">
                                                 <div className="event-detail-section slide-up">
                                                     <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">Fecha y Hora</h4>
+                                                        <h4 className="event-detail-title">{t('eventDate')}</h4>
                                                     </div>
                                                     <p className="event-detail-text primary">{item.eventDate}</p>
                                                     <p className="event-detail-text secondary">{item.eventTime}</p>
@@ -89,29 +97,26 @@ const ProductSinglePage = (props) => {
 
                                                 <div className="event-detail-section slide-up">
                                                     <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">Ubicación</h4>
+                                                        <h4 className="event-detail-title">{t('eventLocation')}</h4>
                                                     </div>
                                                     <p className="event-detail-text primary">{item.eventLocation}</p>
                                                     <p className="event-detail-text secondary">{item.eventAddress}</p>
                                                     <p className="event-detail-text secondary">{item.eventPhone}</p>
                                                 </div>
 
-                                                {item.mapUrl && (
-                                                    <div className="event-detail-section event-map-section slide-up">
+                                                <div className="event-detail-section slide-up">
+                                                    <div className="event-detail-header">
+                                                        <h4 className="event-detail-title">{t('eventDescription')}</h4>
+                                                    </div>
+                                                    <div className="event-description">
+                                                        <p className="event-detail-text">{item.description}</p>
+                                                    </div>
+                                                </div>
+
+                                                {item.details && (
+                                                    <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">Ubicación en el Mapa</h4>
-                                                        </div>
-                                                        <div className="event-map-container">
-                                                            <iframe 
-                                                                src={item.mapUrl}
-                                                                width="100%" 
-                                                                height="400"
-                                                                className="event-map-iframe"
-                                                                allowFullScreen=""
-                                                                loading="lazy"
-                                                                referrerPolicy="no-referrer-when-downgrade"
-                                                                title={`Mapa de ${item.eventLocation}`}
-                                                            ></iframe>
+                                                            <h4 className="event-detail-title">{t('eventDetails')}</h4>
                                                         </div>
                                                     </div>
                                                 )}
@@ -119,7 +124,7 @@ const ProductSinglePage = (props) => {
                                                 {item.logistics && (
                                                     <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">Logística</h4>
+                                                            <h4 className="event-detail-title">{t('eventLogistics')}</h4>
                                                         </div>
                                                         <div className="event-logistics">
                                                             {Object.entries(item.logistics).map(([key, section]) => (
@@ -148,13 +153,33 @@ const ProductSinglePage = (props) => {
                                                 {item.details && (
                                                     <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">Detalles del Evento</h4>
+                                                            <h4 className="event-detail-title">{t('eventDetails') || 'Detalles del Evento'}</h4>
                                                         </div>
                                                         <ul className="event-details-list">
                                                             {item.details.map((detail, index) => (
                                                                 <li key={index}>{detail}</li>
                                                             ))}
                                                         </ul>
+                                                    </div>
+                                                )}
+
+                                                {item.mapUrl && (
+                                                    <div className="event-detail-section slide-up">
+                                                        <div className="event-detail-header">
+                                                            <h4 className="event-detail-title">{t('eventMap') || 'Mapa del Evento'}</h4>
+                                                        </div>
+                                                        <div className="event-map-container">
+                                                            <iframe 
+                                                                src={item.mapUrl}
+                                                                width="100%" 
+                                                                height="400"
+                                                                className="event-map-iframe"
+                                                                allowFullScreen=""
+                                                                loading="lazy"
+                                                                referrerPolicy="no-referrer-when-downgrade"
+                                                                title={`Mapa de ${item.eventLocation}`}
+                                                            ></iframe>
+                                                        </div>
                                                     </div>
                                                 )}
 
@@ -174,8 +199,8 @@ const ProductSinglePage = (props) => {
                         )
                     ) : (
                         <div className="not-found-container fade-in">
-                            <h3 className="not-found-title">Contenido no encontrado</h3>
-                            <p className="not-found-text">Lo sentimos, no pudimos encontrar la información solicitada.</p>
+                            <h3 className="not-found-title">{t('contentNotFound')}</h3>
+                            <p className="not-found-text">{t('contentNotFoundMessage')}</p>
                         </div>
                     )}
                     {!isEvent && <ProductTabs />}

@@ -36,39 +36,24 @@ const MobileMenu = () => {
                 },
                 {
                     id: 22,
-                    title: t('Damas de Honor'),
-                    link: '/groom-bride'
-                },
-                {
-                    id: 23,
-                    title: t('accommodation'),
-                    link: '/accomodation'
-                },
-                {
-                    id: 24,
-                    title: t('Guadalajara'),
-                    link: '/guadalajara'
-                },
-                {
-                    id: 25,
                     title: t('Dress Code'),
                     link: '/dressCode'
                 },
                 {
-                    id: 26,
+                    id: 23,
                     title: t('Menu'),
                     link: '/menu'
                 },
                 {
-                    id: 27,
-                    title: t('comingSoon'),
-                    link: '/coming'
+                    id: 24,
+                    title: t('Damas de Honor'),
+                    link: '/groom-bride'
                 },
                 {
-                    id: 28,
-                    title: t('error404'),
-                    link: '/404'
-                }
+                    id: 25,
+                    title: t('accommodation'),
+                    link: '/accomodation'
+                },
             ]
         },
         {

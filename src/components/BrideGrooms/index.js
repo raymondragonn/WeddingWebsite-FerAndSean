@@ -1,6 +1,7 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from "../SectionTitle";
+import { useLanguage } from "../../contexts/LanguageContext";
 import timg1 from '../../images/team/DamaDeHonor1.jpeg'
 import timg2 from '../../images/team/DamaDeHonor2.jpeg'
 import timg3 from '../../images/team/DamaDeHonor3.jpeg'
@@ -9,66 +10,66 @@ import timg5 from '../../images/team/DamaDeHonor5.jpeg'
 import timg6 from '../../images/team/DamaDeHonor6.jpeg'
 import timg7 from '../../images/team/DamoDeHonor1.jpeg'
 
-
-
-// Damas y Caballeros de Fer (la novia)
-const FerTeam = [
-  {
-    id: '1',
-    tImg: timg1,
-    name: 'María Elena',
-    title: 'Dama de Honor',
-    animation:'1000'
-  },
-  {
-    id: '2',
-    tImg: timg2,
-    name: 'Lupita Quintero',
-    title: 'Dama de Honor',
-    animation:'1200'
-  },
-  {
-    id: '3',
-    tImg: timg3,
-    name: 'Camila Rincón',
-    title: 'Dama de Honor',
-    animation:'1400'
-  },
-  {
-    id: '4',
-    tImg: timg4,  
-    name: 'Ana Sofía',
-    title: 'Dama de Honor',
-    animation:'1600'
-  }
-]
-
-// Damas y Caballeros de Sean (el novio)
-const SeanTeam = [
-  {
-    id: '5',
-    tImg: timg5,  
-    name: 'Lili Yepez',
-    title: 'Dama de Honor',
-    animation:'1000'
-  },
-  {
-    id: '6',
-    tImg: timg6,  
-    name: 'Roberto Luis',
-    title: 'Padrino',
-    animation:'1200'
-  },
-  {
-    id: '7',
-    tImg: timg7,  
-    name: 'Roberto Luis',
-    title: 'Caballero de Honor',
-    animation:'1400'
-  }
-]
-
 const BrideGrooms = (props) => {
+  const { t } = useLanguage();
+
+  // Damas y Caballeros de Fer (la novia)
+  const FerTeam = [
+    {
+      id: '1',
+      tImg: timg1,
+      name: 'María Elena',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1000'
+    },
+    {
+      id: '2',
+      tImg: timg2,
+      name: 'Lupita Quintero',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1200'
+    },
+    {
+      id: '3',
+      tImg: timg3,
+      name: 'Camila Rincón',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1400'
+    },
+    {
+      id: '4',
+      tImg: timg4,  
+      name: 'Ana Sofía',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1600'
+    }
+  ]
+
+  // Damas y Caballeros de Sean (el novio)
+  const SeanTeam = [
+    {
+      id: '5',
+      tImg: timg5,  
+      name: 'Lili Yepez',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1000'
+    },
+    {
+      id: '6',
+      tImg: timg6,  
+      name: 'Roberto Luis',
+      title: t('groomsman') || 'Padrino',
+      animation:'1200'
+    },
+    {
+      id: '7',
+      tImg: timg7,  
+      name: 'Roberto Luis',
+      title: t('groomsman') || 'Caballero de Honor',
+      animation:'1400'
+    }
+  ]
+
   const renderTeamCard = (person, index) => (
     <div className="col col-lg-3 col-md-4 col-sm-6 col-12" key={index} style={{ marginBottom: '40px' }}>
       <Slide direction="up" duration={person.animation} triggerOnce="true">
@@ -155,8 +156,8 @@ const BrideGrooms = (props) => {
     <section className={`wpo-team-section section-padding ${props.brClass}`} style={{ backgroundColor: 'rgb(246, 241, 238)' }}>
       <div className="container">
         <SectionTitle 
-          subTitle={'Personas Importantes'} 
-          MainTitle={'Damas y Caballeros de Honor'} 
+          subTitle={t('importantPeople')} 
+          MainTitle={t('bridesmaidsAndGroomsman')} 
         />
         
         {/* Sección de Fer (La Novia) */}

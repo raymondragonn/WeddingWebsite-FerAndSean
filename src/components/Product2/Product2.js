@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SectionTitle from '../SectionTitle'
+import { useLanguage } from '../../contexts/LanguageContext';
+import { useTranslatedProducts } from '../../hooks/useTranslatedData';
 
-
-const Product2 = ({ products, addToCartProduct, addToWishListProduct }) => {
+const Product2 = ({ addToCartProduct, addToWishListProduct }) => {
+  const { t } = useLanguage();
+  const products = useTranslatedProducts();
+  
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   };
 
   return (
-
     <section className="wpo-product-section section-padding">
       <div className="container">
-        <SectionTitle subTitle={'Our Shop'} MainTitle={'Special Products For You'} />
+        <SectionTitle 
+          subTitle={t('Our Amazing Work')} 
+          MainTitle={t('Our Amazing Work')} 
+        />
         <div className="wpo-product-wrap">
           <div className="row">
             {products.length > 0 &&
@@ -20,7 +26,7 @@ const Product2 = ({ products, addToCartProduct, addToWishListProduct }) => {
                 <div className="col col-lg-3 col-md-6 col-sm-6 col-12" key={pitem}>
                   <div className="wpo-product-item">
                     <div className="wpo-product-img">
-                      <img src={product.proImg} alt="" />
+                      <img src={product.proImg} alt={product.title} />
                       <ul>
                         <li>
                           <button

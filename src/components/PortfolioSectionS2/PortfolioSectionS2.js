@@ -90,6 +90,12 @@ const Portfolios = [
 const PortfolioSectionS2 = (props) => {
 
     const [open, setOpen] = React.useState(false);
+    const [selectedImageIndex, setSelectedImageIndex] = React.useState(0);
+
+    const handleImageClick = (index) => {
+        setSelectedImageIndex(index);
+        setOpen(true);
+    };
 
     return (
 
@@ -104,7 +110,7 @@ const PortfolioSectionS2 = (props) => {
                                     <Masonry columnsCount={4} gutter="30px">
                                         {Portfolios.map((image, i) => (
                                             <div className="grid" key={i}>
-                                                <div className="img-holder" onClick={() => setOpen(true)}>
+                                                <div className="img-holder" onClick={() => handleImageClick(i)}>
                                                     <img src={image.Pimg} alt="" className="img img-responsive" />
                                                     <div className="hover-content">
                                                         <i className="ti-plus"></i>
@@ -122,6 +128,7 @@ const PortfolioSectionS2 = (props) => {
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}
+                index={selectedImageIndex}
                 slides={[
                     { src: pImg1 },
                     { src: pImg2 },
@@ -129,6 +136,20 @@ const PortfolioSectionS2 = (props) => {
                     { src: pImg4 },
                     { src: pImg5 },
                     { src: pImg6 },
+                    { src: pImg7 },
+                    { src: pImg8 },
+                    { src: pImg9 },
+                    { src: pImg10 },
+                    { src: pImg11 },
+                    { src: pImg12 },
+                    { src: pImg13 },
+                    { src: pImg14 },
+                    { src: pImg15 },
+                    { src: pImg16 },
+                    { src: pImg17 },
+                    { src: pImg18 },
+                    { src: pImg19 },
+                    { src: pImg20 },    
                 ]}
             />
         </section>
