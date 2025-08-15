@@ -80,22 +80,58 @@ export const LanguageProvider = ({ children }) => {
       accommodation: 'Alojamiento',
       // Story section translations
       ourStory: 'Nuestra Historia',
-             howItHappened: '¿CÓMO SUCEDIÓ?',
-             howWeMeet: '¿Cómo nos conocimos?',
-       howWeMeetDescription: '"Nuestra historia comenzó con un mensaje y se convirtió en toda una vida. En solo tres años, hemos enfrentado tanto juntos, y cada desafío solo ha hecho nuestro amor más fuerte y nuestro vínculo inquebrantable. Todo lo que hemos planeado hasta ahora ha funcionado a nuestro favor, y apreciamos convertir cada momento que compartimos en algo especial. Nos sentimos verdaderamente bendecidos de que desde el principio, ambas familias nos han amado y apoyado en cada paso del camino."',
-       // Event section translations
+      howItHappened: '¿CÓMO SUCEDIÓ?',
+      howWeMeet: '¿Cómo nos conocimos?',
+      howWeMeetDescription: '"Nuestra historia comenzó con un mensaje y se convirtió en toda una vida. En solo tres años, hemos enfrentado tanto juntos, y cada desafío solo ha hecho nuestro amor más fuerte y nuestro vínculo inquebrantable. Todo lo que hemos planeado hasta ahora ha funcionado a nuestro favor, y apreciamos convertir cada momento que compartimos en algo especial. Nos sentimos verdaderamente bendecidos de que desde el principio, ambas familias nos han amado y apoyado en cada paso del camino."',
+      // Event section translations
        ourWedding: 'Nuestra Boda',
-               whenAndWhere: '¿Itinerario?', 
+       whenAndWhere: '¿Itinerario?', 
        theReception: 'La Misa',
        theCeremony: 'La Ceremonia',
        theParty: 'La Fiesta',
+       // EventSection translations
+       itinerary: 'Itinerario',
+       itinerarySubtitle: 'Te invitamos a celebrar con nosotros en estos lugares especiales',
+       Cantaritos: 'Cantaritos',
+       Llegada: 'Llegada',
+       // WeddingMenuSection translations
+       weddingMenuTitle: 'Menú de Nuestra Boda',
+       weddingMenuSubtitle: 'Hemos seleccionado cuidadosamente cada plato para hacer de este día una experiencia gastronómica memorable',
+       mainMenu: 'Menú Principal',
+       glutenFreeMenu: 'Menú Sin Gluten',
+       glutenFreeBadge: 'Libre de Gluten',
+       // Menu items
+       entrada: 'Entrada',
+       platoPrincipal: 'Plato Principal',
+       acompanamiento: 'Acompañamiento',
+       postre: 'Postre',
+       // Regular menu dishes
+       ensaladaCesar: 'Ensalada César con Pollo',
+       ensaladaCesarDesc: 'Lechuga romana fresca, crutones caseros, queso parmesano, pechuga de pollo a la parrilla y aderezo césar tradicional.',
+       salmonParrilla: 'Salmón a la Parrilla con Risotto',
+       salmonParrillaDesc: 'Filete de salmón fresco a la parrilla con hierbas finas, acompañado de risotto cremoso de champiñones y espárragos.',
+       verdurasMediterraneas: 'Verduras Mediterráneas',
+       verdurasMediterraneasDesc: 'Mezcla de calabacín, berenjena, pimientos rojos y amarillos asados con aceite de oliva y hierbas provenzales.',
+       tartaChocolate: 'Tarta de Chocolate y Frambuesas',
+       tartaChocolateDesc: 'Deliciosa tarta de chocolate belga con mousse ligero, coulis de frambuesas frescas y decoración de frutas.',
+       // Gluten free menu dishes
+       ensaladaQuinoa: 'Ensalada de Quinoa y Aguacate',
+       ensaladaQuinoaDesc: 'Quinoa orgánica, aguacate fresco, tomates cherry, pepino, cilantro y vinagreta de limón y aceite de oliva.',
+       polloMediterraneo: 'Pollo Mediterráneo sin Gluten',
+       polloMediterraneoDesc: 'Pechuga de pollo marinada en hierbas mediterráneas, servida con puré de coliflor y verduras grilladas.',
+       arrozPilaf: 'Arroz Pilaf con Almendras',
+       arrozPilafDesc: 'Arroz basmati con almendras tostadas, pasas, cebolla caramelizada y especias suaves sin gluten.',
+       pannacottaVainilla: 'Pannacotta de Vainilla',
+       pannacottaVainillaDesc: 'Cremoso pannacotta de vainilla natural con coulis de frutas del bosque y decoración de menta fresca.',
+       // Menu note
+       menuNote: 'Nota importante: Si tienes alguna alergia alimentaria o restricción dietética especial, por favor háznoslo saber al confirmar tu asistencia para que podamos preparar una alternativa adecuada.',
        // Misa event
        eventDate1: 'Sábado, 18 Abr. 2026 - 5:00 PM - 6:00 PM',
        eventLocation1: 'Misa en Parroquia Santiago Apóstol (Sixto Gorjón 16, Centro, 46400 Tequila, Jal., Mexico)',
        
        eventPhone1: '+52 33-1234-5678',
        // Ceremonia event
-       llegada: 'Se remocomienda llegar el día jueves 16 de abril',
+       llegada: 'Se remocomienda llegar el día jueves 17 de abril',
        aeropuerto: 'Aeropuerto Internacional de Guadalajara (GDL)',
        fechacantaritos: 'Viernes, 17 Abr 2026',
        lugarCantaritos: 'Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.',
@@ -123,13 +159,16 @@ export const LanguageProvider = ({ children }) => {
        copyrightYear: '© 2025',
        madeBy: 'Made by Kodeo',
        // About section translations
-       aboutDate: '16 de Abril del 2026',
+       aboutDate: '18 de Abril del 2026',
        aboutMainTitle: 'NUESTRO DÍA ESPECIAL',
-       aboutDescription: 'El 16 de abril de 2026, en el mágico pueblo de Tequila, Jalisco, vamos a dar un paso muy especial en nuestras vidas y queremos celebrarlo contigo. Este día no sería el mismo sin las personas que queremos cerca, y por eso nos emociona invitarte a ser parte de esta gran fiesta de amor, alegría y buenos recuerdos.',
+       aboutDescription: 'El 18 de abril de 2026, en el mágico pueblo de Tequila, Jalisco, vamos a dar un paso muy especial en nuestras vidas y queremos celebrarlo contigo. Este día no sería el mismo sin las personas que queremos cerca, y por eso nos emociona invitarte a ser parte de esta gran fiesta de amor, alegría y buenos recuerdos.',
        aboutSignature: '- Fer & Sean',
                // Team section translations
         importantPeople: 'Personas Importantes',
-                 bridesmaids: 'DAMAS DE HONOR',
+        bridesmaids: 'DAMAS DE HONOR',
+        bridesmaid: 'Dama de Honor',
+        groomsman: 'Caballero de Honor',
+        bridesmaidsAndGroomsman: 'Damas de Honor y Caballero de Honor',
         bridesmaidsEn: 'Bridesmaids',
         importantPeopleEn: 'Important People',
         // Contact page translations
@@ -202,8 +241,38 @@ export const LanguageProvider = ({ children }) => {
          previousImage: 'Imagen anterior',
          nextImage: 'Siguiente imagen',
          goToImage: 'Ir a imagen',
-         // Dress Code page translations
-         'Our Amazing Work': 'Nuestro Trabajo Increíble'
+         // Hotel names and descriptions
+         hotelSolarAnimas: 'Hotel Solar de las Ánimas',
+         hotelSolarAnimasAddress: 'Calle Ramón Corona, 86 Colonia Centro , 46400 Jalisco, México',
+         hotelSolarAnimasDescription: 'Hotel con arquitectura típica mexicana del siglo XVII. Ofrece 93 habitaciones con diseño virreinal, combinando confort moderno con historia y tradiciones de más de 490 años.',
+         hotelPlazaJardin: 'Hotel Plaza Jardín',
+         hotelPlazaJardinAddress: 'José Cuervo 13, La Villa, 46400 Tequila, Jal.',
+         hotelPlazaJardinDescription: 'Ubicado en el centro de Tequila, este hotel ofrece un marco rústico y elegante con auténtico encanto mexicano. El lugar perfecto para construir historias inolvidables.',
+         hotelNueveAgaves: 'Nueve Agaves Hotel',
+         hotelNueveAgavesAddress: 'Francisco Javier Sauza Mora 21, La Villa, 46400 Tequila, Jal.',
+         hotelNueveAgavesDescription: 'Hotel enfocado en brindar servicio de hospedaje cálido y confortable. Promueve la cultura y tradiciones del pueblo mágico de Tequila, garantizando una experiencia única.',
+         casaTahona: 'Casa Tahona',
+         casaTahonaAddress: 'C. Luis Navarro 28, Centro, 46400 Tequila, Jal.',
+         casaTahonaDescription: 'Casa boutique ubicada en el centro del pueblo mágico de Tequila. A solo una cuadra de las principales atracciones, destilerías y todo lo que deseas visitar.',
+         hotelCasaGranSenora: 'Hotel Casa La Gran Señora',
+         hotelCasaGranSenoraAddress: 'Nicolás Bravo No. 72, Centro, 46400 Tequila, Jal.',
+         hotelCasaGranSenoraDescription: 'Hotel acogedor ubicado en el centro de Tequila. Un lugar donde los huéspedes pueden descansar y disfrutar plenamente su estadía en el Paisaje Agavero.',
+         hotelBarricas: 'Hotel de Barricas',
+         hotelBarricasAddress: 'La Cofradía 1297 La Cofradía, 46400 Tequila, Jal.',
+         hotelBarricasDescription: 'Complejo turístico único donde cada detalle está creado para una experiencia auténtica. Hospedaje especial, sabores conectados con la tierra y momentos inolvidables.',
+                 // Dress Code page translations
+        'Our Amazing Work': 'Nuestro Trabajo Increíble',
+        // ProductSinglePage translations
+        'Event Details': 'Detalles del Evento',
+        'Product Single': 'Producto Individual',
+        'eventDate': 'Fecha y Hora',
+        'eventLocation': 'Ubicación',
+        'eventDescription': 'Descripción',
+        'eventDetails': 'Detalles del Evento',
+        'eventLogistics': 'Logística',
+        'eventMap': 'Ubicación en el Mapa',
+        'contentNotFound': 'Contenido no encontrado',
+        'contentNotFoundMessage': 'Lo sentimos, no pudimos encontrar la información solicitada.'
        },
      en: {
       names: 'Fer & Sean',
@@ -272,12 +341,48 @@ export const LanguageProvider = ({ children }) => {
        howWeMeetDescription: '"Our story started with a message and turned into a lifetime. In just three years, we\'ve faced so much together, and every challenge has only made our love stronger and our bond unbreakable. Everything we\'ve planned so far has worked in our favor, and we cherish turning every moment we share into something special. We feel truly blessed that from the very beginning, both of our families have loved and supported us every step of the way."',
        // Event section translations
        ourWedding: 'Our Wedding',
-               whenAndWhere: 'WHEN & WHERE',
+       whenAndWhere: 'WHEN & WHERE',
        theReception: 'The Mass',
        theCeremony: 'The Ceremony',
        theParty: 'The Party',
+       // EventSection translations
+       itinerary: 'Itinerary',
+       itinerarySubtitle: 'We invite you to celebrate with us in these special places',
+       Cantaritos: 'Cantaritos',
+       Llegada: 'Arrival',
+       // WeddingMenuSection translations
+       weddingMenuTitle: 'Our Wedding Menu',
+       weddingMenuSubtitle: 'We have carefully selected each dish to make this day a memorable gastronomic experience',
+       mainMenu: 'Main Menu',
+       glutenFreeMenu: 'Gluten-Free Menu',
+       glutenFreeBadge: 'Gluten Free',
+       // Menu items
+       entrada: 'Appetizer',
+       platoPrincipal: 'Main Course',
+       acompanamiento: 'Side Dish',
+       postre: 'Dessert',
+       // Regular menu dishes
+       ensaladaCesar: 'Caesar Salad with Chicken',
+       ensaladaCesarDesc: 'Fresh romaine lettuce, homemade croutons, parmesan cheese, grilled chicken breast and traditional caesar dressing.',
+       salmonParrilla: 'Grilled Salmon with Risotto',
+       salmonParrillaDesc: 'Fresh grilled salmon fillet with fine herbs, served with creamy mushroom and asparagus risotto.',
+       verdurasMediterraneas: 'Mediterranean Vegetables',
+       verdurasMediterraneasDesc: 'Mix of roasted zucchini, eggplant, red and yellow peppers with olive oil and Provençal herbs.',
+       tartaChocolate: 'Chocolate and Raspberry Tart',
+       tartaChocolateDesc: 'Delicious Belgian chocolate tart with light mousse, fresh raspberry coulis and fruit decoration.',
+       // Gluten free menu dishes
+       ensaladaQuinoa: 'Quinoa and Avocado Salad',
+       ensaladaQuinoaDesc: 'Organic quinoa, fresh avocado, cherry tomatoes, cucumber, cilantro and lemon and olive oil vinaigrette.',
+       polloMediterraneo: 'Mediterranean Gluten-Free Chicken',
+       polloMediterraneoDesc: 'Chicken breast marinated in Mediterranean herbs, served with cauliflower puree and grilled vegetables.',
+       arrozPilaf: 'Pilaf Rice with Almonds',
+       arrozPilafDesc: 'Basmati rice with toasted almonds, raisins, caramelized onion and soft gluten-free spices.',
+       pannacottaVainilla: 'Vanilla Pannacotta',
+       pannacottaVainillaDesc: 'Creamy natural vanilla pannacotta with berry coulis and fresh mint decoration.',
+       // Menu note
+       menuNote: 'Important note: If you have any food allergies or special dietary restrictions, please let us know when confirming your attendance so we can prepare an appropriate alternative.',
        // Mass event
-       llegada: 'We recommend arriving on Thursday, April 16',
+       llegada: 'We recommend arriving on Thursday, April 17',
        aeropuerto: 'Guadalajara International Airport (GDL)',
        fechacantaritos: 'Friday, April 17, 2026',
        lugarCantaritos: 'Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.',
@@ -310,13 +415,16 @@ export const LanguageProvider = ({ children }) => {
        copyrightYear: '© 2025',
        madeBy: 'Made by Kodeo',
        // About section translations
-       aboutDate: 'April 16, 2026',
+       aboutDate: 'April 18, 2026',
        aboutMainTitle: 'OUR SPECIAL DAY',
-       aboutDescription: 'On April 16, 2026, in the magical town of Tequila, Jalisco, we are taking a very special step in our lives and we want to celebrate it with you. This day would not be the same without the people we want close to us, and that\'s why we are excited to invite you to be part of this great celebration of love, joy, and good memories.',
+       aboutDescription: 'On April 18, 2026, in the magical town of Tequila, Jalisco, we are taking a very special step in our lives and we want to celebrate it with you. This day would not be the same without the people we want close to us, and that\'s why we are excited to invite you to be part of this great celebration of love, joy, and good memories.',
        aboutSignature: '- Fer & Sean',
                // Team section translations
         importantPeople: 'Important People',
-                 bridesmaids: 'BRIDESMAIDS',
+        bridesmaids: 'BRIDESMAIDS',
+        bridesmaid: 'Bridesmaid',
+        groomsman: 'Groomsman',
+        bridesmaidsAndGroomsman: 'Bridesmaids and Groomsman',
         // Contact page translations
         contactUs: 'Contact Us',
         contact: 'Contact',
@@ -339,7 +447,7 @@ export const LanguageProvider = ({ children }) => {
         afterparty: 'The Afterparty',
         videographers: 'Videographers',
         perfectCake: 'Perfect Cake',
-                allOfTheAbove: 'All Of The Above',
+        allOfTheAbove: 'All Of The Above',
         // Error page translations
         oopsPageNotFound: 'Oops! Page Not Found!',
         errorDescription: 'We\'re sorry but we can\'t seem to find the page you requested. This might be because you have typed the web address incorrectly.',
@@ -379,16 +487,46 @@ export const LanguageProvider = ({ children }) => {
         carnitas: 'Carnitas: Pork meat cooked in its own fat',
         tejuino: 'Tejuino: Refreshing drink made from fermented corn',
         jericalla: 'Jericalla: Creamy dessert that will steal your heart',
-                 // WeddingDate2 (Hotels) translations
-         recommendedHotels: 'Recommended Hotels',
-         hotelsSubtitle: 'We have selected these hotels for you to have a perfect stay during our celebration',
-         callButton: 'Call',
-         bookButton: 'Book',
-         previousImage: 'Previous image',
-         nextImage: 'Next image',
-         goToImage: 'Go to image',
-         // Dress Code page translations
-         'Our Amazing Work': 'Our Amazing Work'
+        // WeddingDate2 (Hotels) translations
+        recommendedHotels: 'Recommended Hotels',
+        hotelsSubtitle: 'We have selected these hotels for you to have a perfect stay during our celebration',
+        callButton: 'Call',
+        bookButton: 'Book',
+        previousImage: 'Previous image',
+        nextImage: 'Next image',
+        goToImage: 'Go to image',
+        // Hotel names and descriptions
+        hotelSolarAnimas: 'Hotel Solar de las Ánimas',
+        hotelSolarAnimasAddress: 'Calle Ramón Corona, 86 Colonia Centro , 46400 Jalisco, México',
+        hotelSolarAnimasDescription: 'Hotel with typical 17th century Mexican architecture. Offers 93 rooms with viceregal design, combining modern comfort with history and traditions of more than 490 years.',
+        hotelPlazaJardin: 'Hotel Plaza Jardín',
+        hotelPlazaJardinAddress: 'José Cuervo 13, La Villa, 46400 Tequila, Jal.',
+        hotelPlazaJardinDescription: 'Located in the center of Tequila, this hotel offers a rustic and elegant setting with authentic Mexican charm. The perfect place to build unforgettable stories.',
+        hotelNueveAgaves: 'Nueve Agaves Hotel',
+        hotelNueveAgavesAddress: 'Francisco Javier Sauza Mora 21, La Villa, 46400 Tequila, Jal.',
+        hotelNueveAgavesDescription: 'Hotel focused on providing warm and comfortable lodging service. Promotes the culture and traditions of the magical town of Tequila, guaranteeing a unique experience.',
+        casaTahona: 'Casa Tahona',
+        casaTahonaAddress: 'C. Luis Navarro 28, Centro, 46400 Tequila, Jal.',
+        casaTahonaDescription: 'Boutique house located in the center of the magical town of Tequila. Just one block from the main attractions, distilleries and everything you want to visit.',
+        hotelCasaGranSenora: 'Hotel Casa La Gran Señora',
+        hotelCasaGranSenoraAddress: 'Nicolás Bravo No. 72, Centro, 46400 Tequila, Jal.',
+        hotelCasaGranSenoraDescription: 'Cozy hotel located in the center of Tequila. A place where guests can rest and fully enjoy their stay in the Agave Landscape.',
+        hotelBarricas: 'Hotel de Barricas',
+        hotelBarricasAddress: 'La Cofradía 1297 La Cofradía, 46400 Tequila, Jal.',
+        hotelBarricasDescription: 'Unique tourist complex where every detail is created for an authentic experience. Special accommodation, flavors connected to the land and unforgettable moments.',
+        // Dress Code page translations
+        'Our Amazing Work': 'Our Amazing Work',
+        // ProductSinglePage translations
+        'Event Details': 'Event Details',
+        'Product Single': 'Product Single',
+        'eventDate': 'Date and Time',
+        'eventLocation': 'Location',
+        'eventDescription': 'Description',
+        'eventDetails': 'Event Details',
+        'eventLogistics': 'Logistics',
+        'eventMap': 'Location on Map',
+        'contentNotFound': 'Content not found',
+        'contentNotFoundMessage': 'Sorry, we could not find the requested information.'
        }
    };
 

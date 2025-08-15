@@ -2,380 +2,710 @@
   {
     "id": 1,
     "proImg": "/product/1.jpg",
-    "title": "Designer Gown",
-    "slug":"Designer-Gown",
+    "title": {
+      "es": "Vestido de Diseñador",
+    "en": "Designer Gown"
+    },
+    "slug": "Designer-Gown",
     "price": "800.00",
     "delPrice": "912.00",
-    "brand":"Gucci",
-    "stock":"Stock out",
-    "size":"Xl"
+    "brand": "Gucci",
+    "stock": {
+      "es": "Sin Stock",
+      "en": "Stock out"
+    },
+    "size": "XL"
   },
   {
     "id": 30,
     "proImg": "/product/16.jpg",
-    "title": "Simple Cake",
-    "slug":"Simple-Cake",
+    "title": {
+      "es": "Pastel Simple",
+      "en": "Simple Cake"
+    },
+    "slug": "Simple-Cake",
     "price": "125",
     "delPrice": "185.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 31,
-    "proImg": "../images/event/Iglesia.jpeg",
-    "title": "La Misa",
-    "slug": "the-reception",
+    "proImg": "/images/event/Aeropuerto.webp",
+    "title": {
+      "es": "Llegada",
+      "en": "Arrival"
+    },
+    "slug": "the-arrival",
     "type": "event",
-    "eventDate": "Sábado, 15 de Febrero de 2025",
-    "eventTime": "6:00 PM - 11:00 PM",
-    "eventLocation": "Parroquia Santiago Apóstol",
-    "eventAddress": "C. Francisco I. Madero 123, Centro, Tequila, Jal.",
-    "eventPhone": "+52 374 742 0123",
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.382838205276!2d-103.83853937824018!3d20.884509581819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615dd4bd04cf9%3A0x8980ab78799224e9!2sParroquia%20Santiago%20Ap%C3%B3stol!5e0!3m2!1ses!2smx!4v1754148173128!5m2!1ses!2smx",
-    "description": "Únete a nosotros en la ceremonia religiosa donde oficializaremos nuestro amor ante Dios y nuestros seres queridos. Un momento sagrado e inolvidable en la hermosa Parroquia Santiago Apóstol.",
-    "details": [
-      "Ceremonia religiosa",
-      "Vestimenta formal",
-      "Llegada 30 minutos antes",
-      "Música en vivo durante la ceremonia"
-    ],
+    "eventDate": {
+      "es": "Se recomienda llegar el 17 de abril",
+      "en": "We recommend arriving on April 17"
+    },
+    "eventLocation": {
+      "es": "Aeropuerto Internacional de Guadalajara",
+      "en": "Guadalajara International Airport"
+    },
+    "eventAddress": {
+      "es": "Carretera Guadalajara - Chapala Km 17.5, Tlajomulco de Zúñiga, Jal.",
+      "en": "Guadalajara - Chapala Highway Km 17.5, Tlajomulco de Zúñiga, Jalisco"
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.528613136687!2d-103.31221792493336!3d20.525541481000804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4daad5240069%3A0x4c14fc392e7d6f9d!2sAeropuerto%20Internacional%20de%20Guadalajara!5e0!3m2!1ses!2smx!4v1754950324746!5m2!1ses!2smx",
+    "description": {
+      "es": "¡Bienvenidos a Guadalajara! Este será el punto de encuentro para todos nuestros invitados que vienen de fuera. Aquí comienza nuestra celebración especial.",
+      "en": "Welcome to Guadalajara! This will be the meeting point for all our out-of-town guests. This is where our special celebration begins."
+    },
+    "details": {
+      "es": [
+        "Recepción de invitados internacionales",
+        "Asistencia para equipaje",
+        "Coordinación para traslados al hotel"
+      ],
+      "en": [
+        "International guest reception",
+        "Luggage assistance",
+        "Hotel transfer coordination"
+      ]
+    },
     "logistics": {
       "arrival": {
-        "title": "Llegada a la Ceremonia",
-        "details": [
-          "Inicio de la ceremonia: 5:00 PM",
-          "Estacionamiento limitado en la zona"
-          
-        ]
+        "title": {
+          "es": "Llegada",
+          "en": "Arrival"
+        },
+        "details": {
+          "es": [
+            "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Interjet)",
+            "Horarios sugeridos: Entre 8:00 AM y 6:00 PM",
+            "Terminal: Terminal 1 y 2 disponibles"
+          ],
+          "en": [
+            "Recommended flights: Major airlines (Volaris, Vivaaerobus, Interjet)",
+            "Suggested times: Between 8:00 AM and 6:00 PM",
+            "Terminal: Terminals 1 and 2 available"
+          ]
+        }
       },
-      "ceremony": {
-        "title": "Durante la Ceremonia",
-        "details": [
-          "Duración aproximada: 1 hora",
-          "Fotografías permitidas sin flash",
-          "Teléfonos en silencio",
-          "Permanecer en sus asientos durante la ceremonia"
-        ]
+      "transportation": {
+        "title": {
+          "es": "Transporte",
+          "en": "Transportation"
+        },
+        "details": {
+          "es": [
+            "Servicio de shuttle disponible desde el aeropuerto",
+            "Reserva tu transporte con anticipación",
+            "Tiempo de traslado: 1.5 horas aproximadamente a Tequila",
+            "Costo aproximado en taxi: $800-1200 MXN"
+          ],
+          "en": [
+            "Shuttle service available from airport",
+            "Book your transportation in advance",
+            "Transfer time: Approximately 1.5 hours to Tequila",
+            "Approximate taxi cost: $800-1200 MXN"
+          ]
+        }
       },
       "departure": {
-        "title": "Traslado a la Recepción",
-        "details": [
-          "Transporte directo a La Cueva de la Luna",
-          "Salida inmediata después de la ceremonia",
-          "Duración del traslado: 20 minutos"
-          
-        ]
+        "title": {
+          "es": "Regreso",
+          "en": "Return"
+        },
+        "details": {
+          "es": [
+            "Check-in recomendado: 2 horas antes del vuelo",
+            "Servicio de transporte de regreso disponible",
+            "Horarios flexibles según tu vuelo de salida"
+          ],
+          "en": [
+            "Recommended check-in: 2 hours before flight",
+            "Return transportation service available",
+            "Flexible schedules according to your departure flight"
+          ]
+        }
       }
     }
   },
   {
     "id": 32,
-    "proImg": "/images/event/LugarBoda.PNG", 
-    "title": "The Ceremony",
-    "slug": "the-ceremony",
+    "proImg": "/images/event/cantaritos.jpg",
+    "title": {
+      "es": "Cantaritos",
+      "en": "Cantaritos"
+    },
+    "slug": "los-cantaritos",
     "type": "event",
-    "eventDate": "Sábado, 15 de Febrero de 2025",
-    "eventTime": "8:00 PM - 2:00 AM",
-    "eventLocation": "La Cueva de la Luna",
-    "eventAddress": "Carretera Tequila - Magdalena Km 5, Tequila, Jal.",
-    "eventPhone": "+52 374 742 0456",
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sLa%20Cueva%20de%20la%20Luna!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx",
-    "description": "Después de la ceremonia, celebraremos con una recepción llena de alegría, música, baile y deliciosa comida. Un ambiente mágico en La Cueva de la Luna para festejar nuestro nuevo comienzo.",
-    "details": [
-      "Cena de tres tiempos",
-      "Barra libre incluida",
-      "DJ y música en vivo",
-      "Pista de baile",
-      "Mesa de postres",
-      "Actividades y juegos"
-    ],
+    "eventDate": {
+      "es": "Viernes, 17 de Abril de 2026",
+      "en": "Friday, April 17, 2026"
+    },
+    "eventTime": {
+      "es": "3:00 PM - 7:00 PM",
+      "en": "3:00 PM - 7:00 PM"
+    },
+    "eventLocation": {
+      "es": "Cantaritos el Güero #1",
+      "en": "Cantaritos el Güero #1"
+    },
+    "eventAddress": {
+      "es": "Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.",
+      "en": "International Highway, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jalisco"
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3884844163513!2d-103.76710147492405!3d20.856386180750192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8426170566424a4b%3A0x68d0a3b104ded7bf!2sCantaritos%20el%20G%C3%BCero%20%231!5e0!3m2!1ses!2smx!4v1754950821218!5m2!1ses!2smx",
+    "description": {
+      "es": "Una tarde especial degustando los famosos cantaritos de Tequila. Una tradición local que queremos compartir con todos ustedes antes de nuestra gran celebración.",
+      "en": "A special afternoon tasting the famous cantaritos of Tequila. A local tradition that we want to share with all of you before our great celebration."
+    },
+    "details": {
+      "es": [
+        "Se ofrecerá transporte de ida y regreso en un punto medio para todos",
+        "Nos reuniremos a la 1:30pm y el regreso será a las 6pm",
+        "Degustación de cantaritos tradicionales",
+        "Música en vivo mexicana",
+        "Botanas típicas jaliscienses"
+      ],
+      "en": [
+        "Round-trip transportation will be offered at a central meeting point for everyone",
+        "We will meet at 1:30pm and return at 6pm",
+        "Traditional cantaritos tasting",
+        "Live Mexican music",
+        "Typical Jalisco snacks"
+      ]
+    },
     "logistics": {
-      "arrival": {
-        "title": "Llegada a la Recepción",
-        "details": [
-          "Llegada directa desde la ceremonia",
-          "Recepción de invitados en jardín principal",
-          "Estacionamiento amplio disponible"
-        ]
+      "meetingPoint": {
+        "title": {
+          "es": "Punto de Encuentro",
+          "en": "Meeting Point"
+        },
+        "details": {
+          "es": [
+            "Lugar: Hotel Casa La Gran Señora (lobby principal)",
+            "Hora de salida: 1:30 PM en punto",
+            "Transporte grupal en autobús privado",
+            "Duración del viaje: 30 minutos aproximadamente"
+          ],
+          "en": [
+            "Location: Hotel Casa La Gran Señora (main lobby)",
+            "Departure time: 1:30 PM sharp",
+            "Group transportation in private bus",
+            "Travel duration: Approximately 30 minutes"
+          ]
+        }
       },
-      "schedule": {
-        "title": "Programa de la Noche",
-        "details": [
-          "8:00 PM - Cóctel de bienvenida",
-          "8:30 PM - Cena (3 tiempos)",
-          "10:00 PM - Apertura de pista de baile",
-          "12:00 AM - Segundo tiempo musical",
-          "2:00 AM - Cierre de la celebración"
-        ]
+      "atVenue": {
+        "title": {
+          "es": "En el Lugar",
+          "en": "At the Venue"
+        },
+        "details": {
+          "es": [
+            "Llegada estimada: 2:00 PM",
+            "Actividades: Degustación, música y convivencia",
+            "Vestimenta: Casual cómoda",
+            "Sombreros recomendados (hay sol)"
+          ],
+          "en": [
+            "Estimated arrival: 2:00 PM",
+            "Activities: Tasting, music and socializing",
+            "Attire: Comfortable casual",
+            "Hats recommended (sunny weather)"
+          ]
+        }
       },
       "departure": {
-        "title": "Regreso al Hotel",
-        "details": [
-          "Transporte de regreso disponible 11pm, 1am y 3am",
-          "Último transporte: 3:00 AM",
-          "Servicio de taxi disponible",
-          "Coordinador para organizar traslados"
-        ]
+        "title": {
+          "es": "Regreso",
+          "en": "Return"
+        },
+        "details": {
+          "es": [
+            "Hora de salida: 6:00 PM",
+            "Regreso al mismo punto de encuentro",
+            "Llegada estimada al hotel: 6:30 PM",
+            "Coordinador estará disponible todo el tiempo"
+          ],
+          "en": [
+            "Departure time: 6:00 PM",
+            "Return to same meeting point",
+            "Estimated arrival at hotel: 6:30 PM",
+            "Coordinator will be available throughout"
+          ]
+        }
       }
     }
   },
   {
     "id": 33,
-    "proImg": "/images/event/Aeropuerto.webp",
-    "title": "Llegada",
-    "slug": "the-arrival",
+    "proImg": "../images/event/Iglesia.jpeg",
+    "title": {
+      "es": "La Misa",
+      "en": "The Mass"
+    },
+    "slug": "the-reception",
     "type": "event",
-    "eventDate": "Se recomienda llegar el 16 de abril",
-    "eventLocation": "Aeropuerto Internacional de Guadalajara",
-    "eventAddress": "Carretera Guadalajara - Chapala Km 17.5, Tlajomulco de Zúñiga, Jal.",
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.528613136687!2d-103.31221792493336!3d20.525541481000804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4daad5240069%3A0x4c14fc392e7d6f9d!2sAeropuerto%20Internacional%20de%20Guadalajara!5e0!3m2!1ses!2smx!4v1754950324746!5m2!1ses!2smx",
-    "description": "¡Bienvenidos a Guadalajara! Este será el punto de encuentro para todos nuestros invitados que vienen de fuera. Aquí comienza nuestra celebración especial.",
-    "details": [
-      "Recepción de invitados internacionales",
-      "Asistencia para equipaje",
-      "Coordinación para traslados al hotel"
-    ],
+    "eventDate": {
+      "es": "Sábado, 18 de Abril de 2026",
+      "en": "Saturday, April 18, 2026"
+    },
+    "eventTime": {
+      "es": "5:00 PM - 6:00 PM",
+      "en": "5:00 PM - 6:00 PM"
+    },
+    "eventLocation": {
+      "es": "Parroquia Santiago Apóstol",
+      "en": "Santiago Apóstol Parish"
+    },
+    "eventAddress": {
+      "es": "Sixto Gorjón 16, Centro, 46400 Tequila, Jal., México",
+      "en": "Sixto Gorjón 16, Centro, 46400 Tequila, Jalisco, Mexico"
+    },
+    "eventPhone": "+52 33-1234-5678",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.382838205276!2d-103.83853937824018!3d20.884509581819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615dd4bd04cf9%3A0x8980ab78799224e9!2sParroquia%20Santiago%20Ap%C3%B3stol!5e0!3m2!1ses!2smx!4v1754148173128!5m2!1ses!2smx",
+    "description": {
+      "es": "Únete a nosotros en la ceremonia religiosa donde oficializaremos nuestro amor ante Dios y nuestros seres queridos. Un momento sagrado e inolvidable en la hermosa Parroquia Santiago Apóstol.",
+      "en": "Join us in the religious ceremony where we will officially declare our love before God and our loved ones. A sacred and unforgettable moment in the beautiful Santiago Apóstol Parish."
+    },
+    "details": {
+      "es": [
+        "Ceremonia religiosa",
+        "Vestimenta formal",
+        "Llegada 30 minutos antes",
+        "Música en vivo durante la ceremonia"
+      ],
+      "en": [
+        "Religious ceremony",
+        "Formal attire",
+        "Arrival 30 minutes before",
+        "Live music during the ceremony"
+      ]
+    },
     "logistics": {
       "arrival": {
-        "title": "Llegada",
-        "details": [
-          "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Interjet)",
-          "Horarios sugeridos: Entre 8:00 AM y 6:00 PM",
-          "Terminal: Terminal 1 y 2 disponibles"
-        ]
+        "title": {
+          "es": "Llegada a la Ceremonia",
+          "en": "Arrival to the Ceremony"
+        },
+        "details": {
+          "es": [
+            "Inicio de la ceremonia: 5:00 PM",
+            "Estacionamiento limitado en la zona"
+          ],
+          "en": [
+            "Ceremony start: 5:00 PM",
+            "Limited parking in the area"
+          ]
+        }
       },
-      "transportation": {
-        "title": "Transporte",
-        "details": [
-          "Servicio de shuttle disponible desde el aeropuerto",
-          "Reserva tu transporte con anticipación",
-          "Tiempo de traslado: 1.5 horas aproximadamente a Tequila",
-          "Costo aproximado en taxi: $800-1200 MXN"
-        ]
+      "ceremony": {
+        "title": {
+          "es": "Durante la Ceremonia",
+          "en": "During the Ceremony"
+        },
+        "details": {
+          "es": [
+            "Duración aproximada: 1 hora",
+            "Fotografías permitidas sin flash",
+            "Teléfonos en silencio",
+            "Permanecer en sus asientos durante la ceremonia"
+          ],
+          "en": [
+            "Approximate duration: 1 hour",
+            "Photography allowed without flash",
+            "Phones on silent",
+            "Remain in your seats during the ceremony"
+          ]
+        }
       },
       "departure": {
-        "title": "Regreso",
-        "details": [
-          "Check-in recomendado: 2 horas antes del vuelo",
-          "Servicio de transporte de regreso disponible",
-          "Horarios flexibles según tu vuelo de salida"
-        ]
+        "title": {
+          "es": "Traslado a la Recepción",
+          "en": "Transfer to Reception"
+        },
+        "details": {
+          "es": [
+            "Transporte directo a La Cueva de la Luna",
+            "Salida inmediata después de la ceremonia",
+            "Duración del traslado: 20 minutos"
+          ],
+          "en": [
+            "Direct transportation to La Cueva de la Luna",
+            "Immediate departure after the ceremony",
+            "Transfer duration: 20 minutes"
+          ]
+        }
       }
     }
   },
   {
     "id": 34,
-    "proImg": "/images/event/cantaritos.jpg",
-    "title": "Cantaritos",
-    "slug": "los-cantaritos",
+    "proImg": "/images/event/LugarBoda.PNG",
+    "title": {
+      "es": "La Ceremonia",
+      "en": "The Ceremony"
+    },
+    "slug": "the-ceremony",
     "type": "event",
-    "eventDate": "Viernes, 14 de Febrero de 2025",
-    "eventTime": "3:00 PM - 7:00 PM",
-    "eventLocation": "Cantaritos el Güero #1",
-    "eventAddress": "Av. Ramón Corona 25, Centro, Tequila, Jal.",
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3884844163513!2d-103.76710147492405!3d20.856386180750192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8426170566424a4b%3A0x68d0a3b104ded7bf!2sCantaritos%20el%20G%C3%BCero%20%231!5e0!3m2!1ses!2smx!4v1754950821218!5m2!1ses!2smx",
-    "description": "Una tarde especial degustando los famosos cantaritos de Tequila. Una tradición local que queremos compartir con todos ustedes antes de nuestra gran celebración.",
-    "details": [
-      "Se ofrecera transporte de ida y regreso en un punto medio para todos",
-      "Nos reuniremos a la 1:30pm y el regreso sera a las 6pm",
-      "Degustación de cantaritos tradicionales",
-      "Música en vivo mexicana",
-      "Botanas típicas jaliscienses"
-    ],
+    "eventDate": {
+      "es": "Sábado, 18 de Abril de 2026",
+      "en": "Saturday, April 18, 2026"
+    },
+    "eventTime": {
+      "es": "Al terminar la Misa",
+      "en": "After Mass"
+    },
+    "eventLocation": {
+      "es": "La Cueva de la Luna",
+      "en": "La Cueva de la Luna"
+    },
+    "eventAddress": {
+      "es": "Camino a la Toma No. 3, 46400 Tequila, Jal., México",
+      "en": "Camino a la Toma No. 3, 46400 Tequila, Jalisco, Mexico"
+    },
+    "eventPhone": "+52 33-1234-5679",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sLa%20Cueva%20de%20la%20Luna!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx",
+    "description": {
+      "es": "Después de la misa, celebraremos con una recepción llena de alegría, música, baile y deliciosa comida. Un ambiente mágico en La Cueva de la Luna para festejar nuestro nuevo comienzo.",
+      "en": "After the ceremony, we will celebrate with a reception full of joy, music, dancing and delicious food. A magical atmosphere at La Cueva de la Luna to celebrate our new beginning."
+    },
+    "details": {
+      "es": [
+        "Cena de tres tiempos",
+        "Barra libre incluida",
+        "DJ y música en vivo",
+        "Pista de baile",
+        "Mesa de postres",
+        "Actividades y juegos"
+      ],
+      "en": [
+        "Three-course dinner",
+        "Open bar included",
+        "DJ and live music",
+        "Dance floor",
+        "Dessert table",
+        "Activities and games"
+      ]
+    },
     "logistics": {
-      "meetingPoint": {
-        "title": "Punto de Encuentro",
-        "details": [
-          "Lugar: Hotel Casa La Gran Señora (lobby principal)",
-          "Hora de salida: 1:30 PM en punto",
-          "Transporte grupal en autobús privado",
-          "Duración del viaje: 30 minutos aproximadamente"
-        ]
+      "arrival": {
+        "title": {
+          "es": "Llegada a la Recepción",
+          "en": "Arrival to Reception"
+        },
+        "details": {
+          "es": [
+            "Llegada directa desde la ceremonia",
+            "Recepción de invitados en jardín principal",
+            "Estacionamiento amplio disponible"
+          ],
+          "en": [
+            "Direct arrival from ceremony",
+            "Guest reception in main garden",
+            "Ample parking available"
+          ]
+        }
       },
-      "atVenue": {
-        "title": "En el Lugar",
-        "details": [
-          "Llegada estimada: 2:00 PM",
-          "Actividades: Degustación, música y convivencia",
-          "Vestimenta: Casual cómoda",
-          "Sombreros recomendados (hay sol)"
-        ]
+      "schedule": {
+        "title": {
+          "es": "Programa de la Noche",
+          "en": "Evening Program"
+        },
+        "details": {
+          "es": [
+            "8:00 PM - Cóctel de bienvenida",
+            "8:30 PM - Cena (3 tiempos)",
+            "10:00 PM - Apertura de pista de baile",
+            "12:00 AM - Segundo tiempo musical",
+            "2:00 AM - Cierre de la celebración"
+          ],
+          "en": [
+            "8:00 PM - Welcome cocktail",
+            "8:30 PM - Dinner (3 courses)",
+            "10:00 PM - Dance floor opens",
+            "12:00 AM - Second music set",
+            "2:00 AM - Celebration ends"
+          ]
+        }
       },
       "departure": {
-        "title": "Regreso",
-        "details": [
-          "Hora de salida: 6:00 PM",
-          "Regreso al mismo punto de encuentro",
-          "Llegada estimada al hotel: 6:30 PM",
-          "Coordinador estará disponible todo el tiempo"
-        ]
+        "title": {
+          "es": "Regreso al Hotel",
+          "en": "Return to Hotel"
+        },
+        "details": {
+          "es": [
+            "Transporte de regreso disponible 11pm, 1am y 3am",
+            "Último transporte: 3:00 AM",
+            "Servicio de taxi disponible",
+            "Coordinador para organizar traslados"
+          ],
+          "en": [
+            "Return transportation available at 11pm, 1am and 3am",
+            "Last transport: 3:00 AM",
+            "Taxi service available",
+            "Coordinator to organize transfers"
+          ]
+        }
       }
     }
   },
   {
     "id": 2,
     "proImg": "/product/2.jpg",
-    "title": "Wedding Rings",
-    "slug":"Wedding-Rings",
+    "title": {
+      "es": "Anillos de Boda",
+      "en": "Wedding Rings"
+    },
+    "slug": "Wedding-Rings",
     "price": "800.00",
     "delPrice": "$750.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"XXl"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "XXL"
   },
   {
     "id": 3,
     "proImg": "/product/3.jpg",
-    "title": "Earrings",
-    "slug":"Earrings",
+    "title": {
+      "es": "Aretes",
+      "en": "Earrings"
+    },
+    "slug": "Earrings",
     "price": "100.00",
     "delPrice": "150.00",
-    "brand":"Gucci",
-    "stock":"Stock out",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "Sin Stock",
+      "en": "Stock out"
+    },
+    "size": "L"
   },
   {
     "id": 4,
     "proImg": "/product/4.jpg",
-    "title": "Wedding-Shoe",
-    "slug":"Wedding Shoe",
+    "title": {
+      "es": "Zapatos de Boda",
+      "en": "Wedding Shoes"
+    },
+    "slug": "Wedding Shoe",
     "price": "360.00",
     "delPrice": "$320.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"M"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "M"
   },
   {
     "id": 5,
     "proImg": "/product/5.jpg",
-    "title": "Mixed Rose Bouquet",
-    "slug":"Mixed-Rose-Bouquet",
+    "title": {
+      "es": "Ramo de Rosas Mixtas",
+      "en": "Mixed Rose Bouquet"
+    },
+    "slug": "Mixed-Rose-Bouquet",
     "price": "125.00",
     "delPrice": "130.00",
-    "brand":"Gucci",
-    "stock":"Stock out",
-    "size":"XXl"
+    "brand": "Gucci",
+    "stock": {
+      "es": "Sin Stock",
+      "en": "Stock out"
+    },
+    "size": "XXL"
   },
   {
     "id": 6,
     "proImg": "/product/6.jpg",
-    "title": "Special White Bouquet",
-    "slug":"Special-White-Bouquet",
+    "title": {
+      "es": "Ramo Blanco Especial",
+      "en": "Special White Bouquet"
+    },
+    "slug": "Special-White-Bouquet",
     "price": "548.00",
     "delPrice": "600.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"Xl"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "XL"
   },
   {
     "id": 7,
     "proImg": "/product/7.jpg",
-    "title": "Classic Mixed Bouquet",
-    "slug":"Classic-Mixed-Bouquet",
+    "title": {
+      "es": "Ramo Mixto Clásico",
+      "en": "Classic Mixed Bouquet"
+    },
+    "slug": "Classic-Mixed-Bouquet",
     "price": "380.00",
     "delPrice": "400.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"Xl"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "XL"
   },
   {
     "id": 8,
     "proImg": "/product/8.jpg",
-    "title": "White Roses",
-    "slug":"White-Roses",
+    "title": {
+      "es": "Rosas Blancas",
+      "en": "White Roses"
+    },
+    "slug": "White-Roses",
     "price": "290.00",
     "delPrice": "300.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"XX"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "XX"
   },
   {
     "id": 9,
     "proImg": "/product/9.jpg",
-    "title": "Unique White Bouquet",
-    "slug":"Unique-White-Bouquet",
+    "title": {
+      "es": "Ramo Blanco Único",
+      "en": "Unique White Bouquet"
+    },
+    "slug": "Unique-White-Bouquet",
     "price": "65",
     "delPrice": "85.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 10,
     "proImg": "/product/10.jpg",
-    "title": "Special Bouquet",
-    "slug":"Special-Bouquet",
+    "title": {
+      "es": "Ramo Especial",
+      "en": "Special Bouquet"
+    },
+    "slug": "Special-Bouquet",
     "price": "285",
     "delPrice": "295.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 11,
     "proImg": "/product/11.jpg",
-    "title": "White Roses",
-    "slug":"White-Roses",
+    "title": {
+      "es": "Rosas Blancas",
+      "en": "White Roses"
+    },
+    "slug": "White-Roses",
     "price": "165",
     "delPrice": "175.00",
-    "brand":"Gucci",
-    "stock":"Stock out",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "Sin Stock",
+      "en": "Stock out"
+    },
+    "size": "L"
   },
   {
     "id": 12,
     "proImg": "/product/12.jpg",
-    "title": "Flower With Leaf",
-    "slug":"Flower-With-Leaf",
+    "title": {
+      "es": "Flor con Hoja",
+      "en": "Flower With Leaf"
+    },
+    "slug": "Flower-With-Leaf",
     "price": "125",
     "delPrice": "185.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 13,
     "proImg": "/product/13.jpg",
-    "title": "Luxury Wedding Cake",
-    "slug":"Luxury-Wedding-Cake",
+    "title": {
+      "es": "Pastel de Boda de Lujo",
+      "en": "Luxury Wedding Cake"
+    },
+    "slug": "Luxury-Wedding-Cake",
     "price": "65",
     "delPrice": "85.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 14,
     "proImg": "/product/14.jpg",
-    "title": "Red Rose Cake",
-    "slug":"Red-Rose-Cake",
+    "title": {
+      "es": "Pastel de Rosas Rojas",
+      "en": "Red Rose Cake"
+    },
+    "slug": "Red-Rose-Cake",
     "price": "285",
     "delPrice": "295.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   },
   {
     "id": 15,
     "proImg": "/product/15.jpg",
-    "title": "Cup Cake & Cookies",
-    "slug":"Cup-Cake-Cookies",
+    "title": {
+      "es": "Cupcakes y Galletas",
+      "en": "Cup Cake & Cookies"
+    },
+    "slug": "Cup-Cake-Cookies",
     "price": "165",
     "delPrice": "175.00",
-    "brand":"Gucci",
-    "stock":"Stock out",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "Sin Stock",
+      "en": "Stock out"
+    },
+    "size": "L"
   },
   {
     "id": 16,
     "proImg": "/product/16.jpg",
-    "title": "Simple Cake",
-    "slug":"Simple-Cake",
+    "title": {
+      "es": "Pastel Simple",
+      "en": "Simple Cake"
+    },
+    "slug": "Simple-Cake",
     "price": "125",
     "delPrice": "185.00",
-    "brand":"Gucci",
-    "stock":"Stock in",
-    "size":"L"
+    "brand": "Gucci",
+    "stock": {
+      "es": "En Stock",
+      "en": "Stock in"
+    },
+    "size": "L"
   }
 ]

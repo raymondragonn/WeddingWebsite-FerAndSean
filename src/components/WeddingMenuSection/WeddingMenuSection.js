@@ -1,51 +1,53 @@
 import React from 'react';
 import './WeddingMenuSection.css';
 import SectionTitle from '../SectionTitle';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const WeddingMenuSection = () => {
+    const { t } = useLanguage();
     const regularMenu = [
         {
-            name: "Entrada",
-            dish: "Ensalada César con Pollo",
-            description: "Lechuga romana fresca, crutones caseros, queso parmesano, pechuga de pollo a la parrilla y aderezo césar tradicional."
+            name: t('entrada'),
+            dish: t('ensaladaCesar'),
+            description: t('ensaladaCesarDesc')
         },
         {
-            name: "Plato Principal",
-            dish: "Salmón a la Parrilla con Risotto",
-            description: "Filete de salmón fresco a la parrilla con hierbas finas, acompañado de risotto cremoso de champiñones y espárragos."
+            name: t('platoPrincipal'),
+            dish: t('salmonParrilla'),
+            description: t('salmonParrillaDesc')
         },
         {
-            name: "Acompañamiento",
-            dish: "Verduras Mediterráneas",
-            description: "Mezcla de calabacín, berenjena, pimientos rojos y amarillos asados con aceite de oliva y hierbas provenzales."
+            name: t('acompanamiento'),
+            dish: t('verdurasMediterraneas'),
+            description: t('verdurasMediterraneasDesc')
         },
         {
-            name: "Postre",
-            dish: "Tarta de Chocolate y Frambuesas",
-            description: "Deliciosa tarta de chocolate belga con mousse ligero, coulis de frambuesas frescas y decoración de frutas."
+            name: t('postre'),
+            dish: t('tartaChocolate'),
+            description: t('tartaChocolateDesc')
         }
     ];
 
     const glutenFreeMenu = [
         {
-            name: "Entrada",
-            dish: "Ensalada de Quinoa y Aguacate",
-            description: "Quinoa orgánica, aguacate fresco, tomates cherry, pepino, cilantro y vinagreta de limón y aceite de oliva."
+            name: t('entrada'),
+            dish: t('ensaladaQuinoa'),
+            description: t('ensaladaQuinoaDesc')
         },
         {
-            name: "Plato Principal",
-            dish: "Pollo Mediterráneo sin Gluten",
-            description: "Pechuga de pollo marinada en hierbas mediterráneas, servida con puré de coliflor y verduras grilladas."
+            name: t('platoPrincipal'),
+            dish: t('polloMediterraneo'),
+            description: t('polloMediterraneoDesc')
         },
         {
-            name: "Acompañamiento",
-            dish: "Arroz Pilaf con Almendras",
-            description: "Arroz basmati con almendras tostadas, pasas, cebolla caramelizada y especias suaves sin gluten."
+            name: t('acompanamiento'),
+            dish: t('arrozPilaf'),
+            description: t('arrozPilafDesc')
         },
         {
-            name: "Postre",
-            dish: "Pannacotta de Vainilla",
-            description: "Cremoso pannacotta de vainilla natural con coulis de frutas del bosque y decoración de menta fresca."
+            name: t('postre'),
+            dish: t('pannacottaVainilla'),
+            description: t('pannacottaVainillaDesc')
         }
     ];
 
@@ -53,8 +55,8 @@ const WeddingMenuSection = () => {
         <section className="wedding-menu-section" style={{ backgroundColor: '#f6f1ee' }}>
             <div className="container">
                 <SectionTitle 
-                    subTitle={'Hemos seleccionado cuidadosamente cada plato para hacer de este día una experiencia gastronómica memorable'}
-                    MainTitle={'Menú de Nuestra Boda'} 
+                    subTitle={t('weddingMenuSubtitle')}
+                    MainTitle={t('weddingMenuTitle')} 
                 />
 
                 {/* Menú Regular */}
@@ -62,7 +64,7 @@ const WeddingMenuSection = () => {
                     <div className="col-lg-6 col-md-12">
                         <div className="menu-card regular-menu">
                             <div className="menu-header">
-                                <h3 className="menu-title">Menú Principal</h3>
+                                <h3 className="menu-title">{t('mainMenu')}</h3>
                                 <div className="menu-icon">
                                     <i className="fi flaticon-restaurant"></i>
                                 </div>
@@ -86,11 +88,11 @@ const WeddingMenuSection = () => {
                     <div className="col-lg-6 col-md-12">
                         <div className="menu-card gluten-free-menu">
                             <div className="menu-header">
-                                <h3 className="menu-title">Menú Sin Gluten</h3>
+                                <h3 className="menu-title">{t('glutenFreeMenu')}</h3>
                                 <div className="menu-icon gluten-free">
                                     <i className="fi flaticon-leaf"></i>
                                 </div>
-                                <span className="special-badge">Libre de Gluten</span>
+                                <span className="special-badge">{t('glutenFreeBadge')}</span>
                             </div>
                             <div className="menu-content">
                                 {glutenFreeMenu.map((item, index) => (
@@ -112,8 +114,7 @@ const WeddingMenuSection = () => {
                     <div className="col-12">
                         <div className="menu-note">
                             <p>
-                                <strong>Nota importante:</strong> Si tienes alguna alergia alimentaria o restricción dietética especial, 
-                                por favor háznoslo saber al confirmar tu asistencia para que podamos preparar una alternativa adecuada.
+                                <strong>{t('menuNote')}</strong>
                             </p>
                         </div>
                     </div>
