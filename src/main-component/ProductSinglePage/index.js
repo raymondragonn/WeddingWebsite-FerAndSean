@@ -103,23 +103,25 @@ const ProductSinglePage = (props) => {
                                                     <p className="event-detail-text secondary">{item.eventAddress}</p>
                                                     <p className="event-detail-text secondary">{item.eventPhone}</p>
                                                 </div>
-
-                                                <div className="event-detail-section slide-up">
-                                                    <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">{t('eventDescription')}</h4>
-                                                    </div>
-                                                    <div className="event-description">
-                                                        <p className="event-detail-text">{item.description}</p>
-                                                    </div>
-                                                </div>
-
-                                                {/* {item.details && (
+                                                {item.mapUrl && (
                                                     <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">{t('eventDetails')}</h4>
+                                                            <h4 className="event-detail-title">{t('eventMap') || 'Mapa del Evento'}</h4>
+                                                        </div>
+                                                        <div className="event-map-container">
+                                                            <iframe 
+                                                                src={item.mapUrl}
+                                                                width="100%" 
+                                                                height="400"
+                                                                className="event-map-iframe"
+                                                                allowFullScreen=""
+                                                                loading="lazy"
+                                                                referrerPolicy="no-referrer-when-downgrade"
+                                                                title={`Mapa de ${item.eventLocation}`}
+                                                            ></iframe>
                                                         </div>
                                                     </div>
-                                                )} */}
+                                                )}
 
                                                 {item.logistics && (
                                                     <div className="event-detail-section slide-up">
@@ -143,12 +145,26 @@ const ProductSinglePage = (props) => {
 
                                                 <div className="event-detail-section slide-up">
                                                     <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">Descripción</h4>
+                                                        <h4 className="event-detail-title">{t('eventDescription')}</h4>
                                                     </div>
                                                     <div className="event-description">
                                                         <p className="event-detail-text">{item.description}</p>
                                                     </div>
                                                 </div>
+
+                                                
+
+                                                {/* {item.details && (
+                                                    <div className="event-detail-section slide-up">
+                                                        <div className="event-detail-header">
+                                                            <h4 className="event-detail-title">{t('eventDetails')}</h4>
+                                                        </div>
+                                                    </div>
+                                                )} */}
+
+                                                
+
+                                               
 
                                                 {item.details && (
                                                     <div className="event-detail-section slide-up">
@@ -163,25 +179,7 @@ const ProductSinglePage = (props) => {
                                                     </div>
                                                 )}
 
-                                                {item.mapUrl && (
-                                                    <div className="event-detail-section slide-up">
-                                                        <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">{t('eventMap') || 'Mapa del Evento'}</h4>
-                                                        </div>
-                                                        <div className="event-map-container">
-                                                            <iframe 
-                                                                src={item.mapUrl}
-                                                                width="100%" 
-                                                                height="400"
-                                                                className="event-map-iframe"
-                                                                allowFullScreen=""
-                                                                loading="lazy"
-                                                                referrerPolicy="no-referrer-when-downgrade"
-                                                                title={`Mapa de ${item.eventLocation}`}
-                                                            ></iframe>
-                                                        </div>
-                                                    </div>
-                                                )}
+                                                
 
                                                 
 

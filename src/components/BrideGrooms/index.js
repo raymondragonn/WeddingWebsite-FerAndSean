@@ -9,6 +9,10 @@ import timg4 from '../../images/team/DamaDeHonor4.jpeg'
 import timg5 from '../../images/team/DamaDeHonor5.jpeg'
 import timg6 from '../../images/team/DamaDeHonor6.jpeg'
 import timg7 from '../../images/team/DamoDeHonor1.jpeg'
+import timg8 from '../../images/team/DamoDeHonor.jpeg'
+import timg9 from '../../images/team/DamoDeHonorRay.jpeg'
+
+
 
 const BrideGrooms = (props) => {
   const { t } = useLanguage();
@@ -18,7 +22,7 @@ const BrideGrooms = (props) => {
     {
       id: '1',
       tImg: timg1,
-      name: 'María Elena',
+      name: 'Jimena García',
       title: t('bridesmaid') || 'Dama de Honor',
       animation:'1000'
     },
@@ -31,16 +35,30 @@ const BrideGrooms = (props) => {
     },
     {
       id: '3',
-      tImg: timg3,
-      name: 'Camila Rincón',
+      tImg: timg4,
+      name: 'Samantha Rodríguez',
       title: t('bridesmaid') || 'Dama de Honor',
       animation:'1400'
     },
     {
       id: '4',
-      tImg: timg4,  
-      name: 'Ana Sofía',
+      tImg: timg5,  
+      name: 'Rebecca Kazmierczak',
       title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1600'
+    },
+    {
+      id: '5',
+      tImg: timg3,  
+      name: 'Camila Rincón',
+      title: t('bridesmaid') || 'Dama de Honor',
+      animation:'1600'
+    },
+    {
+      id: '6',
+      tImg: timg9,  
+      name: 'Raymundo Mondragon',
+      title: t('groomsman') || 'Caballero de Honor',
       animation:'1600'
     }
   ]
@@ -49,22 +67,22 @@ const BrideGrooms = (props) => {
   const SeanTeam = [
     {
       id: '5',
-      tImg: timg5,  
-      name: 'Lili Yepez',
-      title: t('bridesmaid') || 'Dama de Honor',
+      tImg: timg6,  
+      name: 'Elizabeth Kazmierczak',
+      title: t('Groomswoman') || 'Dama de Honor',
       animation:'1000'
     },
     {
       id: '6',
-      tImg: timg6,  
-      name: 'Roberto Luis',
-      title: t('groomsman') || 'Padrino',
+      tImg: timg7,  
+      name: 'Max Sweedo',
+      title: t('groomsman') || 'Caballero de Honor',
       animation:'1200'
     },
     {
       id: '7',
-      tImg: timg7,  
-      name: 'Roberto Luis',
+      tImg: timg8,
+      name: 'Aldo Flores',
       title: t('groomsman') || 'Caballero de Honor',
       animation:'1400'
     }

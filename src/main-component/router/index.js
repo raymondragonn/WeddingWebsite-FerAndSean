@@ -62,6 +62,7 @@ import BlogDetailsFull from '../BlogDetailsFull/BlogDetailsFull';
 import BlogDetailsLeftSiide from '../BlogDetailsLeftSiide/BlogDetailsLeftSiide';
 import BlogPageFullwidth from '../BlogPageFullwidth/BlogPageFullwidth';
 import ContactPage from '../ContactPage/ContactPage';
+import ContactPage1 from '../ContactPage1/ContactPage1';
 import ComingSoonPage from '../ComingSoonPage/ComingSoonPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import LoginPage from '../LoginPage'
@@ -138,6 +139,7 @@ const AllRoute = () => {
             <Route path='/blog-left-sidebar' element={<BlogPageLeft />} />
             <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
             <Route path='/contact' element={<ContactPage />} />
+            <Route path='/contact1' element={<ContactPage1 />} />
             <Route path='/404' element={<ErrorPage />} />
             <Route path='login' element={<LoginPage />} />
             <Route path='register' element={<SignUpPage />} />
