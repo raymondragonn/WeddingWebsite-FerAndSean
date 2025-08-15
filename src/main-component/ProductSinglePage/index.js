@@ -113,13 +113,13 @@ const ProductSinglePage = (props) => {
                                                     </div>
                                                 </div>
 
-                                                {item.details && (
+                                                {/* {item.details && (
                                                     <div className="event-detail-section slide-up">
                                                         <div className="event-detail-header">
                                                             <h4 className="event-detail-title">{t('eventDetails')}</h4>
                                                         </div>
                                                     </div>
-                                                )}
+                                                )} */}
 
                                                 {item.logistics && (
                                                     <div className="event-detail-section slide-up">
