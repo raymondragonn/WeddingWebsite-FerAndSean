@@ -408,14 +408,6 @@ const ContactForm1 = () => {
                 }}>
                     {t('confirmInvitation')}
                 </button>
-                <p style={{ 
-                    color: '#6c757d', 
-                    fontSize: '14px', 
-                    textAlign: 'center',
-                    marginTop: '10px'
-                }}>
-                    {t('submitHelpText')}
-                </p>
             </div>
             
                                                    {/* Nota de contacto para dudas */}
