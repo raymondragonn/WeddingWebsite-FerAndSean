@@ -1,6 +1,7 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from "../SectionTitle";
+import { useLanguage } from "../../contexts/LanguageContext";
 import timg1 from '../../images/team/img-5.jpg'
 import timg2 from '../../images/team/img-6.jpg'
 import timg3 from '../../images/team/img-7.jpg'
@@ -39,10 +40,12 @@ const Brides = [
 ]
 
 const BrideGrooms2 = (props) => {
+  const { t } = useLanguage();
+  
   return (
     <section className="wpo-team-section-s2 section-padding pt-0">
       <div className="container">
-        <SectionTitle subTitle={'Important Persons'} MainTitle={'Bridesmaids & Groomsmen'} />
+        <SectionTitle subTitle={t('importantPeople')} MainTitle={t('Bridesmaids and Groomsmen')} />
         <div className="wpo-team-wrap">
           <div className="row">
             {Brides.slice(0, 8).map((Bride, tm) => (

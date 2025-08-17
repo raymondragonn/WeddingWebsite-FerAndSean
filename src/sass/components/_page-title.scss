@@ -99,8 +99,9 @@
 	flex-direction: column;
 	z-index: 1;
 
-	@media(max-width: 767px) {
-		min-height: 250px;
+	@media(max-width: 992px) {
+		background-color: transparent;
+		min-height: 0;
 	}
 
 	.wpo-breadcumb-wrap {

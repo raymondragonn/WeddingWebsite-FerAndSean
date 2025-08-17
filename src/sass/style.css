@@ -2599,7 +2599,7 @@ a.ui-button:active, .ui-button:active,
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #333333;
+  background-color: #d4c4b0;
   color: white;
   font-size: 0px;
   text-align: center;
@@ -9604,7 +9604,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-contact-section-s6 .bottom-bg svg .bg-path,
 .wpo-contact-section-s7 .bottom-bg svg .bg-path,
 .wpo-contact-section-s8 .bottom-bg svg .bg-path {
-  fill: #A5AA9C;
+  fill: #2d2420;
 }
 
 .wpo-contact-section .bottom-bg svg .bg-stroke,
@@ -9615,7 +9615,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-contact-section-s6 .bottom-bg svg .bg-stroke,
 .wpo-contact-section-s7 .bottom-bg svg .bg-stroke,
 .wpo-contact-section-s8 .bottom-bg svg .bg-stroke {
-  stroke: #A5AA9C;
+  stroke: #2d2420;
 }
 
 .wpo-contact-section .bottom-bg .shape-1,

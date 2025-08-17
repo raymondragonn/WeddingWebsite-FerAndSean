@@ -8,7 +8,7 @@ const SectionTitle = (props) => {
                 <h2 className="section-title">
                     {props.MainTitle}
                 </h2>
-                <p className="section-subtitle">
+                <p className="section-subtitle" style={{ whiteSpace: 'pre-line' }}>
                     {props.subTitle}
                 </p>
             </div>

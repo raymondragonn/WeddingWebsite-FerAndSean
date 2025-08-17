@@ -25,8 +25,8 @@ const Footer = (props) => {
                                     <ul>
                                         <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas de Honor')}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/accomodation">{t('accommodation')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/dressCode">{t('Codigo de Vestimenta')}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/groom-bride">{t('Damas y Caballeros')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/dressCode">{t('Dress Code')}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/groom-bride">{t('Bridesmaids and Groomsmen')}</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/rsvp">RSVP</Link></li> */}
                                     </ul>
                                     <ul>

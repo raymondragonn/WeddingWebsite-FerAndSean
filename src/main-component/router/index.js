@@ -104,7 +104,7 @@ const AllRoute = () => {
             <Route path='story-5' element={<StoryPage5 />} />
             <Route path='story-6' element={<StoryPage6 />} />
             <Route path='accomodation' element={<AccomodationPage />} />
-            <Route path='rsvp' element={<RsvpPage1 />} />
+            {/* <Route path='rsvp' element={<RsvpPage1 />} /> */}
             <Route path='guadalajara' element={<RsvpPage2 />} />
             <Route path='rsvp-3' element={<RsvpPage3 />} />
             <Route path='rsvp-4' element={<RsvpPage4 />} />
@@ -139,7 +139,7 @@ const AllRoute = () => {
             <Route path='/blog-left-sidebar' element={<BlogPageLeft />} />
             <Route path='/blog-fullwidth' element={<BlogPageFullwidth />} />
             <Route path='/contact' element={<ContactPage />} />
-            <Route path='/contact1' element={<ContactPage1 />} />
+            <Route path='/rsvp' element={<ContactPage1 />} />
             <Route path='/404' element={<ErrorPage />} />
             <Route path='login' element={<LoginPage />} />
             <Route path='register' element={<SignUpPage />} />

@@ -1,0 +1,8 @@
+/* Estilos específicos para Contactpage1 */
+.wpo-contact-section .bottom-bg svg .bg-path {
+  fill: #2d2420 !important;
+}
+
+.wpo-contact-section .bottom-bg svg .bg-stroke {
+  stroke: #2d2420 !important;
+}
