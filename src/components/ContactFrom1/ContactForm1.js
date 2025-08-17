@@ -119,7 +119,7 @@ const ContactForm1 = () => {
     };
 
     return (
-        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active">
+        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active" style={{paddingTop:'40px'}}>
             {/* Instrucciones generales */}
             <div style={{ 
                 backgroundColor: '#f8f9fa', 

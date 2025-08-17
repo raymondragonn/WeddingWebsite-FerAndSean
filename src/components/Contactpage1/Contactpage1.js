@@ -3,6 +3,7 @@ import ContactForm1 from "../ContactFrom1/ContactForm1";
 import { useLanguage } from "../../contexts/LanguageContext";
 import SectionTitle from "../SectionTitle";
 import { JackInTheBox } from "react-awesome-reveal";
+import ItineraryBanner from "../ItineraryBanner/ItineraryBanner";
 import "./Contactpage1.css";
 
 const Contactpage1 = () => {
@@ -27,45 +28,8 @@ const Contactpage1 = () => {
                                     subTitle={t("invitationConfirmation")}
                                     MainTitle={t("confirmYourAttendance")}
                                 />
-                                {/* Itinerario de Actividades */}
-                                <div
-                                    className="itinerary-section"
-                                    style={{
-                                        marginBottom: "30px",
-                                        textAlign: "center",
-                                        padding: "20px",
-                                    }}
-                                >
-                                    <h3
-                                        style={{
-                                            color: "#5C5C5C",
-                                            fontSize: "24px",
-                                            marginBottom: "15px",
-                                        }}
-                                    >
-                                        {t("itinerary")}
-                                    </h3>
-                                    <div>
-                                        <p
-                                            style={{
-                                                color: "#666",
-                                                fontSize: "16px",
-                                                lineHeight: "1.6",
-                                            }}
-                                        >
-                                            <strong>{t("fridayEvent")}</strong>
-                                        </p>
-                                        <p
-                                            style={{
-                                                color: "#666",
-                                                fontSize: "16px",
-                                                lineHeight: "1.6",
-                                            }}
-                                        >
-                                            <strong>{t("saturdayEvent")}</strong>
-                                        </p>
-                                    </div>
-                                </div>
+                                {/* Banner del Itinerario */}
+                                <ItineraryBanner />
                                 <div className="wpo-contact-form-area">
                                     <ContactForm1 />
                                 </div>
