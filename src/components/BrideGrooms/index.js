@@ -57,7 +57,7 @@ const BrideGrooms = (props) => {
     {
       id: '6',
       tImg: timg9,  
-      name: 'Raymundo Mondragon',
+      name: 'Raymundo Mondragón',
       title: t('groomsman') || 'Caballero de Honor',
       animation:'1600'
     }
@@ -184,13 +184,13 @@ const BrideGrooms = (props) => {
             <div className="col-12 text-center" style={{ marginBottom: '40px' }}>
               <h2 style={{
                 color: '#2d2420',
-                fontSize: '40px',
-                fontWeight: '600',
+                fontSize: '60px',
+                fontWeight: '500',
                 fontFamily: '"Playfair Display", serif',
                 position: 'relative',
                 display: 'inline-block'
               }}>
-                Fer
+                FER
                 <div style={{
                   position: 'absolute',
                   bottom: '-10px',
@@ -215,13 +215,13 @@ const BrideGrooms = (props) => {
             <div className="col-12 text-center" style={{ marginBottom: '40px' }}>
               <h2 style={{
                 color: '#2d2420',
-                fontSize: '40px',
-                fontWeight: '600',
+                fontSize: '60px',
+                fontWeight: '500',
                 fontFamily: '"Playfair Display", serif',
                 position: 'relative',
                 display: 'inline-block'
               }}>
-                Sean
+                SEAN
                 <div style={{
                   position: 'absolute',
                   bottom: '-10px',
