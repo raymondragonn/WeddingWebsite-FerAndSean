@@ -13,7 +13,6 @@ const ContactForm1 = () => {
         phone: '',
         attendance: '',
         fridayAttendance: '',
-        saturdayAttendance: '',
         songSuggestion: ''
     });
     const [validator, setValidator] = useState(null);
@@ -23,18 +22,102 @@ const ContactForm1 = () => {
             className: 'errorMessage',
             messages: {
                 required: t('requiredField'),
-                alpha_space: t('invalidName')
+                alpha_space: t('invalidName'),
+                phone: t('invalidPhone'),
+                min: t('minLength'),
+                max: t('maxLength'),
+                alpha_space_dash: t('invalidNameWithDash'),
+                alpha_space_dot: t('invalidNameWithDot'),
+                song_format: t('invalidSongFormat')
+            },
+            validators: {
+                phone: {
+                    message: t('invalidPhone'),
+                    rule: (val, params, validator) => {
+                        // Validar formato de teléfono internacional
+                        const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+                        return phoneRegex.test(val.replace(/[\s\-\(\)]/g, ''));
+                    }
+                },
+                min: {
+                    message: t('minLength'),
+                    rule: (val, params, validator) => {
+                        return val.length >= params[0];
+                    }
+                },
+                max: {
+                    message: t('maxLength'),
+                    rule: (val, params, validator) => {
+                        return val.length <= params[0];
+                    }
+                },
+                phone_min: {
+                    message: t('phoneMinLength'),
+                    rule: (val, params, validator) => {
+                        return val.length >= 10;
+                    }
+                },
+                phone_max: {
+                    message: t('phoneMaxLength'),
+                    rule: (val, params, validator) => {
+                        return val.length <= 20;
+                    }
+                },
+                song_max: {
+                    message: t('songMaxLength'),
+                    rule: (val, params, validator) => {
+                        if (!val.trim()) return true; // Campo opcional
+                        return val.length <= 100;
+                    }
+                },
+                alpha_space_dash: {
+                    message: t('invalidNameWithDash'),
+                    rule: (val, params, validator) => {
+                        // Permitir letras, espacios, guiones y apóstrofes para nombres compuestos
+                        return /^[a-zA-ZÀ-ÿ\u00f1\u00d1\s\-']+$/.test(val);
+                    }
+                },
+                alpha_space_dot: {
+                    message: t('invalidNameWithDot'),
+                    rule: (val, params, validator) => {
+                        // Permitir letras, espacios, puntos y apóstrofes para nombres con iniciales
+                        return /^[a-zA-ZÀ-ÿ\u00f1\u00d1\s\.']+$/.test(val);
+                    }
+                },
+                song_format: {
+                    message: t('invalidSongFormat'),
+                    rule: (val, params, validator) => {
+                        if (!val.trim()) return true; // Campo opcional
+                        // Permitir letras, números, espacios, guiones, paréntesis y caracteres especiales comunes en títulos de canciones
+                        return /^[a-zA-Z0-9À-ÿ\u00f1\u00d1\s\-\(\)&.,!?'"\/]+$/.test(val);
+                    }
+                }
             }
         }));
     }, [t]);
+
     const changeHandler = e => {
         const { name, value } = e.target;
         
+        // Validaciones en tiempo real
+        let processedValue = value;
+        
+        // Validación específica para teléfono
+        if (name === 'phone') {
+            // Remover caracteres no válidos excepto +, números, espacios, guiones y paréntesis
+            processedValue = value.replace(/[^\d\s\-\(\)\+]/g, '');
+        }
+        
+        // Validación para nombres - capitalizar primera letra
+        if (name === 'name' || name === 'lastName') {
+            processedValue = value.replace(/\b\w/g, l => l.toUpperCase());
+        }
+        
         // Si cambian a "no podré asistir", limpiar todos los campos relacionados
         if (name === 'attendance' && value === 'no') {
-            setForms({ ...forms, [name]: value, fridayAttendance: '', saturdayAttendance: '', songSuggestion: '' });
+            setForms({ ...forms, [name]: processedValue, fridayAttendance: '', songSuggestion: '' });
         } else {
-            setForms({ ...forms, [name]: value });
+            setForms({ ...forms, [name]: processedValue });
         }
         
         if (validator && validator.allValid()) {
@@ -47,24 +130,28 @@ const ContactForm1 = () => {
     const submitHandler = e => {
         e.preventDefault();
         
-        // Validaciones condicionales
-        const nameValid = validator.message('name', forms.name, 'required|alpha_space');
-        const lastNameValid = validator.message('lastName', forms.lastName, 'required|alpha_space');
-        const phoneValid = validator.message('phone', forms.phone, 'required');
+        // Validaciones específicas por campo con mensajes personalizados
+        const nameValid = validator.message('name', forms.name, 'required|alpha_space_dash|min:2|max:50');
+        const lastNameValid = validator.message('lastName', forms.lastName, 'required|alpha_space_dash|min:2|max:50');
+        const phoneValid = validator.message('phone', forms.phone, 'required|phone|phone_min|phone_max');
         const attendanceValid = validator.message('attendance', forms.attendance, 'required');
         
         // Solo validar campos adicionales si confirma asistencia
         let fridayAttendanceValid = null;
-        let saturdayAttendanceValid = null;
+        let songSuggestionValid = null;
         
         if (forms.attendance === 'yes') {
             fridayAttendanceValid = validator.message('fridayAttendance', forms.fridayAttendance, 'required');
-            saturdayAttendanceValid = validator.message('saturdayAttendance', forms.saturdayAttendance, 'required');
+            
+            // Validar sugerencia de canción solo si se proporciona
+            if (forms.songSuggestion.trim()) {
+                songSuggestionValid = validator.message('songSuggestion', forms.songSuggestion, 'song_format|song_max');
+            }
         }
         
         // Verificar si todas las validaciones requeridas pasan
         const isFormValid = !nameValid && !lastNameValid && !phoneValid && !attendanceValid && 
-                           (forms.attendance === 'no' || (!fridayAttendanceValid && !saturdayAttendanceValid));
+                           (forms.attendance === 'no' || (!fridayAttendanceValid && !songSuggestionValid));
         
         if (isFormValid) {
             validator.hideMessages();
@@ -84,10 +171,6 @@ const ContactForm1 = () => {
                     whatsappText += `
                 *${t('fridayAttendance')}:* ${forms.fridayAttendance}`;
                 }
-                if (forms.saturdayAttendance) {
-                    whatsappText += `
-                    *${t('saturdayAttendance')}:* ${forms.saturdayAttendance}`;
-                }
                 if (forms.songSuggestion.trim()) {
                     whatsappText += `
                     *${t('suggestedSong')}:* ${forms.songSuggestion}`;
@@ -95,7 +178,7 @@ const ContactForm1 = () => {
                 
             }
 
-            let apiLocal = 'http://localhost/BackEndInvitaciones/index.php'
+            let apiLocal = 'http://localhost/BackEndFer-Sean/index.php'
 
             fetch(apiLocal, {
                 method: 'POST',
@@ -104,12 +187,22 @@ const ContactForm1 = () => {
                 },
                 body: JSON.stringify(forms)
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => {
+                            throw new Error(err.error || 'Error en el servidor');
+                        });
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     console.log('Success:', data);
+                    // Aquí puedes agregar un mensaje de éxito al usuario
+                    alert('¡Confirmación enviada exitosamente!');
                 })
                 .catch((error) => {
                     console.error('Error:', error);
+                    alert('Error al enviar la confirmación: ' + error.message);
              });
 
             console.log(forms);
@@ -130,12 +223,22 @@ const ContactForm1 = () => {
                 phone: '',
                 attendance: '',
                 fridayAttendance: '',
-                saturdayAttendance: '',
                 songSuggestion: ''
             });
         } else {
             validator.showMessages();
         }
+    };
+
+    // Función para validar si el formulario está completo
+    const isFormComplete = () => {
+        const basicFields = forms.name.trim() && forms.lastName.trim() && forms.phone.trim() && forms.attendance;
+        
+        if (forms.attendance === 'yes') {
+            return basicFields && forms.fridayAttendance;
+        }
+        
+        return basicFields;
     };
 
     return (
@@ -189,7 +292,10 @@ const ContactForm1 = () => {
                             onChange={(e) => changeHandler(e)}
                                                          placeholder={t('namePlaceholder')}
                              style={{ fontSize: '16px' }} />
-                        {validator && validator.message('name', forms.name, 'required|alpha_space')}
+                        {validator && validator.message('name', forms.name, 'required|alpha_space_dash|min:2|max:50')}
+                        <small style={{ color: '#6c757d', fontSize: '14px' }}>
+                            {t('nameHelpText')}
+                        </small>
                     </div>
                 </div>
                 
@@ -212,7 +318,10 @@ const ContactForm1 = () => {
                             onChange={(e) => changeHandler(e)}
                                                          placeholder={t('lastNamePlaceholder')}
                              style={{ fontSize: '16px' }} />
-                        {validator && validator.message('lastName', forms.lastName, 'required|alpha_space')}
+                        {validator && validator.message('lastName', forms.lastName, 'required|alpha_space_dash|min:2|max:50')}
+                        <small style={{ color: '#6c757d', fontSize: '14px' }}>
+                            {t('lastNameHelpText')}
+                        </small>
                     </div>
                 </div>
                 
@@ -238,7 +347,7 @@ const ContactForm1 = () => {
                                                  <small style={{ color: '#6c757d', fontSize: '14px' }}>
                              {t('phoneHelpText')}
                          </small>
-                        {validator && validator.message('phone', forms.phone, 'required')}
+                        {validator && validator.message('phone', forms.phone, 'required|phone|phone_min|phone_max')}
                     </div>
                 </div>
 
@@ -306,7 +415,7 @@ const ContactForm1 = () => {
                         
 
                          
-                         <div className="col col-lg-6 col-12">
+                         <div className="col col-lg-12 col-12">
                              <div className="form-field">
                                  <label style={{ 
                                      display: 'block', 
@@ -335,38 +444,9 @@ const ContactForm1 = () => {
                                      <option value="no">{t('cannotAttend')}</option>
                                  </select>
                                  {validator && validator.message('fridayAttendance', forms.fridayAttendance, 'required')}
-                             </div>
-                         </div>
-                         
-                         <div className="col col-lg-6 col-12">
-                             <div className="form-field">
-                                 <label style={{ 
-                                     display: 'block', 
-                                     marginBottom: '5px', 
-                                     color: '#495057',
-                                     fontSize: '16px',
-                                     fontWeight: '500'
-                                 }}>
-                                     {t('saturdayEvent')} *
-                                 </label>
-                                 <select
-                                     value={forms.saturdayAttendance}
-                                     name="saturdayAttendance"
-                                     onBlur={(e) => changeHandler(e)}
-                                     onChange={(e) => changeHandler(e)}
-                                     style={{ 
-                                         height: '50px', 
-                                         padding: '0 15px', 
-                                         border: '1px solid #e0e0e0', 
-                                         borderRadius: '5px', 
-                                         backgroundColor: 'white',
-                                         fontSize: '16px'
-                                     }}>
-                                     <option value="">{t('selectAttendanceOption')}</option>
-                                     <option value="yes">{t('yesConfirmAttendance')}</option>
-                                     <option value="no">{t('cannotAttend')}</option>
-                                 </select>
-                                 {validator && validator.message('saturdayAttendance', forms.saturdayAttendance, 'required')}
+                                 <small style={{ color: '#6c757d', fontSize: '14px' }}>
+                                     {t('fridayEventHelpText')}
+                                 </small>
                              </div>
                          </div>
                         
@@ -392,6 +472,7 @@ const ContactForm1 = () => {
                                 <small style={{ color: '#6c757d', fontSize: '14px' }}>
                                     {t('songSuggestionHelpText')}
                                 </small>
+                                {validator && forms.songSuggestion.trim() && validator.message('songSuggestion', forms.songSuggestion, 'song_format|song_max')}
                             </div>
                         </div>
                     </>
@@ -428,15 +509,10 @@ const ContactForm1 = () => {
                         fontSize: '18px', 
                         padding: '15px 30px', 
                         fontWeight: '600', 
-                        opacity: (!forms.name.trim() || !forms.lastName.trim() || !forms.phone.trim() || !forms.attendance) ? 0.5 : 1,
-                        cursor: (!forms.name.trim() || !forms.lastName.trim() || !forms.phone.trim() || !forms.attendance) ? 'not-allowed' : 'pointer'
+                        opacity: !isFormComplete() ? 0.5 : 1,
+                        cursor: !isFormComplete() ? 'not-allowed' : 'pointer'
                     }}
-                    disabled={
-                        !forms.name.trim() ||
-                        !forms.lastName.trim() ||
-                        !forms.phone.trim() ||
-                        !forms.attendance
-                    }
+                    disabled={!isFormComplete()}
                 >
                     {t('confirmInvitation')}
                 </button>
