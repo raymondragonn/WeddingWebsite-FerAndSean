@@ -73,35 +73,55 @@ const ContactForm1 = () => {
             const attendanceText = forms.attendance === 'yes' ? t('confirmAttendance') : t('cannotAttend');
             let whatsappText = `${t('weddingInvitationConfirmation')}
 
-*${t('name')}:* ${forms.name}
-*${t('lastName')}:* ${forms.lastName}
-*${t('phone')}:* ${forms.phone}
-*${t('attendance')}:* ${attendanceText}`;
+                *${t('name')}:* ${forms.name}
+                *${t('lastName')}:* ${forms.lastName}
+                *${t('phone')}:* ${forms.phone}
+                *${t('attendance')}:* ${attendanceText}`;
 
             // Solo agregar información adicional si confirma asistencia
             if (forms.attendance === 'yes') {
                 if (forms.fridayAttendance) {
                     whatsappText += `
-*${t('fridayAttendance')}:* ${forms.fridayAttendance}`;
+                *${t('fridayAttendance')}:* ${forms.fridayAttendance}`;
                 }
                 if (forms.saturdayAttendance) {
                     whatsappText += `
-*${t('saturdayAttendance')}:* ${forms.saturdayAttendance}`;
+                    *${t('saturdayAttendance')}:* ${forms.saturdayAttendance}`;
                 }
                 if (forms.songSuggestion.trim()) {
                     whatsappText += `
-*${t('suggestedSong')}:* ${forms.songSuggestion}`;
+                    *${t('suggestedSong')}:* ${forms.songSuggestion}`;
                 }
+                
             }
 
-            // Codificar el mensaje para URL
-            const encodedMessage = encodeURIComponent(whatsappText);
+            let apiLocal = 'http://localhost/BackEndInvitaciones/index.php'
+
+            fetch(apiLocal, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(forms)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+             });
+
+            console.log(forms);
+
+            // // Codificar el mensaje para URL
+            // const encodedMessage = encodeURIComponent(whatsappText);
             
-            // Crear URL de WhatsApp
-            const whatsappUrl = `https://wa.me/17734311552?text=${encodedMessage}`;
+            // // Crear URL de WhatsApp
+            // const whatsappUrl = `https://wa.me/17734311552?text=${encodedMessage}`;
             
-            // Abrir WhatsApp en nueva ventana
-            window.open(whatsappUrl, '_blank');
+            // // Abrir WhatsApp en nueva ventana
+            // window.open(whatsappUrl, '_blank');
             
             // Limpiar formulario
             setForms({
@@ -401,11 +421,23 @@ const ContactForm1 = () => {
             </div>
             
             <div className="submit-area" style={{ marginTop: '30px' }}>
-                <button type="submit" className="theme-btn" style={{ 
-                    fontSize: '18px',
-                    padding: '15px 30px',
-                    fontWeight: '600'
-                }}>
+                <button 
+                    type="submit" 
+                    className="theme-btn" 
+                    style={{ 
+                        fontSize: '18px', 
+                        padding: '15px 30px', 
+                        fontWeight: '600', 
+                        opacity: (!forms.name.trim() || !forms.lastName.trim() || !forms.phone.trim() || !forms.attendance) ? 0.5 : 1,
+                        cursor: (!forms.name.trim() || !forms.lastName.trim() || !forms.phone.trim() || !forms.attendance) ? 'not-allowed' : 'pointer'
+                    }}
+                    disabled={
+                        !forms.name.trim() ||
+                        !forms.lastName.trim() ||
+                        !forms.phone.trim() ||
+                        !forms.attendance
+                    }
+                >
                     {t('confirmInvitation')}
                 </button>
             </div>
