@@ -11,6 +11,7 @@ import timg6 from '../../images/team/DamaDeHonor6.jpeg'
 import timg7 from '../../images/team/DamoDeHonor1.jpeg'
 import timg8 from '../../images/team/DamoDeHonor.jpeg'
 import timg9 from '../../images/team/DamoDeHonorRay.jpeg'
+import timg10 from '../../images/team/DamoDeHonor9.jpeg'
 
 
 
@@ -65,6 +66,13 @@ const BrideGrooms = (props) => {
 
   // Damas y Caballeros de Sean (el novio)
   const SeanTeam = [
+    {
+      id: '8',
+      tImg: timg10,
+      name: 'Fernando Flores',
+      title: t('groomsman') || 'Caballero de Honor',
+      animation:'1000'
+    },
     {
       id: '5',
       tImg: timg6,  
