@@ -8,23 +8,23 @@ const WeddingMenuSection = () => {
     const regularMenu = [
         {
             name: t('entrada'),
-            dish: t('ensaladaCesar'),
-            description: t('ensaladaCesarDesc')
+            dish: t('chalupasPoblanas'),
+            description: t('chalupasPoblanasDesc')
         },
         {
             name: t('platoPrincipal'),
-            dish: t('salmonParrilla'),
-            description: t('salmonParrillaDesc')
-        },
-        {
-            name: t('acompanamiento'),
-            dish: t('verdurasMediterraneas'),
-            description: t('verdurasMediterraneasDesc')
+            dish: t('bistecVolcan'),
+            description: t('bistecVolcanDesc')
         },
         {
             name: t('postre'),
-            dish: t('tartaChocolate'),
-            description: t('tartaChocolateDesc')
+            dish: t('mousseOaxaca'),
+            description: t('mousseOaxacaDesc')
+        },
+        {
+            name: t('snackBar'),
+            dish: t('snackBar'),
+            description: t('snackBarDesc')
         }
     ];
 
@@ -60,8 +60,8 @@ const WeddingMenuSection = () => {
                 />
 
                 {/* Menú Regular */}
-                <div className="row menu-section-wrapper">
-                    <div className="col-lg-6 col-md-12">
+                <div className="row menu-section-wrapper justify-content-center">
+                    <div className="col-lg-8 col-md-12">
                         <div className="menu-card regular-menu">
                             <div className="menu-header">
                                 <h3 className="menu-title">{t('mainMenu')}</h3>
@@ -85,7 +85,7 @@ const WeddingMenuSection = () => {
                     </div>
 
                     {/* Menú Sin Gluten */}
-                    <div className="col-lg-6 col-md-12">
+                    {/* <div className="col-lg-6 col-md-12">
                         <div className="menu-card gluten-free-menu">
                             <div className="menu-header">
                                 <h3 className="menu-title">{t('glutenFreeMenu')}</h3>
@@ -107,10 +107,10 @@ const WeddingMenuSection = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-12">
                         <div className="menu-note">
                             <p>
@@ -118,7 +118,7 @@ const WeddingMenuSection = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

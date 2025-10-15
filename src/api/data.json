@@ -35,6 +35,10 @@
   },
   {
     "id": 31,
+    "description": {
+      "es": "¡Bienvenidos a Guadalajara! Este será el punto de encuentro para todos nuestros invitados que vienen de fuera. Aquí comienza nuestra celebración especial.",
+      "en": "Welcome to Guadalajara! This will be the meeting point for all our out-of-town guests. This is where our special celebration begins."
+    },
     "proImg": "/images/event/Aeropuerto.webp",
     "title": {
       "es": "Llegada",
@@ -43,8 +47,8 @@
     "slug": "the-arrival",
     "type": "event",
     "eventDate": {
-      "es": "Se recomienda llegar el viernes 17 de abril",
-      "en": "We recommend arriving on Friday, April 17"
+      "es": "Se recomienda llegar el jueves 16 de abril durante el día",
+      "en": "We recommend arriving on Thursday, April 16 during the day"
     },
     "eventLocation": {
       "es": "Aeropuerto Internacional de Guadalajara",
@@ -55,22 +59,6 @@
       "en": "Guadalajara - Chapala Highway Km 17.5, Tlajomulco de Zúñiga, Jalisco"
     },
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.528613136687!2d-103.31221792493336!3d20.525541481000804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4daad5240069%3A0x4c14fc392e7d6f9d!2sAeropuerto%20Internacional%20de%20Guadalajara!5e0!3m2!1ses!2smx!4v1754950324746!5m2!1ses!2smx",
-    "description": {
-      "es": "¡Bienvenidos a Guadalajara! Este será el punto de encuentro para todos nuestros invitados que vienen de fuera. Aquí comienza nuestra celebración especial.",
-      "en": "Welcome to Guadalajara! This will be the meeting point for all our out-of-town guests. This is where our special celebration begins."
-    },
-    "details": {
-      "es": [
-        "Recepción de invitados internacionales",
-        "Asistencia para equipaje",
-        "Coordinación para traslados al hotel"
-      ],
-      "en": [
-        "International guest reception",
-        "Luggage assistance",
-        "Hotel transfer coordination"
-      ]
-    },
     "logistics": {
       "arrival": {
         "title": {
@@ -80,13 +68,11 @@
         "details": {
           "es": [
             "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Interjet)",
-            "Horarios sugeridos: Entre 8:00 AM y 6:00 PM",
-            "Terminal: Terminal 1 y 2 disponibles"
+            "Horarios sugeridos: Entre 8:00 AM y 6:00 PM"
           ],
           "en": [
             "Recommended flights: Major airlines (Volaris, Vivaaerobus, Interjet)",
-            "Suggested times: Between 8:00 AM and 6:00 PM",
-            "Terminal: Terminals 1 and 2 available"
+            "Suggested times: Between 8:00 AM and 6:00 PM"
           ]
         }
       },
@@ -97,34 +83,13 @@
         },
         "details": {
           "es": [
-            "Servicio de shuttle disponible desde el aeropuerto",
             "Reserva tu transporte con anticipación",
-            "Tiempo de traslado: 1.5 horas aproximadamente a Tequila",
-            "Costo aproximado en taxi: $800-1200 MXN"
+            "Renta de automóvil o Mini Van para grupos",
+            "Tiempo de traslado: 1.5 horas aproximadamente a Tequila"
           ],
           "en": [
-            "Shuttle service available from airport",
             "Book your transportation in advance",
-            "Transfer time: Approximately 1.5 hours to Tequila",
-            "Approximate taxi cost: $800-1200 MXN"
-          ]
-        }
-      },
-      "departure": {
-        "title": {
-          "es": "Regreso",
-          "en": "Return"
-        },
-        "details": {
-          "es": [
-            "Check-in recomendado: 2 horas antes del vuelo",
-            "Servicio de transporte de regreso disponible",
-            "Horarios flexibles según tu vuelo de salida"
-          ],
-          "en": [
-            "Recommended check-in: 2 hours before flight",
-            "Return transportation service available",
-            "Flexible schedules according to your departure flight"
+            "Transfer time: Approximately 1.5 hours to Tequila"
           ]
         }
       }

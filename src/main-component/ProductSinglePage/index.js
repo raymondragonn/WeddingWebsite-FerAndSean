@@ -87,6 +87,15 @@ const ProductSinglePage = (props) => {
                                             <h2 className="event-title">{item.title}</h2>
                                             
                                             <div className="event-info-grid">
+
+                                                <div className="event-detail-section slide-up">
+                                                    <div className="event-detail-header">
+                                                        <h4 className="event-detail-title">{t('eventDescription')}</h4>
+                                                    </div>
+                                                    <div className="event-description">
+                                                        <p className="event-detail-text">{item.description}</p>
+                                                    </div>
+                                                </div>
                                                 <div className="event-detail-section slide-up">
                                                     <div className="event-detail-header">
                                                         <h4 className="event-detail-title">{t('eventDate')}</h4>
@@ -143,15 +152,6 @@ const ProductSinglePage = (props) => {
                                                     </div>
                                                 )}
 
-                                                <div className="event-detail-section slide-up">
-                                                    <div className="event-detail-header">
-                                                        <h4 className="event-detail-title">{t('eventDescription')}</h4>
-                                                    </div>
-                                                    <div className="event-description">
-                                                        <p className="event-detail-text">{item.description}</p>
-                                                    </div>
-                                                </div>
-
                                                 
 
                                                 {/* {item.details && (
@@ -160,30 +160,7 @@ const ProductSinglePage = (props) => {
                                                             <h4 className="event-detail-title">{t('eventDetails')}</h4>
                                                         </div>
                                                     </div>
-                                                )} */}
-
-                                                
-
-                                               
-
-                                                {item.details && (
-                                                    <div className="event-detail-section slide-up">
-                                                        <div className="event-detail-header">
-                                                            <h4 className="event-detail-title">{t('eventDetails') || 'Detalles del Evento'}</h4>
-                                                        </div>
-                                                        <ul className="event-details-list">
-                                                            {item.details.map((detail, index) => (
-                                                                <li key={index}>{detail}</li>
-                                                            ))}
-                                                        </ul>
-                                                    </div>
-                                                )}
-
-                                                
-
-                                                
-
-                                                
+                                                )} */}  
                                             </div>
                                         </div>
                                     </div>
