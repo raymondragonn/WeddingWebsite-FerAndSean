@@ -8,7 +8,7 @@ import sImg1 from '../../images/event/Iglesia.jpeg'
 import sImg2 from '../../images/event/LugarBoda.PNG'
 import sImg3 from '../../images/event/3.jpg'
 import sImg4 from '../../images/event/Aeropuerto.webp'
-import sImg5 from '../../images/event/cantaritos.jpg'
+import sImg5 from '../../images/event/fondaCholula.jpg'
 
 import LocationMap from './Modal'
 import './EventSection.css'
@@ -26,7 +26,7 @@ const EventSection = (props) => {
             case 'the-arrival':
                 eventImage = sImg4;
                 break;
-            case 'los-cantaritos':
+            case 'La Fonda Cholula':
                 eventImage = sImg5;
                 break;
             case 'the-reception':

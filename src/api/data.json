@@ -67,11 +67,11 @@
         },
         "details": {
           "es": [
-            "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Interjet)",
+            "Vuelos recomendados: Aerolíneas principales (Volaris, Vivaaerobus, Aeromexico)",
             "Horarios sugeridos: Entre 8:00 AM y 6:00 PM"
           ],
           "en": [
-            "Recommended flights: Major airlines (Volaris, Vivaaerobus, Interjet)",
+            "Recommended flights: Major airlines (Volaris, Vivaaerobus, Aeromexico)",
             "Suggested times: Between 8:00 AM and 6:00 PM"
           ]
         }
@@ -83,47 +83,53 @@
         },
         "details": {
           "es": [
-            "Reserva tu transporte con anticipación",
-            "Renta de automóvil o Mini Van para grupos",
-            "Tiempo de traslado: 1.5 horas aproximadamente a Tequila"
+            "Reserva tu transporte con anticipación: ",
+            "Renta de automovil ",
+            "Tiempo de transporte del aereopuerto a Tequila puede variar entre una hora a hora y media dependiendo el trafico. "
           ],
           "en": [
             "Book your transportation in advance",
-            "Transfer time: Approximately 1.5 hours to Tequila"
+            "Car rental",
+            "Transfer time from the airport to Tequila may vary between one to one and a half hours depending on traffic."
           ]
+        },
+        "bookingLink": "https://gettransfer.com/en?h1_title=Airport%20Transfer%20Service&utm_source=GOT&utm_medium=cpc&utm_campaign=%7Bunited_states%7D:21011779321&utm_content=158317846789&utm_term=kwd-360571034877&gad_source=1&gad_campaignid=21011779321&gclid=Cj0KCQjw6bfHBhDNARIsAIGsqLg3QMuYnUU27UQ7l8SGn8BTRobZsZ0rbjYeWYxRdqup_FDJWlTjzqoaAirmEALw_wcB",
+        "bookingText": {
+          "es": "Reservar ahora",
+          "en": "Book now"
         }
       }
     }
   },
   {
     "id": 32,
-    "proImg": "/images/event/cantaritos.jpg",
+    "proImg": "/images/event/fondaCholula.jpg",
     "title": {
-      "es": "Cantaritos",
-      "en": "Cantaritos"
+      "es": "La Fonda Cholula",
+      "en": "La Fonda Cholula"
     },
-    "slug": "los-cantaritos",
+    "slug": "La Fonda Cholula",
     "type": "event",
     "eventDate": {
       "es": "Viernes, 17 de Abril de 2026",
       "en": "Friday, April 17, 2026"
     },
     "eventTime": {
-      "es": "3:00 PM - 7:00 PM",
-      "en": "3:00 PM - 7:00 PM"
+      "es": "6:00 PM - 10:00 PM",
+      "en": "6:00 PM - 10:00 PM"
     },
     "eventLocation": {
-      "es": "Cantaritos el Güero #1",
-      "en": "Cantaritos el Güero #1"
+      "es": "La Fonda Cholula",
+      "en": "La Fonda Cholula"
     },
     "eventAddress": {
-      "es": "Carretera internacional, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jal.",
-      "en": "International Highway, Carr. Guadalajara - Tepic km 49 #4970, La Meza, 45380 Amatitán, Jalisco"
+      "es": "Ramón Corona & José Cuervo, Centro, 46400 Tequila, Jal., México",
+      "en": "Ramón Corona & José Cuervo, Centro, 46400 Tequila, Jal., Mexico"
     },
-    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.3884844163513!2d-103.76710147492405!3d20.856386180750192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8426170566424a4b%3A0x68d0a3b104ded7bf!2sCantaritos%20el%20G%C3%BCero%20%231!5e0!3m2!1ses!2smx!4v1754950821218!5m2!1ses!2smx",
+    "mapUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.6748899591953!2d-103.84232519052375!3d20.88515038064803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615ea302aec27%3A0x7019b80711226a9f!2sRestaurante%20La%20Fonda%20Cholula!5e0!3m2!1ses-419!2smx!4v1760557668710!5m2!1ses-419!2smx",
     "description": {
-      "es": "Una tarde especial degustando los famosos cantaritos de Tequila. Una tradición local que queremos compartir con todos ustedes antes de nuestra gran celebración.",
-      "en": "A special afternoon tasting the famous cantaritos of Tequila. A local tradition that we want to share with all of you before our great celebration."
+      "es": "Una velada inigualable en La Fonda Cholula, disfrutando de la auténtica cocina mexicana 'Con El Sazón Del Agave'. Una probadita del folclor local antes de nuestra gran celebración.",
+      "en": "An incomparable evening at La Fonda Cholula, enjoying authentic Mexican cuisine 'Con El Sazón Del Agave' (With the Flavor of Agave). A taste of local folklore before our grand celebration."
     },
     "details": {
       "es": [
@@ -149,16 +155,15 @@
         },
         "details": {
           "es": [
-            "Lugar: Hotel Casa La Gran Señora (lobby principal)",
-            "Hora de salida: 1:30 PM en punto",
-            "Transporte grupal en autobús privado",
-            "Duración del viaje: 30 minutos aproximadamente"
+            "Lugar: Restaurante La Fonda Cholula",
+            "Hora de Llegada: 6 PM",
+            "Hora aproximada de termino del evento: 10:30 PM"
           ],
           "en": [
-            "Location: Hotel Casa La Gran Señora (main lobby)",
-            "Departure time: 1:30 PM sharp",
-            "Group transportation in private bus",
-            "Travel duration: Approximately 30 minutes"
+            "Location: Restaurante La Fonda Cholula",
+            "Arrival time: 6 PM",
+            "Departure time: 10:30 PM sharp"
+
           ]
         }
       },
@@ -169,36 +174,13 @@
         },
         "details": {
           "es": [
-            "Llegada estimada: 2:00 PM",
             "Actividades: Degustación, música y convivencia",
-            "Vestimenta: Casual cómoda",
-            "Sombreros recomendados (hay sol)"
+            "Vestimenta: Casual cómoda"
           ],
           "en": [
-            "Estimated arrival: 2:00 PM",
             "Activities: Tasting, music and socializing",
-            "Attire: Comfortable casual",
-            "Hats recommended (sunny weather)"
-          ]
-        }
-      },
-      "departure": {
-        "title": {
-          "es": "Regreso",
-          "en": "Return"
-        },
-        "details": {
-          "es": [
-            "Hora de salida: 6:00 PM",
-            "Regreso al mismo punto de encuentro",
-            "Llegada estimada al hotel: 6:30 PM",
-            "Coordinador estará disponible todo el tiempo"
-          ],
-          "en": [
-            "Departure time: 6:00 PM",
-            "Return to same meeting point",
-            "Estimated arrival at hotel: 6:30 PM",
-            "Coordinator will be available throughout"
+            "Attire: Comfortable casual"
+            
           ]
         }
       }

@@ -16,7 +16,7 @@ import eventImage1 from '../../images/event/Iglesia.jpeg';
 import eventImage2 from '../../images/event/LugarBoda.PNG';
 import imgIA from '../../images/IglesiaIA.jpeg';
 import airportImage from '../../images/event/Aeropuerto.webp';
-import cantaritosImage from '../../images/event/cantaritos.jpg';
+import cantaritosImage from '../../images/event/fondaCholula.jpg';
 
 const ProductSinglePage = (props) => {
     const { slug } = useParams();
@@ -27,7 +27,7 @@ const ProductSinglePage = (props) => {
         'the-reception': imgIA,
         'the-ceremony': eventImage2,
         'the-arrival': airportImage,
-        'los-cantaritos': cantaritosImage
+        'La Fonda Cholula': cantaritosImage
     };
 
     const addToCartProduct = (product, qty = 1) => {
@@ -143,7 +143,26 @@ const ProductSinglePage = (props) => {
                                                                     <h5 className="logistics-subtitle">{section.title}</h5>
                                                                     <ul className="logistics-details-list">
                                                                         {section.details.map((detail, index) => (
-                                                                            <li key={index} className="logistics-detail-item">{detail}</li>
+                                                                            <li key={index} className="logistics-detail-item">
+                                                                                {detail}
+                                                                                {index === 0 && section.bookingLink && (
+                                                                                    <a 
+                                                                                        href={section.bookingLink}
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer"
+                                                                                        className="theme-btn"
+                                                                                        style={{
+                                                                                            display: 'inline-block',
+                                                                                            padding: '8px 20px',
+                                                                                            fontSize: '14px',
+                                                                                            textDecoration: 'none',
+                                                                                            marginLeft: '10px'
+                                                                                        }}
+                                                                                    >
+                                                                                        {section.bookingText}
+                                                                                    </a>
+                                                                                )}
+                                                                            </li>
                                                                         ))}
                                                                     </ul>
                                                                 </div>

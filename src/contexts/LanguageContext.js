@@ -93,7 +93,7 @@ export const LanguageProvider = ({ children }) => {
        // EventSection translations
        itinerary: 'Itinerario',
                itinerarySubtitle: 'Te invitamos a celebrar con nosotros en estos lugares especiales.\nSelecciona el evento para ver más información.',
-       Cantaritos: 'Cantaritos',
+       Cantaritos: 'La Fonda Cholula',
        Llegada: 'Llegada',
        // WeddingMenuSection translations
        weddingMenuTitle: 'Menú de Nuestra Boda',
@@ -203,7 +203,7 @@ export const LanguageProvider = ({ children }) => {
         // Invitation confirmation form
         invitationConfirmation: 'Confirmación de Invitación',
         invitationConfirmationDescription: 'Por favor confirma tu asistencia a nuestra boda. Tu presencia es muy importante para nosotros.',
-        fridayEvent: 'Viernes 17 de Abril - 3:00 PM: Cantaritos',
+        fridayEvent: 'Viernes 17 de Abril - 3:00 PM: La Fonda Cholula',
         saturdayEvent: 'Sábado 18 de Abril: Ceremonia Religiosa (Misa)',
         name: 'Nombre',
         lastName: 'Apellidos',
@@ -235,7 +235,7 @@ export const LanguageProvider = ({ children }) => {
         selectAttendanceOption: 'Selecciona una opción',
         additionalInformation: 'Información Adicional',
         selectArrivalDay: 'Selecciona el día de tu llegada',
-        fridayTime: '3:00 PM - Cantaritos',
+        fridayTime: '3:00 PM - La Fonda Cholula',
         saturdayTime: 'Ceremonia Religiosa',
         fridayAttendance: 'Asistencia al Viernes',
         saturdayAttendance: 'Asistencia al Sábado',
@@ -413,7 +413,7 @@ export const LanguageProvider = ({ children }) => {
        // EventSection translations
        itinerary: 'Itinerary',
                itinerarySubtitle: 'We invite you to celebrate with us in these special places.\nSelect the event to see more information.',
-       Cantaritos: 'Cantaritos',
+       Cantaritos: 'La Fonda Cholula',
        Llegada: 'Arrival',
        // WeddingMenuSection translations
        weddingMenuTitle: 'Our Wedding Menu',
@@ -520,7 +520,7 @@ export const LanguageProvider = ({ children }) => {
         // Invitation confirmation form
         invitationConfirmation: 'Invitation Confirmation',
         invitationConfirmationDescription: 'Please confirm your attendance to our wedding. Your presence is very important to us.',
-        fridayEvent: 'Friday, April 17 - 3:00 PM: Cantaritos',
+        fridayEvent: 'Friday, April 17 - 3:00 PM: La Fonda Cholula',
         saturdayEvent: 'Saturday, April 18: Religious Ceremony (Mass)',
         name: 'Name',
         lastName: 'Last Name',
@@ -552,7 +552,7 @@ export const LanguageProvider = ({ children }) => {
         selectAttendanceOption: 'Select an option',
         additionalInformation: 'Additional Information',
         selectArrivalDay: 'Select your arrival day',
-        fridayTime: '3:00 PM - Cantaritos',
+        fridayTime: '3:00 PM - La Fonda Cholula',
         saturdayTime: 'Religious Ceremony',
         fridayAttendance: 'Friday Attendance',
         saturdayAttendance: 'Saturday Attendance',
@@ -561,7 +561,7 @@ export const LanguageProvider = ({ children }) => {
         songSuggestionHelpText: 'Optional: Suggest a song for the party',
         nameHelpText: 'Enter your full name',
         lastNameHelpText: 'Enter your full last names',
-        fridayEventHelpText: 'Cantaritos event on Friday, April 17 at 3:00 PM',
+        fridayEventHelpText: 'La Fonda Cholula event on Friday, April 17 at 3:00 PM',
         saturdayEventHelpText: 'Religious ceremony on Saturday, April 18',
         thankYouMessage: 'Thank you for your response. Even if you cannot attend, your presence in our hearts will always be.',
         submitHelpText: 'When submitting, WhatsApp will open to confirm your attendance',
