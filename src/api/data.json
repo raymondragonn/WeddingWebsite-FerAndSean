@@ -229,7 +229,6 @@
       "es": "Sixto Gorjón 16, Centro, 46400 Tequila, Jal., México",
       "en": "Sixto Gorjón 16, Centro, 46400 Tequila, Jalisco, Mexico"
     },
-    "eventPhone": "+52 33-1234-5678",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.382838205276!2d-103.83853937824018!3d20.884509581819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842615dd4bd04cf9%3A0x8980ab78799224e9!2sParroquia%20Santiago%20Ap%C3%B3stol!5e0!3m2!1ses!2smx!4v1754148173128!5m2!1ses!2smx",
     "description": {
       "es": "Únete a nosotros en la ceremonia religiosa donde oficializaremos nuestro amor ante Dios y nuestros seres queridos. Un momento sagrado e inolvidable en la hermosa Parroquia Santiago Apóstol.",
@@ -275,14 +274,12 @@
           "es": [
             "Duración aproximada: 1 hora",
             "Fotografías permitidas sin flash",
-            "Teléfonos en silencio",
-            "Permanecer en sus asientos durante la ceremonia"
+            "Teléfonos en silencio"
           ],
           "en": [
             "Approximate duration: 1 hour",
             "Photography allowed without flash",
-            "Phones on silent",
-            "Remain in your seats during the ceremony"
+            "Phones on silent"
           ]
         }
       },
