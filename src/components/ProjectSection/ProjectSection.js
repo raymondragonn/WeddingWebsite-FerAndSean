@@ -19,7 +19,7 @@ const ProjectSection = (props) => {
                         <div className="col-lg-12">
                             <div className="portfolio-grids gallery-container clearfix">
                                 <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-                                    <Masonry gutter="30px">
+                                    <Masonry gutter="45px">
                                         {Projects.slice(0, 6).map((project, pitem) => (
                                             <div className="grid" key={pitem}>
                                                 <div className="img-holder">

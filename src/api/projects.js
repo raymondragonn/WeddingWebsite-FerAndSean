@@ -1,9 +1,9 @@
-import pimg1 from '../images/portfolio/12.jpg'
-import pimg2 from '../images/portfolio/13.jpg'
-import pimg3 from '../images/portfolio/14.jpg'
-import pimg4 from '../images/portfolio/15.jpg'
-import pimg7 from '../images/portfolio/16.jpg'
-import pimg8 from '../images/portfolio/17.jpg'
+import pimg1 from '../images/portfolio/image1.jpg'
+import pimg2 from '../images/portfolio/image3.jpg'
+import pimg3 from '../images/portfolio/image2.jpg'
+import pimg4 from '../images/portfolio/image6.jpg'
+import pimg7 from '../images/portfolio/image5.jpg'
+import pimg8 from '../images/portfolio/image4.jpg'
 
 import pSimg1 from '../images/portfolio/12.jpg'
 import pSimg2 from '../images/portfolio/2.jpg'
@@ -63,7 +63,7 @@ const Projects = [
     {
         id: '6',
         title:'Fer & Sean',
-        slug:'James-Amelia',
+        slug:'Fer-Sean',
         pimg1:pimg8,
         pSimg:pSimg8,
         date:'Jun 2023',

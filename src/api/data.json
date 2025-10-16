@@ -289,8 +289,8 @@
     "id": 34,
     "proImg": "/images/event/LugarBoda.PNG",
     "title": {
-      "es": "La Ceremonia",
-      "en": "The Ceremony"
+      "es": "Fiesta de Bodas",
+      "en": "Wedding Party"
     },
     "slug": "the-ceremony",
     "type": "event",
@@ -310,29 +310,10 @@
       "es": "Camino a la Toma No. 3, 46400 Tequila, Jal., México",
       "en": "Camino a la Toma No. 3, 46400 Tequila, Jalisco, Mexico"
     },
-    "eventPhone": "+52 33-1234-5679",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29817.06255800722!2d-103.83386376679846!3d20.906975359972215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84263fc89e7aaf67%3A0x1a490d668cc314e1!2sLa%20Cueva%20de%20la%20Luna!5e0!3m2!1ses!2smx!4v1754147243660!5m2!1ses!2smx",
     "description": {
       "es": "Después de la misa, celebraremos con una recepción llena de alegría, música, baile y deliciosa comida. Un ambiente mágico en La Cueva de la Luna para festejar nuestro nuevo comienzo.",
       "en": "After the ceremony, we will celebrate with a reception full of joy, music, dancing and delicious food. A magical atmosphere at La Cueva de la Luna to celebrate our new beginning."
-    },
-    "details": {
-      "es": [
-        "Cena de tres tiempos",
-        "Barra libre incluida",
-        "DJ y música en vivo",
-        "Pista de baile",
-        "Mesa de postres",
-        "Actividades y juegos"
-      ],
-      "en": [
-        "Three-course dinner",
-        "Open bar included",
-        "DJ and live music",
-        "Dance floor",
-        "Dessert table",
-        "Activities and games"
-      ]
     },
     "logistics": {
       "arrival": {
@@ -342,56 +323,34 @@
         },
         "details": {
           "es": [
-            "Llegada directa desde la ceremonia",
+            "Llegada directa desde la Parroquia Santiago Apóstol",
             "Recepción de invitados en jardín principal",
             "Estacionamiento amplio disponible"
           ],
           "en": [
-            "Direct arrival from ceremony",
+            "Direct arrival from Parroquia Santiago Apóstol",
             "Guest reception in main garden",
             "Ample parking available"
           ]
         }
       },
-      "schedule": {
-        "title": {
-          "es": "Programa de la Noche",
-          "en": "Evening Program"
-        },
-        "details": {
-          "es": [
-            "8:00 PM - Cóctel de bienvenida",
-            "8:30 PM - Cena (3 tiempos)",
-            "10:00 PM - Apertura de pista de baile",
-            "12:00 AM - Segundo tiempo musical",
-            "2:00 AM - Cierre de la celebración"
-          ],
-          "en": [
-            "8:00 PM - Welcome cocktail",
-            "8:30 PM - Dinner (3 courses)",
-            "10:00 PM - Dance floor opens",
-            "12:00 AM - Second music set",
-            "2:00 AM - Celebration ends"
-          ]
-        }
-      },
       "departure": {
         "title": {
-          "es": "Regreso al Hotel",
-          "en": "Return to Hotel"
+          "es": "Regreso a la Parroquia Santiago Apóstol",
+          "en": "Return to Parroquia Santiago Apóstol"
         },
         "details": {
           "es": [
-            "Transporte de regreso disponible 11pm, 1am y 3am",
+            "Coordinador para organizar traslados",
+            "Transporte de regreso disponible a partir de las 11:30 PM",
             "Último transporte: 3:00 AM",
-            "Servicio de taxi disponible",
-            "Coordinador para organizar traslados"
+            "Servicio de taxi disponible"
           ],
           "en": [
-            "Return transportation available at 11pm, 1am and 3am",
+            "Coordinator to organize transfers",
+            "Return transportation available from 11:30 PM",
             "Last transport: 3:00 AM",
-            "Taxi service available",
-            "Coordinator to organize transfers"
+            "Taxi service available"
           ]
         }
       }
