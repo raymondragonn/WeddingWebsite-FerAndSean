@@ -37,7 +37,7 @@
 
 .summary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 0 auto;
 }
@@ -123,15 +123,31 @@
     }
     
     .summary-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
     }
     
     .summary-item {
-        padding: 15px;
+        padding: 12px;
     }
     
-
+    .item-title {
+        font-size: 0.9rem;
+    }
+    
+    .item-date {
+        font-size: 0.8rem;
+    }
+    
+    .item-location {
+        font-size: 0.7rem;
+    }
+    
+    .item-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -143,17 +159,29 @@
         font-size: 0.9rem;
     }
     
+    .summary-grid {
+        gap: 8px;
+    }
+    
     .summary-item {
-        padding: 12px;
+        padding: 8px;
     }
     
     .item-title {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .item-date {
+        font-size: 0.7rem;
+    }
+    
+    .item-location {
+        font-size: 0.6rem;
     }
     
     .item-number {
-        width: 30px;
-        height: 30px;
-        font-size: 0.9rem;
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
     }
 }

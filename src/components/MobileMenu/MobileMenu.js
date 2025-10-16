@@ -64,7 +64,7 @@ const MobileMenu = () => {
         },
         {
             id: 4,
-            title: t('contact'),
+            title: t('rsvp'),
             link: '/rsvp',
             hasSubmenu: false
         }
