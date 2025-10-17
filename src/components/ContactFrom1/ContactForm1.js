@@ -178,7 +178,7 @@ const ContactForm1 = () => {
                 
             }
 
-            let apiLocal = 'http://localhost/BackEndFer-Sean/index.php'
+            let apiLocal = 'https://ferandsean.com/api/index.php'
 
             fetch(apiLocal, {
                 method: 'POST',
