@@ -86,14 +86,14 @@ export const LanguageProvider = ({ children }) => {
       howWeMeetDescription: '"Nuestra historia comenzó con un mensaje y se convirtió en toda una vida. En solo tres años, hemos enfrentado tanto juntos, y cada desafío solo ha hecho nuestro amor más fuerte y nuestro vínculo inquebrantable. Todo lo que hemos planeado hasta ahora ha funcionado a nuestro favor, y apreciamos convertir cada momento que compartimos en algo especial. Nos sentimos verdaderamente bendecidos de que desde el principio, ambas familias nos han amado y apoyado en cada paso del camino."',
       // Event section translations
        ourWedding: 'Nuestra Boda',
-       whenAndWhere: '¿Itinerario?', 
+       whenAndWhere: '¿Dónde y cuándo?',
        theReception: 'La Misa',
        theCeremony: 'La Ceremonia',
        theParty: 'La Fiesta',
        // EventSection translations
        itinerary: 'Itinerario',
                itinerarySubtitle: 'Te invitamos a celebrar con nosotros en estos lugares especiales.\nSelecciona el evento para ver más información.',
-       Cantaritos: 'La Fonda Cholula',
+       Cantaritos: 'Fiesta de bienvenida',
        Llegada: 'Llegada',
        // WeddingMenuSection translations
        weddingMenuTitle: 'Menú de Nuestra Boda',
@@ -209,7 +209,7 @@ export const LanguageProvider = ({ children }) => {
         // Invitation confirmation form
         invitationConfirmation: 'Confirmación de Invitación',
         invitationConfirmationDescription: 'Por favor confirma tu asistencia a nuestra boda. Tu presencia es muy importante para nosotros.',
-        fridayEvent: 'Viernes 17 de Abril - 6:00 PM: La Fonda Cholula',
+        fridayEvent: 'Viernes 17 de Abril - 6:00 PM: Fiesta de bienvenida',
         saturdayEvent: 'Sábado 18 de Abril: Ceremonia Religiosa (Misa)',
         name: 'Nombre',
         lastName: 'Apellidos',
@@ -242,7 +242,7 @@ export const LanguageProvider = ({ children }) => {
         selectDessertOption: 'Selecciona tu postre',
         additionalInformation: 'Información Adicional',
         selectArrivalDay: 'Selecciona el día de tu llegada',
-        fridayTime: '3:00 PM - La Fonda Cholula',
+        fridayTime: '3:00 PM - Fiesta de bienvenida',
         saturdayTime: 'Ceremonia Religiosa',
         fridayAttendance: 'Asistencia al Viernes',
         saturdayAttendance: 'Asistencia al Sábado',
@@ -251,7 +251,7 @@ export const LanguageProvider = ({ children }) => {
         dessertChoiceHelpText: '¿Qué postre quieres?',
         nameHelpText: 'Ingresa tu nombre completo',
         lastNameHelpText: 'Ingresa tus apellidos completos',
-        fridayEventHelpText: 'Evento La Fonda Cholula el viernes 17 de abril a las 6:00 PM',
+        fridayEventHelpText: 'Evento Fiesta de bienvenida el viernes 17 de abril a las 6:00 PM',
         saturdayEventHelpText: 'Ceremonia religiosa el sábado 18 de abril',
         thankYouMessage: 'Gracias por tu respuesta. Aunque no puedas asistir, tu presencia en nuestros corazones siempre estará.',
         submitHelpText: 'Al enviar, se abrirá WhatsApp para confirmar tu asistencia',
@@ -331,7 +331,7 @@ export const LanguageProvider = ({ children }) => {
          hotelBarricasDescription: 'Complejo turístico único donde cada detalle está creado para una experiencia auténtica. Hospedaje especial, sabores conectados con la tierra y momentos inolvidables.',
                  // Dress Code page translations
         'Our Amazing Work': 'Nuestro Trabajo Increíble',
-        dressCodeWelcomeParty: 'Te invitamos a usar con lo que te sientas más cómodo, pero nuestra recomendación es "Resort Casual"',
+        dressCodeWelcomeParty: 'Te invitamos a usar con lo que te sientas más cómodo, pero nuestra recomendación es formal',
         // ProductSinglePage translations
         'Event Details': 'Detalles del Evento',
         'Product Single': 'Producto Individual',
@@ -420,7 +420,7 @@ export const LanguageProvider = ({ children }) => {
        // EventSection translations
        itinerary: 'Itinerary',
                itinerarySubtitle: 'We invite you to celebrate with us in these special places.\nSelect the event to see more information.',
-       Cantaritos: 'La Fonda Cholula',
+       Cantaritos: 'Welcome Party',
        Llegada: 'Arrival',
        // WeddingMenuSection translations
        weddingMenuTitle: 'Our Wedding Menu',
@@ -533,7 +533,7 @@ export const LanguageProvider = ({ children }) => {
         // Invitation confirmation form
         invitationConfirmation: 'Invitation Confirmation',
         invitationConfirmationDescription: 'Please confirm your attendance to our wedding. Your presence is very important to us.',
-        fridayEvent: 'Friday, April 17 - 6:00 PM: La Fonda Cholula',
+        fridayEvent: 'Friday, April 17 - 6:00 PM: Welcome Party',
         saturdayEvent: 'Saturday, April 18: Religious Ceremony (Mass)',
         name: 'Name',
         lastName: 'Last Name',
@@ -566,7 +566,7 @@ export const LanguageProvider = ({ children }) => {
         selectDessertOption: 'Select your dessert',
         additionalInformation: 'Additional Information',
         selectArrivalDay: 'Select your arrival day',
-        fridayTime: '3:00 PM - La Fonda Cholula',
+        fridayTime: '3:00 PM - Welcome Party',
         saturdayTime: 'Religious Ceremony',
         fridayAttendance: 'Friday Attendance',
         saturdayAttendance: 'Saturday Attendance',
@@ -575,7 +575,7 @@ export const LanguageProvider = ({ children }) => {
         dessertChoiceHelpText: 'choose your dessert',
         nameHelpText: 'Enter your full name',
         lastNameHelpText: 'Enter your full last names',
-        fridayEventHelpText: 'La Fonda Cholula event on Friday, April 17 at 6:00 PM',
+        fridayEventHelpText: 'Welcome Party event on Friday, April 17 at 6:00 PM',
         saturdayEventHelpText: 'Religious ceremony on Saturday, April 18',
         thankYouMessage: 'Thank you for your response. Even if you cannot attend, your presence in our hearts will always be.',
         submitHelpText: 'When submitting, WhatsApp will open to confirm your attendance',
@@ -655,7 +655,7 @@ export const LanguageProvider = ({ children }) => {
         hotelBarricasDescription: 'Unique tourist complex where every detail is created for an authentic experience. Special accommodation, flavors connected to the land and unforgettable moments.',
         // Dress Code page translations
         'Our Amazing Work': 'Our Amazing Work',
-        dressCodeWelcomeParty: 'The dress code is "Resort Casual" but you are welcome to use whatever you feel most comfortable wearing.',
+        dressCodeWelcomeParty: 'The dress code is formal but you are welcome to use whatever you feel most comfortable wearing.',
         // ProductSinglePage translations
         'Event Details': 'Event Details',
         'Product Single': 'Product Single',

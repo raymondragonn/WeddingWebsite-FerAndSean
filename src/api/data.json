@@ -105,10 +105,10 @@
     "id": 32,
     "proImg": "/images/event/fondaCholula.jpg",
     "title": {
-      "es": "La Fonda Cholula",
-      "en": "La Fonda Cholula"
+      "es": "Fiesta de bienvenida",
+      "en": "Welcome Party"
     },
-    "slug": "La Fonda Cholula",
+    "slug": "Fiesta de bienvenida",
     "type": "event",
     "eventDate": {
       "es": "Viernes, 17 de Abril de 2026",
@@ -162,7 +162,7 @@
           "en": [
             "Location: Restaurante La Fonda Cholula",
             "Arrival time: 6 PM",
-            "Departure time: 10:30 PM sharp"
+            "Departure time: 10:00 PM sharp"
 
           ]
         }
@@ -255,12 +255,12 @@
         "details": {
           "es": [
             "Duración aproximada: 1 hora",
-            "Fotografías permitidas sin flash",
+            "Fotografías no permitidas",
             "Teléfonos en silencio"
           ],
           "en": [
             "Approximate duration: 1 hour",
-            "Photography allowed without flash",
+            "Photography not allowed",
             "Phones on silent"
           ]
         }
@@ -289,8 +289,8 @@
     "id": 34,
     "proImg": "/images/event/LugarBoda.PNG",
     "title": {
-      "es": "Fiesta de Bodas",
-      "en": "Wedding Party"
+      "es": "Recepción",
+      "en": "Reception"
     },
     "slug": "the-ceremony",
     "type": "event",

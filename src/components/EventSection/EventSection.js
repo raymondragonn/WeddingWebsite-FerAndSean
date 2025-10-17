@@ -26,7 +26,7 @@ const EventSection = (props) => {
             case 'the-arrival':
                 eventImage = sImg4;
                 break;
-            case 'La Fonda Cholula':
+            case 'Fiesta de bienvenida':
                 eventImage = sImg5;
                 break;
             case 'the-reception':

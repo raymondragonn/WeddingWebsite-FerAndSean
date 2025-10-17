@@ -27,7 +27,7 @@ const ProductSinglePage = (props) => {
         'the-reception': imgIA,
         'the-ceremony': eventImage2,
         'the-arrival': airportImage,
-        'La Fonda Cholula': cantaritosImage
+        'Fiesta de bienvenida': cantaritosImage
     };
 
     const addToCartProduct = (product, qty = 1) => {

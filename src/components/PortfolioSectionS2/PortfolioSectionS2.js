@@ -99,7 +99,7 @@ const PortfolioSectionS2 = (props) => {
 
     return (
 
-        <section className={`wpo-portfolio-section-s2 section-padding ${props.prClass}`} id="gallery" style={{ marginBottom: '20px' }}>
+        <section className={`wpo-portfolio-section-s3 section-padding ${props.prClass}`} id="gallery" style={{ marginBottom: '20px' }}>
             <div className="container-fluid">
                 <div className="sortable-gallery">
                     <div className="gallery-filters"></div>
@@ -112,9 +112,6 @@ const PortfolioSectionS2 = (props) => {
                                             <div className="grid" key={i}>
                                                 <div className="img-holder" onClick={() => handleImageClick(i)}>
                                                     <img src={image.Pimg} alt="" className="img img-responsive" />
-                                                    <div className="hover-content">
-                                                        <i className="ti-plus"></i>
-                                                    </div>
                                                 </div>
                                             </div>
                                         ))}
