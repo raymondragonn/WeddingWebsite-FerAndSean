@@ -171,7 +171,7 @@ export const LanguageProvider = ({ children }) => {
                // Team section translations
         importantPeople: 'Personas Importantes',
         bridesmaids: 'DAMAS DE HONOR',
-        corteNupcial: 'CORTE NUPCIAL',
+        corteNupcial: 'CORTEJO NUPCIAL',
         bridesmaid: 'Dama de Honor',
         bridesmaidFer: 'Dama',
         Groomswoman : 'Dama de Honor',

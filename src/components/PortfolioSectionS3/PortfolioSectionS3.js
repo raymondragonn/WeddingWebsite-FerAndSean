@@ -2,7 +2,7 @@ import React from 'react'
 import "yet-another-react-lightbox/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Bg from "../../images/ferandsean/background-portfolio2.svg";
+import Bg from "../../images/ferandsean/background-portfolio3.png";
 import "./PortfolioSectionS3.css";
 
 const PortfolioSection = (props) => {

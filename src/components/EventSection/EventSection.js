@@ -60,7 +60,7 @@ const EventSection = (props) => {
     };
 
     return (
-        <section className="wpo-event-section" id="event" style={{backgroundColor: '#f6f1ee'}}>
+        <section className="wpo-event-section" id="event" style={{backgroundColor: '#f4eeea'}}>
             <div className="container">
                 <SectionTitle 
                     subTitle={t('itinerarySubtitle')} 
