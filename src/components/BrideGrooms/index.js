@@ -31,28 +31,28 @@ const BrideGrooms = (props) => {
       id: '2',
       tImg: timg2,
       name: 'Lupita Quintero',
-      title: t('bridesmaid') || 'Dama de Honor',
+      title: t('bridesmaidFer') || 'Dama',
       animation:'1200'
     },
     {
       id: '3',
       tImg: timg4,
       name: 'Samantha Rodríguez',
-      title: t('bridesmaid') || 'Dama de Honor',
+      title: t('bridesmaidFer') || 'Dama',
       animation:'1400'
     },
     {
       id: '4',
       tImg: timg5,  
       name: 'Rebecca Kazmierczak',
-      title: t('bridesmaid') || 'Dama de Honor',
+      title: t('bridesmaidFer') || 'Dama',
       animation:'1600'
     },
     {
       id: '5',
       tImg: timg3,  
       name: 'Camila Rincón',
-      title: t('bridesmaid') || 'Dama de Honor',
+      title: t('bridesmaidFer') || 'Dama',
       animation:'1600'
     },
     {
@@ -70,7 +70,7 @@ const BrideGrooms = (props) => {
       id: '8',
       tImg: timg10,
       name: 'Fernando Flores',
-      title: t('groomsman') || 'Caballero de Honor',
+      title: t('padrinos') || 'Padrino',
       animation:'1000'
     },
     {
@@ -84,14 +84,14 @@ const BrideGrooms = (props) => {
       id: '6',
       tImg: timg7,  
       name: 'Max Sweedo',
-      title: t('groomsman') || 'Caballero de Honor',
+      title: t('padrinos') || 'Padrino',
       animation:'1200'
     },
     {
       id: '7',
       tImg: timg8,
       name: 'Aldo Flores',
-      title: t('groomsman') || 'Caballero de Honor',
+      title: t('padrinos') || 'Padrino',
       animation:'1400'
     }
   ]

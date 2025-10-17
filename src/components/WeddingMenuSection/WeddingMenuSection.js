@@ -18,8 +18,18 @@ const WeddingMenuSection = () => {
         },
         {
             name: t('postre'),
-            dish: t('mousseOaxaca'),
-            description: t('mousseOaxacaDesc')
+            dish: t('postreAElegir'),
+            description: '',
+            options: [
+                {
+                    dish: t('mousseOaxaca'),
+                    description: t('mousseOaxacaDesc')
+                },
+                {
+                    dish: t('buñuelos'),
+                    description: t('buñuelosDesc')
+                }
+            ]
         },
         {
             name: t('snackBar'),
@@ -78,6 +88,20 @@ const WeddingMenuSection = () => {
                                         </div>
                                         <h4 className="dish-name">{item.dish}</h4>
                                         <p className="dish-description">{item.description}</p>
+                                        
+                                        {item.options && (
+                                            <div className="menu-options">
+                                                {item.options.map((option, optIndex) => (
+                                                    <div key={optIndex} className="menu-option">
+                                                        <div className="option-number">{optIndex + 1}</div>
+                                                        <div className="option-details">
+                                                            <h5 className="option-dish">{option.dish}</h5>
+                                                            <p className="option-description">{option.description}</p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
                                     </div>
                                 ))}
                             </div>

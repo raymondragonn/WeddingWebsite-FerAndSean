@@ -15,7 +15,7 @@ const TeamSection = (props) => {
     return (
         <section className="wpo-team-section-s2 section-padding" style={{backgroundColor: '#f6f1ee'}}>
             <div className="container">
-                <SectionTitle subTitle={t('importantPeople')} MainTitle={t('bridesmaids')} />
+                <SectionTitle subTitle={t('importantPeople')} MainTitle={t('corteNupcial')} />
                 <div className="wpo-team-wrap">
                     <div className="row">
                         {Team.slice(0, 8).map((team, tm) => (

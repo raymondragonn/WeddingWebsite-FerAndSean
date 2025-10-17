@@ -13,7 +13,7 @@ const ContactForm1 = () => {
         phone: '',
         attendance: '',
         fridayAttendance: '',
-        songSuggestion: ''
+        dessertChoice: ''
     });
     const [validator, setValidator] = useState(null);
 
@@ -115,7 +115,7 @@ const ContactForm1 = () => {
         
         // Si cambian a "no podré asistir", limpiar todos los campos relacionados
         if (name === 'attendance' && value === 'no') {
-            setForms({ ...forms, [name]: processedValue, fridayAttendance: '', songSuggestion: '' });
+            setForms({ ...forms, [name]: processedValue, fridayAttendance: '', dessertChoice: '' });
         } else {
             setForms({ ...forms, [name]: processedValue });
         }
@@ -138,20 +138,16 @@ const ContactForm1 = () => {
         
         // Solo validar campos adicionales si confirma asistencia
         let fridayAttendanceValid = null;
-        let songSuggestionValid = null;
+        let dessertChoiceValid = null;
         
         if (forms.attendance === 'yes') {
             fridayAttendanceValid = validator.message('fridayAttendance', forms.fridayAttendance, 'required');
-            
-            // Validar sugerencia de canción solo si se proporciona
-            if (forms.songSuggestion.trim()) {
-                songSuggestionValid = validator.message('songSuggestion', forms.songSuggestion, 'song_format|song_max');
-            }
+            dessertChoiceValid = validator.message('dessertChoice', forms.dessertChoice, 'required');
         }
         
         // Verificar si todas las validaciones requeridas pasan
         const isFormValid = !nameValid && !lastNameValid && !phoneValid && !attendanceValid && 
-                           (forms.attendance === 'no' || (!fridayAttendanceValid && !songSuggestionValid));
+                           (forms.attendance === 'no' || (!fridayAttendanceValid && !dessertChoiceValid));
         
         if (isFormValid) {
             validator.hideMessages();
@@ -171,14 +167,14 @@ const ContactForm1 = () => {
                     whatsappText += `
                 *${t('fridayAttendance')}:* ${forms.fridayAttendance}`;
                 }
-                if (forms.songSuggestion.trim()) {
+                if (forms.dessertChoice.trim()) {
                     whatsappText += `
-                    *${t('suggestedSong')}:* ${forms.songSuggestion}`;
+                *${t('dessertChoice')}:* ${forms.dessertChoice}`;
                 }
                 
             }
 
-            let apiLocal = 'https://ferandsean.com/api/index.php'
+            let apiLocal = 'https://ferandsean.com/api/index.php' 
 
             fetch(apiLocal, {
                 method: 'POST',
@@ -223,7 +219,7 @@ const ContactForm1 = () => {
                 phone: '',
                 attendance: '',
                 fridayAttendance: '',
-                songSuggestion: ''
+                dessertChoice: ''
             });
         } else {
             validator.showMessages();
@@ -235,7 +231,7 @@ const ContactForm1 = () => {
         const basicFields = forms.name.trim() && forms.lastName.trim() && forms.phone.trim() && forms.attendance;
         
         if (forms.attendance === 'yes') {
-            return basicFields && forms.fridayAttendance;
+            return basicFields && forms.fridayAttendance && forms.dessertChoice;
         }
         
         return basicFields;
@@ -459,20 +455,29 @@ const ContactForm1 = () => {
                                     fontSize: '16px',
                                     fontWeight: '500'
                                 }}>
-                                    {t('songSuggestion')}
+                                    {t('dessertChoice')} *
                                 </label>
-                                <input
-                                    value={forms.songSuggestion}
-                                    type="text"
-                                    name="songSuggestion"
+                                <select
+                                    value={forms.dessertChoice}
+                                    name="dessertChoice"
                                     onBlur={(e) => changeHandler(e)}
                                     onChange={(e) => changeHandler(e)}
-                                    placeholder={t('songSuggestionPlaceholder')}
-                                    style={{ fontSize: '16px' }} />
+                                    style={{ 
+                                        height: '50px', 
+                                        padding: '0 15px', 
+                                        border: '1px solid #e0e0e0', 
+                                        borderRadius: '5px', 
+                                        backgroundColor: 'white',
+                                        fontSize: '16px'
+                                    }}>
+                                    <option value="">{t('selectDessertOption')}</option>
+                                    <option value="Mousse de Chocolate Oaxaqueño">{t('mousseOaxaca')}</option>
+                                    <option value="Buñuelos con Azúcar de Té de Manzana">{t('buñuelos')}</option>
+                                </select>
                                 <small style={{ color: '#6c757d', fontSize: '14px' }}>
-                                    {t('songSuggestionHelpText')}
+                                    {t('dessertChoiceHelpText')}
                                 </small>
-                                {validator && forms.songSuggestion.trim() && validator.message('songSuggestion', forms.songSuggestion, 'song_format|song_max')}
+                                {validator && validator.message('dessertChoice', forms.dessertChoice, 'required')}
                             </div>
                         </div>
                     </>
