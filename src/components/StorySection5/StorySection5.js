@@ -34,7 +34,7 @@ const StorySection5 = (props) => {
                                     </span>
                                     <div className="story-text">
                                         <span className="date">22 Feb, 2019</span>
-                                        <h3>How we meet</h3>
+                                        <h3>How we meet?</h3>
                                         <p>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim tortor, faucibus netus orci donec volutpat adipiscing.</p>
                                     </div>

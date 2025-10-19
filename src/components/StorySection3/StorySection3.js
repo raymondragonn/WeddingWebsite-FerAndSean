@@ -13,7 +13,7 @@ const Storys = [
         sImg: sImg1,
         shape: shape1,
         animation: '1000',
-        title: 'How we meet',
+        title: 'How we meet?',
         date: '15 June 2014',
         description: 'Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed. Enim tortor, faucibus netus orci donec volutpat adipiscing. Sit condimentum elit convallis libero.',
     },

@@ -194,6 +194,8 @@ export const LanguageProvider = ({ children }) => {
         message: 'Mensaje',
         submitNow: 'Enviar',
         whatsappMessage: 'Hola, me gustaría contactarte sobre la boda de Fer & Sean.',
+        // Confirmation text translations
+        confirmationText: 'Confirma tu asistencia antes del 31 de enero de 2026',
         // Validation messages
         requiredField: 'Este campo es requerido',
         invalidName: 'El nombre solo puede contener letras y espacios',
@@ -402,14 +404,14 @@ export const LanguageProvider = ({ children }) => {
       'Itinerario': 'Itinerary',
       'Dress Code': 'Dress Code',
       'Menu': 'Menu',
-      'Damas de Honor': 'Bridesmaids',
+      'Damas de Honor': 'Bridal Party',
       'Bridesmaids and Groomsmen': 'Bridesmaids and Groomsmen',
       'Guadalajara': 'Guadalajara',
       accommodation: 'Accommodation',
       // Story section translations
       ourStory: 'Our Story',
              howItHappened: 'HOW IT HAPPENED',
-             howWeMeet: 'How we meet',
+             howWeMeet: 'How we meet?',
        howWeMeetDescription: '"Our story started with a message and turned into a lifetime. In just three years, we\'ve faced so much together, and every challenge has only made our love stronger and our bond unbreakable. Everything we\'ve planned so far has worked in our favor, and we cherish turning every moment we share into something special. We feel truly blessed that from the very beginning, both of our families have loved and supported us every step of the way."',
        // Event section translations
        ourWedding: 'Our Wedding',
@@ -499,9 +501,9 @@ export const LanguageProvider = ({ children }) => {
         importantPeople: 'Important People',
         bridesmaids: 'BRIDESMAIDS',
         corteNupcial: 'BRIDAL PARTY',
-        bridesmaid: 'Bridesmaid',
+        bridesmaid: 'Maid of Honor',
         bridesmaidFer: 'Bridesmaid',
-        groomsman: 'Groomsman',
+        groomsman: 'Bridesman',
         padrinos: 'Groomsman',
         bridesmaidsAndGroomsman: 'Bridesmaids and Groomsmen',
         // Contact page translations
@@ -518,6 +520,8 @@ export const LanguageProvider = ({ children }) => {
         message: 'Message',
         submitNow: 'Send',
         whatsappMessage: 'Hello, I would like to contact you about Fer & Sean\'s wedding.',
+        // Confirmation text translations
+        confirmationText: 'Please confirm your attendance before January 31, 2026',
         // Validation messages
         requiredField: 'This field is required',
         invalidName: 'Name can only contain letters and spaces',

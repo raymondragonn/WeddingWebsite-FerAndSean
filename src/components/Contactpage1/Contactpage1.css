@@ -6,3 +6,50 @@
 .wpo-contact-section .bottom-bg svg .bg-stroke {
   stroke: #2d2420 !important;
 }
+
+/* Estilos responsive para Contactpage1 */
+@media (max-width: 768px) {
+  .wpo-contact-section {
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+  }
+  
+  .wpo-contact-section-wrapper {
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .section-confirmation {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-top: 8px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .wpo-contact-section {
+    padding-top: 20px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem !important;
+  }
+  
+  .section-confirmation {
+    font-size: 14px !important;
+  }
+}

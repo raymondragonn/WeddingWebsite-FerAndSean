@@ -33,7 +33,7 @@ const StorySection4 = (props) => {
                                     </span>
                                     <div className="story-text">
                                         <span style={{ color: '#68615a' }} className="date">22 Feb, 2019</span>
-                                        <h3>How we meet</h3>
+                                        <h3>How we meet?</h3>
                                         <p style={{ color: '#68615a' }}>Consectetur adipiscing elit. Fringilla at risus orci, tempus facilisi sed.
                                             Enim tortor, faucibus netus orci donec volutpat adipiscing.</p>
                                     </div>

@@ -22,11 +22,12 @@ const Contactpage1 = () => {
             >
                 <div className="container-fluid">
                     <div className="row justify-content-center">
-                        <div className="col col-xl-6 col-lg-6 col-md-6 col-12">
+                        <div className="col-12 col-md-10 col-lg-8 col-xl-6">
                             <div className="wpo-contact-section-wrapper" style={{ width: '100%', maxWidth: '100%'}}>
                                 <SectionTitle
                                     subTitle={t("invitationConfirmation")}
                                     MainTitle={t("confirmYourAttendance")}
+                                    confirmation={t("confirmationText")}
                                 />
                                 {/* Banner del Itinerario */}
                                 <ItineraryBanner />

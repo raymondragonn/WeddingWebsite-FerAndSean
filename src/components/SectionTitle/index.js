@@ -11,6 +11,17 @@ const SectionTitle = (props) => {
                 <p className="section-subtitle" style={{ whiteSpace: 'pre-line' }}>
                     {props.subTitle}
                 </p>
+                {props.confirmation && (
+                    <p className="section-confirmation" style={{ 
+                        color: '#000', 
+                        fontSize: '20px', 
+                        fontWeight: '500',
+                        marginTop: '10px',
+                        fontStyle: 'italic'
+                    }}>
+                        {props.confirmation}
+                    </p>
+                )}
             </div>
         </div>
     )
