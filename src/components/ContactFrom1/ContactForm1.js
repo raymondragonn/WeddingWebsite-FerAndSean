@@ -506,18 +506,46 @@ const ContactForm1 = () => {
                 )}
             </div>
             
-            <div className="submit-area" style={{ marginTop: '30px' }}>
+            {/* Mensaje de que ya no se aceptan confirmaciones */}
+            <div style={{ 
+                backgroundColor: '#f8d7da', 
+                border: '1px solid #f5c6cb', 
+                borderRadius: '8px', 
+                padding: '20px',
+                marginTop: '30px',
+                textAlign: 'center'
+            }}>
+                <h5 style={{ 
+                    color: '#721c24', 
+                    marginBottom: '10px', 
+                    fontSize: '20px',
+                    fontWeight: '600'
+                }}>
+                    ⚠️ {t('confirmationsClosed')}
+                </h5>
+                <p style={{ 
+                    color: '#721c24', 
+                    fontSize: '16px', 
+                    lineHeight: '1.5', 
+                    margin: 0
+                }}>
+                    {t('confirmationsClosedMessage')}
+                </p>
+            </div>
+            
+            <div className="submit-area" style={{ marginTop: '20px' }}>
                 <button 
-                    type="submit" 
+                    type="button" 
                     className="theme-btn" 
                     style={{ 
                         fontSize: '18px', 
                         padding: '15px 30px', 
                         fontWeight: '600', 
-                        opacity: !isFormComplete() ? 0.5 : 1,
-                        cursor: !isFormComplete() ? 'not-allowed' : 'pointer'
+                        opacity: 0.5,
+                        cursor: 'not-allowed',
+                        backgroundColor: '#6c757d'
                     }}
-                    disabled={!isFormComplete()}
+                    disabled={true}
                 >
                     {t('confirmInvitation')}
                 </button>
